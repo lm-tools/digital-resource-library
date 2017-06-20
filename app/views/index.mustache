@@ -1,10 +1,16 @@
 {{<layout}}
 
   {{$applicationContent}}
-    <h1>{{ title }}</h1>
-    <p>{{#__}}main.title{{/__}}</p>
+    <h1>{{ article.title }}</h1>
+    <div>
+      {{{article.contents}}}
+    </div>
+    <ul>
+      {{#article.labels}}
+        <li class="button">{{.}}</li>
+      {{/article.labels}}
+    </ul>
 
-    <input class="button" type="submit" value="Save and continue">
   {{/applicationContent}}
 
 {{/layout}}
