@@ -1,6 +1,6 @@
 {
   "name": "digital-resource-library",
-  "repository": "https://github.com/lm-tools/digi",
+  "repository": "https://github.com/lm-tools/digital-resource-library",
   "buildpacks": [
     { "url": "heroku/nodejs" }
   ]
