@@ -1,12 +1,17 @@
 const helper = require('./support/integrationSpecHelper');
 const googleTagManagerHelper = helper.googleTagManagerHelper;
-const mainPage = helper.mainPage;
+const findPage = helper.findPage;
 const expect = require('chai').expect;
 
-describe('Main', () => {
+describe('Find', () => {
   it('should contain valid google tag manager data', () =>
-    mainPage.visit()
+    findPage.visit()
       .then(() => expect(googleTagManagerHelper.getUserVariable()).to.equal('set-me-in-controller'))
+  );
+
+  it('should display page', () =>
+    findPage.visit()
+      .then(() => expect(findPage.header()).to.equal('Explore the resource library'))
   );
 });
 
