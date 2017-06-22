@@ -5,11 +5,9 @@ const logger = require('./../logger');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
-const indexController = require('./controllers/index-controller');
-const usersController = require('./controllers/users-controller');
+const findController = require('./controllers/find-controller');
 const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
-const healthCheckController = require('./controllers/health-check-controller');
 const helmet = require('helmet');
 
 const app = express();
@@ -27,9 +25,6 @@ app.set('views', path.join(__dirname, 'views'));
 const basePath = app.locals.basePath = process.env.EXPRESS_BASE_PATH || '';
 const assetPath = `${basePath}/`;
 const googleTagManagerId = process.env.GOOGLE_TAG_MANAGER_ID;
-
-app.use('/health_check', healthCheckController);
-app.use(`${basePath}/health_check`, healthCheckController);
 
 // Middleware to set default layouts.
 // This must be done per request (and not via app.locals) as the Consolidate.js
@@ -67,8 +62,7 @@ app.use(assetPath, express.static(path.join(__dirname, '..',
 
 app.use(helmet.noCache());
 
-app.use(`${basePath}/`, indexController);
-app.use(`${basePath}/users`, usersController);
+app.use(`${basePath}/`, findController);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
