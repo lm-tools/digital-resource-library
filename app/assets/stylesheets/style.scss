@@ -5,12 +5,13 @@
 }
 
 .search-result-excerpt {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .search-result-metadata-item {
   display: inline-block;
-  margin: $gutter-one-quarter $gutter-half 0 0;
+  margin: 0 $gutter-half 0 0;
   font-weight: 400;
   a {
     text-decoration: none;
@@ -19,8 +20,15 @@
 
 .search-result-title {
   font-weight: 700;
+  font-size: 19px
   a {
     text-decoration: none;
   }
 }
 
+
+@media (min-width: 641px) {
+  .search-result-title {
+    font-size: 24px;
+  } 
+}
