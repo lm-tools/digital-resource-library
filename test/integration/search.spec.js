@@ -1,7 +1,7 @@
 const { searchPage, googleTagManagerHelper } = require('./support/integrationSpecHelper');
 const expect = require('chai').expect;
 const { describe, it, before } = require('mocha');
-const resourcesListModel = require('../../app/models/resources');
+const resourcesListModel = require('../../app/data/resources');
 
 describe('Search', () => {
   before(() => searchPage.visit());
