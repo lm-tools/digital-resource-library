@@ -9,26 +9,17 @@
   margin-bottom: 0;
 }
 
-.search-result-metadata-item {
+.search-result-category {
   display: inline-block;
   margin: 0 $gutter-half 0 0;
-  font-weight: 400;
   a {
     text-decoration: none;
   }
 }
 
 .search-result-title {
-  font-weight: 700;
-  font-size: 19px;
+  @include bold-24();
   a {
     text-decoration: none;
   }
-}
-
-
-@media (min-width: 641px) {
-  .search-result-title {
-    font-size: 24px;
-  } 
 }
