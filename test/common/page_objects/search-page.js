@@ -1,4 +1,4 @@
-class FindPage {
+class SearchPage {
   constructor(browser) {
     this.browser = browser;
   }
@@ -25,4 +25,4 @@ class FindPage {
     }));
   }
 }
-module.exports = FindPage;
+module.exports = SearchPage;
