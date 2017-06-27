@@ -3,26 +3,50 @@
 {{$applicationContent}}
 
 <h2 class="heading-xlarge" data-test="header">{{#__}}search.header{{/__}}</h2>
+<div class="grid-row">
+  <section class="column-one-third search-page-filters" aria-label="Search filters">
+    <form action="{{basePath}}/search" method="get">
 
-{{#resourceList}}
-  <div class="search-result" data-test="resource">
-    <h2 class="search-result-title" data-test="title">
-      <a href="{{ basePath }}/resources/{{ resourceId }}" data-test="resource-{{resourceId}}">
-          {{ title }}</a>
-    </h2>
-    <p class="search-result-excerpt" data-test="summary">
-      {{summary}}
+      <div class="govuk-option-select filter-field-text js-collapsible">
+        <div class="container-head">
+          <label class="option-select-label" for="keywords">
+            Keywords
+          </label>
+        </div>
+        <input type="text" name="search" id="keywords" value="{{ search }}" maxlength="200">
+      </div>
+
+      <button class="button" type="submit">Search</button>
+    </form>
+  </section>
+  <section class="column-two-thirds" aria-label="Resources found">
+
+    <p class="search-summary">
+      <span class="search-summary-count">{{resourceList.length}}</span> results found containing <em>{{ search }}</em>
     </p>
-    <ul aria-label="tags" class="search-result-metadata">
-      {{#category}}
-        <li class="search-result-category" data-test="category">
-          <a href="#{{ . }}">{{.}}</a>
-        </li>
-      {{/category}}
 
-    </ul>
-  </div>
-{{/resourceList}}
+    {{#resourceList}}
+      <div class="search-result" data-test="resource">
+        <h2 class="search-result-title" data-test="title">
+          <a href="{{ basePath }}/resources/{{ resourceId }}" data-test="resource-{{resourceId}}">
+            {{ title }}
+          </a>
+        </h2>
+        <p class="search-result-excerpt" data-test="summary">
+          {{summary}}
+        </p>
+        <ul aria-label="tags" class="search-result-metadata">
+          {{#category}}
+            <li class="search-result-category" data-test="category">
+              <a href="#{{ . }}">{{.}}</a>
+            </li>
+          {{/category}}
+
+        </ul>
+      </div>
+    {{/resourceList}}
+  </section>
+</div>
 
 {{/applicationContent}}
 
