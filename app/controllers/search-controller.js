@@ -1,10 +1,10 @@
 const express = require('express');
 const router = new express.Router();
-const resourceList = require('../models/resources');
+const { resourceModel } = require('../appContext');
 
 /* GET home page. */
 router.get('/search', (req, res) => {
-  res.render('search', { resourceList });
+  res.render('search', { resourceList: resourceModel.findAll() });
 });
 
 module.exports = router;
