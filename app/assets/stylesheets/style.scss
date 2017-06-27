@@ -1,2 +1,25 @@
 @import '_govuk-elements';
 
+.search-result {
+  padding-bottom: $gutter;
+}
+
+.search-result-excerpt {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.search-result-category {
+  display: inline-block;
+  margin: 0 $gutter-half 0 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.search-result-title {
+  @include bold-24();
+  a {
+    text-decoration: none;
+  }
+}

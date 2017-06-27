@@ -1,0 +1,68 @@
+/* eslint-disable max-len */
+const resourceList = [
+  {
+    resourceId: 'octo001',
+    title: 'Steps Ahead mentoring',
+    url: 'https://www.cipd.co.uk/steps-ahead-mentoring',
+    summary: 'Steps Ahead offers one-to-one mentoring sessions to help jobseekers improve their employability skills, boost their confidence and find work.',
+    journalMessage: "We've agreed that mentoring might help you - talking to someone with a bit of experience could be useful. \n\n Take a look at this site and sign up: \n\n https://www.cipd.co.uk/steps-ahead-mentoring",
+    category: ['mentoring', 'training'],
+    groups: ['young jobseekers', 'intensive work search'],
+  },
+  {
+    resourceId: 'octo002',
+    title: 'Skills for care',
+    url: 'http://www.skillsforcare.org.uk/Home.aspx',
+    summary: 'Helping social care employers to recruit, develop and lead their workforce.',
+    journalMessage: "You've said you're interested in care work. This site might be useful: \n\n http://www.skillsforcare.org.uk/Care-careers/Think-Care-Careers/Home-Page.aspx \n\n Take a look and find out more about how you might become a care worker.",
+    category: ['training', 'care'],
+    groups: ['young jobseekers', 'intensive work search'],
+  },
+  {
+    resourceId: 'octo003',
+    title: 'My world of work CV Builder',
+    url: 'https://www.myworldofwork.co.uk/getting-job/building-cv',
+    summary: 'A simple tool to help a claimant build a CV',
+    journalMessage: "We've agreed that mentoring might help you - talking to someone with a bit of experience could be useful. \n\n Take a look at this site and sign up: \n\n https://www.cipd.co.uk/steps-ahead-mentoring",
+    category: ['CV and resumes'],
+    groups: ['young jobseekers', 'intensive work search'],
+  },
+  {
+    resourceId: 'octo004',
+    title: 'Childcare Choices',
+    url: 'https://childcarechoices.gov.uk',
+    summary: 'A government site that shows all the options for help with childcare.',
+    journalMessage: 'You can get support for childcare as you move back into work. Take a look at this site that explains all the options and see which one suits you:\n\n https://childcarechoices.gov.uk ',
+    category: ['childcare'],
+    groups: ['parents', 'intensive work search', 'preparing for work'],
+  },
+  {
+    resourceId: 'octo005',
+    title: 'Do-it',
+    url: 'https://do-it.org',
+    summary: 'A website that lets you search for volunteering opportunities in your area.',
+    journalMessage: 'We agreed that volunteering might help you in your work search. Take a look a Do-it, a website that lets you look for chances to volunteer in your area:\n\n https://do-it.org',
+    category: ['volunteering'],
+    groups: ['intensive work search'],
+  },
+  {
+    resourceId: 'octo006',
+    title: 'Find an internship',
+    url: 'http://www.gov.uk/find-internship',
+    summary: 'A service to help new and recent graduates find a paid, government-backed internship.',
+    journalMessage: "We discussed internships. The Graduate Talent Pool can help you find one that's paid: \n\n http://www.gov.uk/find-internship \n\n",
+    category: ['internships'],
+    groups: ['young jobseekers', 'intensive work search'],
+  },
+  {
+    resourceId: 'octo007',
+    title: 'Prospects: jobs and work experience',
+    url: 'https://www.prospects.ac.uk/jobs-and-work-experience',
+    summary: 'Information about different kinds of work experience along with links to opportunities.',
+    journalMessage: "We agreed you might need more experience to help with your work search. To find out more about getting that experience and to see what's available, look at the Prospects site: \n\n http://www.gov.uk/find-internship \n\n It has information about different kinds of work experience, and will tell you what's available at the moment.",
+    category: ['internships', 'volunteering', 'apprenticeships', 'work experience'],
+    groups: ['young jobseekers', 'intensive work search'],
+  },
+];
+
+module.exports = resourceList;

@@ -1,13 +1,17 @@
 {
-  "find": {
-    "pageTitle": "Explore the resource library",
-    "header": "Explore the resource library"
-  },
   "error": {
     "404": "Page not found",
     "500": "We're experiencing technical problems."
   },
   "layout": {
     "header": "Digital resource library"
+  },
+  "search": {
+    "pageTitle": "Explore the resource library",
+    "header": "Explore the resource library"
+  },
+  "dashboard": {
+    "pageTitle": "Explore the resource library",
+    "header": "Explore the resource library"
   }
 }

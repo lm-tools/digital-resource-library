@@ -5,7 +5,8 @@ const logger = require('./../logger');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
-const findController = require('./controllers/find-controller');
+const dashboardController = require('./controllers/dashboard-controller');
+const searchController = require('./controllers/search-controller');
 const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
 const healthCheckController = require('./controllers/health-check-controller');
@@ -66,7 +67,8 @@ app.use(assetPath, express.static(path.join(__dirname, '..',
 
 app.use(helmet.noCache());
 
-app.use(`${basePath}/`, findController);
+app.use(`${basePath}/`, dashboardController);
+app.use(`${basePath}/`, searchController);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

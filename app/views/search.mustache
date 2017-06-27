@@ -1,0 +1,29 @@
+{{<layout}}
+{{$pageTitle}}{{#__}}search.pageTitle{{/__}}{{/pageTitle}}
+{{$applicationContent}}
+
+<h2 class="heading-xlarge" data-test="header">{{#__}}search.header{{/__}}</h2>
+
+{{#resourceList}}
+  <div class="search-result" data-test="resource">
+    <h2 class="search-result-title" data-test="title">
+      <a href="#{{ resourceId }}">{{ title }}</a>
+    </h2>
+    <p class="search-result-excerpt" data-test="summary">
+      {{summary}}
+    </p>
+    <ul aria-label="tags" class="search-result-metadata">
+      {{#category}}
+        <li class="search-result-category" data-test="category">
+          <a href="#{{ . }}">{{.}}</a>
+        </li>
+      {{/category}}
+
+    </ul>
+  </div>
+{{/resourceList}}
+
+{{/applicationContent}}
+
+{{/layout}}
+
