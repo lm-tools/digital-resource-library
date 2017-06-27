@@ -33,6 +33,10 @@ describe('Search', () => {
       expect(this.resourceList.map(i => i.categories))
         .to.eql(resourcesListModel.map(i => i.category))
     );
+    it('should have correct path for all resources details page', () =>
+      expect(this.resourceList.map(i => i.pathname))
+        .to.eql(resourcesListModel.map(i => `/resources/${i.resourceId}/detail`))
+    );
   });
 });
 

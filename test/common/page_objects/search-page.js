@@ -22,6 +22,7 @@ class SearchPage {
       summary: this.extractText('summary', context),
       categories: this.browser.queryAll('[data-test="category"]', context)
         .map(i => this.browser.text(i)),
+      pathname: this.browser.query('[data-test="href"]', context).pathname,
     }));
   }
 }
