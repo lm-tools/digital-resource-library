@@ -7,7 +7,8 @@
 {{#resourceList}}
   <div class="search-result" data-test="resource">
     <h2 class="search-result-title" data-test="title">
-      <a href="{{ basePath }}/resources/{{ resourceId }}" data-test="search-result-link">{{ title }}</a>
+      <a href="{{ basePath }}/resources/{{ resourceId }}" data-test="resource-{{resourceId}}">
+          {{ title }}</a>
     </h2>
     <p class="search-result-excerpt" data-test="summary">
       {{summary}}

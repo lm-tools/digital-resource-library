@@ -15,6 +15,10 @@ class SearchPage {
     return this.browser.text(`[data-test="${name}"]`, context);
   }
 
+  clickOnResourse(resourceId) {
+    return this.browser.click(`[data-test="resource-${resourceId}"]`);
+  }
+
   getResources() {
     const resources = this.browser.queryAll('[data-test="resource"]');
     return resources.map(context => ({
@@ -22,7 +26,7 @@ class SearchPage {
       summary: this.extractText('summary', context),
       categories: this.browser.queryAll('[data-test="category"]', context)
         .map(i => this.browser.text(i)),
-      pathname: this.browser.query('[data-test="search-result-link"]', context).pathname,
+      pathname: this.browser.query('[data-test^="resource-"]', context).pathname,
     }));
   }
 }

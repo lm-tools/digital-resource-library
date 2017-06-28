@@ -16,6 +16,11 @@
   },
   "detail": {
     "pageTitle": "detail.pageTitle",
-    "header": "detail.header"
+    "header": "detail.header",
+    "howToUseIt": {
+      "header": "How to use it",
+      "description": "Paste this message into the claimant's journal"
+    },
+    "linkText": "Check it out"
   }
 }
