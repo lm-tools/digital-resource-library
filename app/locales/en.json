@@ -15,8 +15,7 @@
     "resultsSectionAria": "Resources found",
     "singleResultFound": "result found containing",
     "resultsFound": "results found containing",
-    "resultsFoundWithoutKeyword": "results found",
-    "resultsNotFound": "results found"
+    "resultsFoundWithoutKeyword": "results found"
   },
   "dashboard": {
     "pageTitle": "Explore the resource library",

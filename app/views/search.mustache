@@ -22,10 +22,7 @@
   <section class="column-two-thirds" aria-label="{{#__}}search.resultsSectionAria{{/__}}">
 
     <p class="search-summary" data-test="search-summary">
-      <span class="search-summary-count">{{resourceList.length}}</span> {{resultsSummaryCopy}}
-      {{#hasResults}}
-        <strong>{{ search }}</strong>
-      {{/hasResults}}
+      <span class="search-summary-count">{{resourceList.length}}</span> {{resultsSummaryCopy}} <strong>{{ search }}</strong>
     </p>
 
     {{#resourceList}}

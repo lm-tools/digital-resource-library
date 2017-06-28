@@ -64,7 +64,7 @@ describe('Search', () => {
       {
         name: 'empty result',
         keyword: 'incorrect-keyword',
-        summary: '0 results found',
+        summary: '0 results found containing incorrect-keyword',
       },
       {
         name: 'single result',
