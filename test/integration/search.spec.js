@@ -35,7 +35,7 @@ describe('Search', () => {
     );
     it('should have correct path for all resources details page', () =>
       expect(this.resourceList.map(i => i.pathname))
-        .to.eql(resourcesListModel.map(i => `/resources/${i.resourceId}/detail`))
+        .to.eql(resourcesListModel.map(i => `/resources/${i.resourceId}`))
     );
   });
 });

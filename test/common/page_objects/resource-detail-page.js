@@ -1,4 +1,4 @@
-class ResourceDetailPage {
+class DetailPage {
   constructor(browser) {
     this.browser = browser;
   }
@@ -7,8 +7,8 @@ class ResourceDetailPage {
     this.browser.query('[data-test="header"]');
   }
 
-  visitById(id) {
-    return this.browser.visit(`/resources/${id}/detail`);
+  visit(id) {
+    return this.browser.visit(`/resources/${id}`);
   }
 
   header() {
@@ -16,4 +16,4 @@ class ResourceDetailPage {
   }
 
 }
-module.exports = ResourceDetailPage;
+module.exports = DetailPage;
