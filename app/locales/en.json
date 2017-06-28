@@ -8,7 +8,12 @@
   },
   "search": {
     "pageTitle": "Explore the resource library",
-    "header": "Explore the resource library"
+    "header": "Explore the resource library",
+    "searchSectionAria": "Search filters",
+    "searchButtonLabel": "Keywords",
+    "searchButton": "Search",
+    "resultsSectionAria": "Resources found",
+    "resultsNotFound": "results found containing"
   },
   "dashboard": {
     "pageTitle": "Explore the resource library",
