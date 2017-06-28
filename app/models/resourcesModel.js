@@ -12,6 +12,6 @@ module.exports = function ({ data }) {
 
   const findAll = () => data;
   const findByKeyword = (keyword) => _.values(data).filter(it => searchInSingleItem(it, keyword));
-  const findById = (id) => data.find((item) => item.resourceId === id);
+  const findById = (id) => data.find(i => i.resourceId === id);
   return { findAll, findByKeyword, findById };
 };
