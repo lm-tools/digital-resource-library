@@ -16,7 +16,6 @@
   },
   "detail": {
     "pageTitle": "detail.pageTitle",
-    "header": "detail.header",
     "howToUseIt": {
       "header": "How to use it",
       "description": "Paste this message into the claimant's journal"
