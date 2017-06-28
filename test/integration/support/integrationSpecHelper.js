@@ -7,6 +7,7 @@ const GoogleTagManagerHelper = require('../../common/page_objects/google-tag-man
 const DashboardPage = require('../../common/page_objects/dashboard-page');
 const SearchPage = require('../../common/page_objects/search-page');
 const ErrorPage = require('../../common/page_objects/error-page');
+const DetailPage = require('../../common/page_objects/resource-detail-page');
 
 process.env.GOOGLE_TAG_MANAGER_ID = 'fake-id';
 process.env.PORT = appPort;
@@ -24,5 +25,6 @@ module.exports = {
   dashboardPage: new DashboardPage(browser),
   searchPage: new SearchPage(browser),
   errorPage: new ErrorPage(browser),
+  detailPage: new DetailPage(browser),
   app,
 };
