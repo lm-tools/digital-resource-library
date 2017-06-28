@@ -13,5 +13,9 @@
   "dashboard": {
     "pageTitle": "Explore the resource library",
     "header": "Explore the resource library"
+  },
+  "detail": {
+    "pageTitle": "detail.pageTitle",
+    "header": "detail.header"
   }
 }
