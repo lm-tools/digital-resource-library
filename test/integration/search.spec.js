@@ -16,7 +16,7 @@ describe('Search', () => {
 
   describe('list', () => {
     before(() => {
-      this.resourceList = searchPage.getResources();
+      this.resourceList = searchPage.getResults();
     });
 
     it('should display all resources', () =>
@@ -37,6 +37,56 @@ describe('Search', () => {
       expect(this.resourceList.map(i => i.pathname))
         .to.eql(resourcesListModel.map(i => `/resources/${i.resourceId}`))
     );
+  });
+
+  describe('search', () => {
+    [
+      {
+        name: 'returns 0 result for incorrect keyword',
+        keyword: 'incorrect-keyword',
+        resultsLength: 0,
+        summary: '0 results found',
+      },
+      {
+        name: 'displays results found for keyword',
+        keyword: 'https://do-it.org',
+        resultsLength: 1,
+        summary: '1 result found containing https://do-it.org',
+      },
+    ].forEach(s => {
+      it(s.name, () =>
+        searchPage.search(s.keyword)
+          .then(() => expect(searchPage.getResults().length).to.eql(s.resultsLength))
+      );
+    });
+
+    [
+      {
+        name: 'empty result',
+        keyword: 'incorrect-keyword',
+        summary: '0 results found containing incorrect-keyword',
+      },
+      {
+        name: 'single result',
+        keyword: 'https://do-it.org',
+        summary: '1 result found containing https://do-it.org',
+      },
+      {
+        name: 'multiple results without keyword',
+        keyword: '    ',
+        summary: `${resourcesListModel.length} results found`,
+      },
+      {
+        name: 'multiple results with keyword',
+        keyword: 'a',
+        summary: `${resourcesListModel.length} results found containing a`,
+      },
+    ].forEach(s => {
+      it(`for ${s.name} displays: "${s.summary}"`, () =>
+        searchPage.search(s.keyword)
+          .then(() => expect(searchPage.getSearchSummary()).to.eql(s.summary))
+      );
+    });
   });
 });
 
