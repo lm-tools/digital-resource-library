@@ -19,7 +19,7 @@ class SearchPage {
     return this.browser.click(`[data-test="resource-${resourceId}"]`);
   }
 
-  getResources() {
+  getResults() {
     const resources = this.browser.queryAll('[data-test="resource"]');
     return resources.map(context => ({
       title: this.extractText('title', context),
@@ -28,6 +28,15 @@ class SearchPage {
         .map(i => this.browser.text(i)),
       pathname: this.browser.query('[data-test^="resource-"]', context).pathname,
     }));
+  }
+
+  getSearchSummary() {
+    return this.browser.text('[data-test="search-summary"]');
+  }
+
+  search(keyword) {
+    this.browser.fill('[data-test="search-input"]', keyword);
+    return this.browser.click('[data-test="search-button"]');
   }
 }
 module.exports = SearchPage;

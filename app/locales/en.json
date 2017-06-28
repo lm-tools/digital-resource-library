@@ -13,7 +13,10 @@
     "searchButtonLabel": "Keywords",
     "searchButton": "Search",
     "resultsSectionAria": "Resources found",
-    "resultsNotFound": "results found containing"
+    "singleResultFound": "result found containing",
+    "resultsFound": "results found containing",
+    "resultsFoundWithoutKeyword": "results found",
+    "resultsNotFound": "results found"
   },
   "dashboard": {
     "pageTitle": "Explore the resource library",
