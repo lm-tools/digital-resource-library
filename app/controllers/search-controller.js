@@ -8,7 +8,7 @@ router.get('/search', (req, res) => {
   res.render('search',
     {
       resourceList: resourceModel.findByKeyword(searchParam),
-      search: searchParam
+      search: searchParam,
     }
   );
 });
