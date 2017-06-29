@@ -1,4 +1,4 @@
-class FindPage {
+class DashboardPage {
   constructor(browser) {
     this.browser = browser;
   }
@@ -11,4 +11,4 @@ class FindPage {
     return this.browser.text('[data-test="header"]');
   }
 }
-module.exports = FindPage;
+module.exports = DashboardPage;
