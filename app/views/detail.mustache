@@ -2,7 +2,7 @@
     {{$pageTitle}}{{#__}}detail.pageTitle{{/__}}{{/pageTitle}}
     {{$applicationContent}}
         {{#resource}}
-            <a data-test="category">{{ category.0 }}</a>
+            <a href="/search?search={{ category.0 }}" data-test="category">{{ category.0 }}</a>
             <h2 class="heading-xlarge" data-test="header">{{ title }}</h2>
             <p class="description text" data-test="summary">{{ summary }}</p>
             <h3>{{#__}}detail.howToUseIt.header{{/__}}</h3>

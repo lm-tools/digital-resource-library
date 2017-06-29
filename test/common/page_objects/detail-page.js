@@ -11,8 +11,13 @@ class DetailPage {
     return this.browser.text(`[data-test="${dataTestAttrVal}"]`);
   }
 
-  category() {
+  categoryText() {
     return this.text('category');
+  }
+
+  categoryLink() {
+    const catEl = this.browser.query('[data-test="category"]');
+    return `${catEl.pathname}${catEl.search}`;
   }
 
   header() {

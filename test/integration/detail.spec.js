@@ -19,7 +19,10 @@ describe('Detail', () => {
     );
 
     it('should display first category', () =>
-      expect(detailPage.category()).to.equal(sampleResource.category[0]));
+      expect(detailPage.categoryText()).to.equal(sampleResource.category[0]));
+
+    it('should link first category to search page', () =>
+      expect(detailPage.categoryLink()).to.equal(`/search?search=${sampleResource.category[0]}`));
 
     it('should display title', () =>
       expect(detailPage.header()).to.equal(sampleResource.title)
