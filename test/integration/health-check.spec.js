@@ -9,4 +9,12 @@ describe('Health Check', () => {
         expect(response.status).to.equal(200)
       )
   );
+
+  it('should provide status if test controller available', () =>
+    browser.fetch('/health_check')
+      .then((response) =>
+        expect(response.status).to.equal(200)
+      )
+  );
+
 });
