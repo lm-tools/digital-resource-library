@@ -8,7 +8,7 @@ const expect = chai.expect;
 const { describe, it, before } = require('mocha');
 const sampleResource = require('../../app/data/resources').find(i => i.category.length > 1);
 
-describe('ResourceDetail', () => {
+describe('Detail', () => {
   describe('DirectNavigation', () => {
     before(() => detailPage.visit(sampleResource.resourceId));
 
