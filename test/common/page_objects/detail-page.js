@@ -1,43 +1,32 @@
-class DetailPage {
-  constructor(browser) {
-    this.browser = browser;
-  }
+const Page = require('./page');
+class DetailPage extends Page {
 
   visit(id) {
     return this.browser.visit(`/resources/${id}`);
   }
 
-  text(dataTestAttrVal) {
-    return this.browser.text(`[data-test="${dataTestAttrVal}"]`);
-  }
-
   categoryText() {
-    return this.text('category');
+    return this.extractText('category');
   }
 
   categoryLink() {
-    const catEl = this.browser.query('[data-test="category"]');
-    return `${catEl.pathname}${catEl.search}`;
-  }
-
-  header() {
-    return this.text('header');
-  }
-
-  summary() {
-    return this.text('summary');
-  }
-
-  journalMessage() {
-    return this.text('journal-message');
+    return this.extractLink('category').href;
   }
 
   link() {
-    return this.browser.query('[data-test="link"]').href;
+    return this.extractLink('link');
   }
 
-  linkText() {
-    return this.text('link');
+  header() {
+    return this.extractText('header');
+  }
+
+  summary() {
+    return this.extractText('summary');
+  }
+
+  journalMessage() {
+    return this.extractText('journal-message');
   }
 
 }
