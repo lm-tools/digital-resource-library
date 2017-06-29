@@ -15,10 +15,16 @@ class DashboardPage {
     return this.browser.text(`[data-test="${name}"]`, context);
   }
 
+  extractRelativeLink(name, context) {
+    const linkEl = this.browser.query(`[data-test="${name}"]`, context);
+    return `${linkEl.pathname}${linkEl.search}`;
+  }
+
   getCategories() {
     return this.browser.queryAll('[data-test="category"]').map(context => ({
-      title: this.extractText('category-title', context),
+      title: this.extractText('category-link', context),
       summary: this.extractText('category-summary', context),
+      relativeLink: this.extractRelativeLink('category-link', context),
     }));
   }
 }

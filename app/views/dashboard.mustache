@@ -8,13 +8,15 @@
     <h4>{{#__}}dashboard.categories.heading{{/__}}</h4>
     {{#categoryList}}
         <div data-test="category">
-            <h3 data-test="category-title">{{ title }}</h3>
+            <a href="{{ basePath }}/search?search={{ uriEncodedTitle }}" data-test="category-link">
+                {{ title }}</a>
             <p data-test="category-summary">{{ summary }}</p>
         </div>
     {{/categoryList}}
 
     <h4>{{#__}}dashboard.featured.heading{{/__}}</h4>
-    <a href="{{#__}}dashboard.featured.resourceLink{{/__}}">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
+    <a href="{{#__}}dashboard.featured.resourceLink{{/__}}">
+        {{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
     <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
 
     <h4>{{#__}}dashboard.edit.heading{{/__}}</h4>

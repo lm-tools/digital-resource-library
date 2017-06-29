@@ -28,5 +28,10 @@ describe('Dashboard', () => {
     it('should display correct summary for all categories', () =>
       expect(this.categoryList.map(i => i.summary)).to.eql(categoryListModel.map(i => i.summary))
     );
+
+    it('should have correct relative link for all categories', () =>
+      expect(this.categoryList.map(i => i.relativeLink))
+        .to.eql(categoryListModel.map(i => `/search?search=${encodeURI(i.title)}`))
+    );
   });
 });
