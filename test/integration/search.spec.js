@@ -1,4 +1,4 @@
-const { searchPage, googleTagManagerHelper } = require('./support/integrationSpecHelper');
+const { searchPage, googleTagManagerHelper, browser } = require('./support/integrationSpecHelper');
 const expect = require('chai').expect;
 const { describe, it, before } = require('mocha');
 const resourcesListModel = require('../../app/data/resources');
@@ -34,12 +34,13 @@ describe('Search', () => {
         .to.eql(resourcesListModel.map(i => i.category))
     );
     it('should contain correct link to all categories for all resources', () =>
-      expect(this.resourceList.map(i => i.categories.map(j => j.link)))
-        .to.eql(resourcesListModel.map(i => i.category.map(j => encodeURI(`/search?search=${j}`))))
+      expect(this.resourceList.map(i => i.categories.map(j => j.href)))
+        .to.eql(resourcesListModel.map(i =>
+                  i.category.map(j => encodeURI(`${browser.site}/search?search=${j}`))))
     );
     it('should have correct path for all resources details page', () =>
-      expect(this.resourceList.map(i => i.pathname))
-        .to.eql(resourcesListModel.map(i => `/resources/${i.resourceId}`))
+      expect(this.resourceList.map(i => i.href))
+        .to.eql(resourcesListModel.map(i => `${browser.site}/resources/${i.resourceId}`))
     );
   });
 
