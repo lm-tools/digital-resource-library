@@ -38,7 +38,7 @@
         <ul aria-label="tags" class="search-result-metadata">
           {{#category}}
             <li class="search-result-category" data-test="category">
-              <a href="#{{ . }}">{{.}}</a>
+              <a href="{{ basePath }}/search?search={{ . }}" data-test="category-link">{{ . }}</a>
             </li>
           {{/category}}
 
