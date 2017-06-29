@@ -30,8 +30,12 @@ describe('Search', () => {
       expect(this.resourceList.map(i => i.summary)).to.eql(resourcesListModel.map(i => i.summary))
     );
     it('should display correct categories for all resources', () =>
-      expect(this.resourceList.map(i => i.categories))
+      expect(this.resourceList.map(i => i.categories.map(j => j.text)))
         .to.eql(resourcesListModel.map(i => i.category))
+    );
+    it('should contain correct link to all categories for all resources', () =>
+      expect(this.resourceList.map(i => i.categories.map(j => j.link)))
+        .to.eql(resourcesListModel.map(i => i.category.map(j => encodeURI(`/search?search=${j}`))))
     );
     it('should have correct path for all resources details page', () =>
       expect(this.resourceList.map(i => i.pathname))

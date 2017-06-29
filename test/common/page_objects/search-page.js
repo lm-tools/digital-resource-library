@@ -25,7 +25,14 @@ class SearchPage {
       title: this.extractText('title', context),
       summary: this.extractText('summary', context),
       categories: this.browser.queryAll('[data-test="category"]', context)
-        .map(i => this.browser.text(i)),
+        .map(categoryContext => Object({
+          text: this.browser.text(categoryContext),
+          link: (() => {
+            const categoryLink = this.browser.query('[data-test="category-link"]', categoryContext);
+            return `${categoryLink.pathname}${categoryLink.search}`;
+          })(),
+        })
+      ),
       pathname: this.browser.query('[data-test^="resource-"]', context).pathname,
     }));
   }
