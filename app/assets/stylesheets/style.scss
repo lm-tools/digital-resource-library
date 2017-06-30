@@ -1,5 +1,8 @@
 @import '_govuk-elements';
 
+
+/*Results page*/
+
 .search-result {
   padding-bottom: $gutter-half;
 }
@@ -94,3 +97,20 @@
   padding-top: 5px;
 }
 
+/*Details page*/
+
+.heading-secondary a {
+    color: $secondary-text-colour;
+    text-decoration: none;
+}
+
+pre {
+    background-color: $panel-colour;
+    padding: $gutter;
+    white-space: pre-wrap;
+    margin-bottom: $gutter-half;
+}
+
+.button-get-started {
+    background-image: url('../images/icon-pointer-2x.png');
+}
