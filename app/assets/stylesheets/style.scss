@@ -1,5 +1,7 @@
 @import '_govuk-elements';
 
+/*Results page*/
+
 .search-result {
   padding-bottom: $gutter-half;
 }
@@ -105,18 +107,6 @@
       margin-left: 0;
       width: 100%;
     }
-  }
-}
-
-.button-secondary {
-  @include button ($grey-1);
-  @include box-sizing (border-box);
-  padding: em(10) em(15) em(5) em(15);
-  vertical-align: top;
-  @include media (mobile) {
-    width: 100%;
-    text-align: center;
-    margin-top: $gutter-half;
   }
 }
 
