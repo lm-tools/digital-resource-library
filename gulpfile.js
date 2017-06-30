@@ -78,7 +78,7 @@ gulp.task('watch', ['js', 'css', 'images', 'server'], () => {
   gulp.watch(['app/**/*.js', 'bin/www'], ['server']);
   gulp.watch('app/assets/stylesheets/*.scss', ['css']);
   gulp.watch('app/assets/js/**/*.js', ['browserify']);
-  gulp.watch('app/assets/images/**', ['image']);
+  gulp.watch('app/assets/images/**', ['image-local']);
 });
 
 
