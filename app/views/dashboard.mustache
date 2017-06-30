@@ -4,7 +4,7 @@
     <h2 class="heading-xlarge" data-test="header">{{#__}}dashboard.header{{/__}}</h2>
     <p class="lede">{{#__}}dashboard.summary{{/__}}</p>
 
-    <form action="/search" method="GET" id="search-form">
+    <form action="{{ basePath }}/search" method="GET" id="search-form">
       <div class="form-group">
         <input type="text" name="search" id="search" class="form-control" value=""
                data-test="search-input">
