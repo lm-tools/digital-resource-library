@@ -27,5 +27,11 @@ class DashboardPage {
       relativeLink: this.extractRelativeLink('category-link', context),
     }));
   }
+
+  search(keyword) {
+    this.browser.fill('[data-test="search-input"]', keyword);
+    return this.browser.click('[data-test="search-button"]');
+  }
+
 }
 module.exports = DashboardPage;

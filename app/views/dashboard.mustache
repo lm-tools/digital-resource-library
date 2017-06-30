@@ -2,8 +2,15 @@
   {{$pageTitle}}{{#__}}dashboard.pageTitle{{/__}}{{/pageTitle}}
   {{$applicationContent}}
     <h2 class="heading-xlarge" data-test="header">{{#__}}dashboard.header{{/__}}</h2>
+    <p class="lede">{{#__}}dashboard.summary{{/__}}</p>
 
-    <a href="{{basePath}}/search" class="button">Search</a> <!--temporary link-->
+    <form action="/search" method="GET" id="search-form">
+      <div class="form-group">
+        <input type="text" name="search" id="search" class="form-control" value=""
+               data-test="search-input">
+        <input type="submit" class="button" value="Search" data-test="search-button">
+      </div>
+    </form>
 
     <h4 class="heading-small">{{#__}}dashboard.categories.heading{{/__}}</h4>
     <div class="grid-row">
