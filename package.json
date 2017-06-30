@@ -54,7 +54,6 @@
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.8.0",
-    "gulp-imagemin": "^3.3.0",
     "mocha": "^2.4.5",
     "moment": "^2.14.1",
     "npm-shrinkwrap-check": "git+https://git@github.com/gjvis/npm-shrinkwrap-check.git#ignore-nested-package-json-files",
