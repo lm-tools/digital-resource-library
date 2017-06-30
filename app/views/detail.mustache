@@ -2,13 +2,19 @@
     {{$pageTitle}}{{#__}}detail.pageTitle{{/__}}{{/pageTitle}}
     {{$applicationContent}}
         {{#resource}}
-            <a href="/search?search={{ category.0 }}" data-test="category">{{ category.0 }}</a>
-            <h2 class="heading-xlarge" data-test="header">{{ title }}</h2>
-            <p class="description text" data-test="summary">{{ summary }}</p>
-            <h3>{{#__}}detail.howToUseIt.header{{/__}}</h3>
-            <p>{{#__}}detail.howToUseIt.description{{/__}}:</p>
-            <pre data-test="journal-message">{{ journalMessage }}</pre>
-            <a href="{{ url }}" data-test="link">{{#__}}detail.linkText{{/__}}</a>
+          <header class="page-header">
+              <h1 class="heading-large">
+                  <span class="heading-secondary">
+                        <a href="/search?search={{ category.0 }}" data-test="category">{{ category.0 }}</a>
+                  </span>
+                        <span data-test="header">{{ title }}</span>
+              </h1>
+          </header>
+          <p class="lede" data-test="summary">{{ summary }}</p>
+          <h2 class="heading-medium">{{#__}}detail.howToUseIt.header{{/__}}</h2>
+          <p>{{#__}}detail.howToUseIt.description{{/__}}:</p>
+          <pre data-test="journal-message">{{ journalMessage }}</pre>
+          <a href="{{ url }}" class="button button-get-started" data-test="link">{{#__}}detail.linkText{{/__}}</a>
         {{/resource}}
     {{/applicationContent}}
 {{/layout}}
