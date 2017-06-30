@@ -29,8 +29,8 @@
 
     <h4 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h4>
     <h3 class="heading-medium">
-      <a href="{{#__}}dashboard.featured.resourceLink{{/__}}">
-        {{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
+      <a href="{{ basePath }}/search?search={{#__}}dashboard.featured.resourceId{{/__}}"
+         data-test="featured-resource-link">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
     </h3>
     <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
 

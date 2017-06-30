@@ -25,7 +25,7 @@
     },
     "featured": {
       "heading": "Featured resource",
-      "resourceLink": "https://activity-prompt-prototype.herokuapp.com/claimant/to-do/resources/detail?resId=octo003",
+      "resourceId": "octo003",
       "resourceLinkText": "My world of work CV Builder",
       "resourceSummary": "A simple tool to help a claimant build a CV"
     },

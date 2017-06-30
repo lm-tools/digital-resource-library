@@ -33,5 +33,9 @@ class DashboardPage {
     return this.browser.click('[data-test="search-button"]');
   }
 
+  clickFeaturedResourceLink() {
+    return this.browser.click('[data-test="featured-resource-link"]');
+  }
+
 }
 module.exports = DashboardPage;
