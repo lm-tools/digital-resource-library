@@ -5,7 +5,8 @@
           <header class="page-header">
               <h1 class="heading-large">
                   <span class="heading-secondary">
-                        <a href="/search?search={{ category.0 }}" data-test="category">{{ category.0 }}</a>
+                        <a href="{{ basePath }}/search?search={{ category.0 }}"
+                           data-test="category">{{ category.0 }}</a>
                   </span>
                         <span data-test="header">{{ title }}</span>
               </h1>
@@ -14,7 +15,8 @@
           <h2 class="heading-medium">{{#__}}detail.howToUseIt.header{{/__}}</h2>
           <p>{{#__}}detail.howToUseIt.description{{/__}}:</p>
           <pre data-test="journal-message">{{ journalMessage }}</pre>
-          <a href="{{ url }}" class="button button-get-started" data-test="link">{{#__}}detail.linkText{{/__}}</a>
+          <a href="{{ url }}" class="button button-get-started" data-test="link">
+            {{#__}}detail.linkText{{/__}}</a>
         {{/resource}}
     {{/applicationContent}}
 {{/layout}}
