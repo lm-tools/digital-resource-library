@@ -19,7 +19,22 @@
   },
   "dashboard": {
     "pageTitle": "Explore the resource library",
-    "header": "Explore the resource library"
+    "header": "Explore the resource library",
+    "categories": {
+      "heading": "Browse by category"
+    },
+    "featured": {
+      "heading": "Featured resource",
+      "resourceId": "octo003",
+      "resourceLinkText": "My world of work CV Builder",
+      "resourceSummary": "A simple tool to help a claimant build a CV"
+    },
+    "edit": {
+      "heading": "Have something you want to add?",
+      "mailto": "mailto:lmtoolsteam@digital.uc.dwp.gov.uk?Subject=Suggested%20resource",
+      "text": "Suggest a resource (email)"
+    },
+    "summary": "Find approved digital resources and share it with claimants."
   },
   "detail": {
     "pageTitle": "detail.pageTitle",

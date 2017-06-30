@@ -1,6 +1,5 @@
 @import '_govuk-elements';
 
-
 /*Results page*/
 
 .search-result {
@@ -97,20 +96,34 @@
   padding-top: 5px;
 }
 
+#search-form {
+  .button {
+    @include core-19;
+    padding: 6px em(15) 5px em(15);
+    margin-left: -4px;
+
+    @include media (mobile) {
+      margin-top: $gutter-half;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
 /*Details page*/
 
 .heading-secondary a {
-    color: $secondary-text-colour;
-    text-decoration: none;
+  color: $secondary-text-colour;
+  text-decoration: none;
 }
 
 pre {
-    background-color: $panel-colour;
-    padding: $gutter;
-    white-space: pre-wrap;
-    margin-bottom: $gutter-half;
+  background-color: $panel-colour;
+  padding: $gutter;
+  white-space: pre-wrap;
+  margin-bottom: $gutter-half;
 }
 
 .button-get-started {
-    background-image: url('../images/icon-pointer-2x.png');
+  background-image: url('../images/icon-pointer-2x.png');
 }
