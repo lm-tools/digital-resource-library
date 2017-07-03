@@ -1,7 +1,9 @@
 const {
   dashboardPage,
   googleTagManagerHelper,
-  browser } = require('./support/integrationSpecHelper');
+  browser,
+  routes,
+} = require('./support/integrationSpecHelper');
 const expect = require('chai').expect;
 const { describe, it } = require('mocha');
 const categoryListModel = require('../../app/data/categories');
@@ -34,13 +36,13 @@ describe('Dashboard', () => {
 
     it('should have correct relative link for all categories', () =>
       expect(this.categoryList.map(i => i.relativeLink))
-        .to.eql(categoryListModel.map(i => `/search?search=${encodeURI(i.title)}`))
+        .to.eql(categoryListModel.map(i => routes.searchUrl(i.title)))
     );
 
     it('should link to search page with correct category searched', () =>
       dashboardPage.search(this.searchableCategory)
         .then(() => expect(browser.location.href)
-          .to.equal(`${browser.site}/search?search=${encodeURIComponent(this.searchableCategory)}`))
+          .to.equal(routes.searchUrlAbsolute(this.searchableCategory)))
     );
   });
 

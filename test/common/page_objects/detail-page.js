@@ -2,7 +2,7 @@ const Page = require('./page');
 class DetailPage extends Page {
 
   visit(id) {
-    return this.browser.visit(`/resources/${id}`);
+    return this.browser.visit(this.routes.detailsUrl(id));
   }
 
   categoryText() {

@@ -36,11 +36,11 @@
           {{summary}}
         </p>
         <ul aria-label="tags" class="search-result-metadata">
-          {{#category}}
+          {{#categories}}
             <li class="search-result-category" data-test="category">
-              <a href="{{ basePath }}/search?search={{ . }}" data-test="category-link">{{ . }}</a>
+              <a href="{{ basePath }}/search?search={{ categoryEncoded }}" data-test="category-link">{{ category }}</a>
             </li>
-          {{/category}}
+          {{/categories}}
 
         </ul>
       </div>

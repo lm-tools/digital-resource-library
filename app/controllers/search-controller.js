@@ -11,12 +11,20 @@ const resultsSummaryCopy = (resourcesCount, search) => {
   return search ? i18n.__('search.resultsFound') : i18n.__('search.resultsFoundWithoutKeyword');
 };
 
+const decorateWithCategories = resource => {
+  const categories = resource.category.map(category => ({
+    category,
+    categoryEncoded: encodeURI(category),
+  }));
+  return Object.assign({ categories }, resource);
+};
+
 router.get('/search', (req, res) => {
   const search = (req.query.search || '').trim();
   const resourceList = resourceModel.findByKeyword(search);
   res.render('search',
     {
-      resourceList,
+      resourceList: resourceList.map(decorateWithCategories),
       search,
       resultsSummaryCopy: resultsSummaryCopy(resourceList.length, search),
     }

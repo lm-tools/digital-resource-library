@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "pretest": "npm-shrinkwrap-check -3 && eslint . && npm run compile",
     "test-mocha": "mocha",
-    "test": "NODE_ENV=test npm run test-mocha",
+    "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha",
     "heroku-postbuild": "npm run compile"
   },
   "// NOTE": [
