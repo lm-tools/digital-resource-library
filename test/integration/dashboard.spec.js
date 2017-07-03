@@ -46,6 +46,14 @@ describe('Dashboard', () => {
     );
   });
 
+  describe('breadcrumb', () => {
+    before(() => dashboardPage.visit());
+
+    it('should not show breadcrumb on the homepage', () =>
+      expect(dashboardPage.getBreadcrumbs()).to.eql([])
+    );
+  });
+
   it('should have a valid resource as the featured resource', () =>
     dashboardPage.clickFeaturedResourceLink().then(() => expect(browser.statusCode).to.equal(200))
   );

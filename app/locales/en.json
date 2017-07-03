@@ -44,5 +44,9 @@
     },
     "linkText": "Check it out",
     "copyJournalMessage": "Copy message to clipboard"
+  },
+  "breadcrumb": {
+    "dashboard": "Homepage",
+    "search": "Search"
   }
 }
