@@ -29,5 +29,9 @@ class DetailPage extends Page {
     return this.extractText('journal-message');
   }
 
+  copyClipboardJournalContent() {
+    return this.extractAttributeValue('copy-clipboard-journal-link', 'data-clipboard-text');
+  }
+
 }
 module.exports = DetailPage;

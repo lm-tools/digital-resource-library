@@ -14,7 +14,12 @@
           <p class="lede" data-test="summary">{{ summary }}</p>
           <h2 class="heading-medium">{{#__}}detail.howToUseIt.header{{/__}}</h2>
           <p>{{#__}}detail.howToUseIt.description{{/__}}:</p>
-          <pre data-test="journal-message">{{ journalMessage }}</pre>
+          <div>
+            <pre data-test="journal-message">{{ journalMessage }}</pre>
+            <a class="copy-clipboard-link" data-clipboard-text="{{ journalMessage }}"
+               data-test="copy-clipboard-journal-link">
+              {{#__}}detail.copyJournalMessage{{/__}}</a>
+          </div>
           <a href="{{ url }}" class="button button-get-started" data-test="link">
             {{#__}}detail.linkText{{/__}}</a>
         {{/resource}}

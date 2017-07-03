@@ -38,6 +38,10 @@ describe('Detail', () => {
       expect(detailPage.journalMessage()).to.equalIgnoreSpaces(sampleResource.journalMessage)
     );
 
+    it('should contain journal message as the copy to clipboard text', () =>
+      expect(detailPage.copyClipboardJournalContent()).to.equal(sampleResource.journalMessage)
+    );
+
     it('should display link', () =>
       expect(detailPage.link().href).to.equal(sampleResource.url)
     );

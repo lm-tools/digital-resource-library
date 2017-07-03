@@ -42,6 +42,7 @@
       "header": "How to use it",
       "description": "Paste this message into the claimant's journal"
     },
-    "linkText": "Check it out"
+    "linkText": "Check it out",
+    "copyJournalMessage": "Copy message to clipboard"
   }
 }
