@@ -127,3 +127,11 @@ pre {
 .button-get-started {
   background-image: url('../images/icon-pointer.png');
 }
+
+/*Dashboard page*/
+
+.categories-list {
+  h3.heading-medium{
+    margin: $gutter-half 0 0 0;
+  }
+}
