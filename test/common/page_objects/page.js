@@ -28,5 +28,16 @@ class Page {
     return { href, text };
   }
 
+  /**
+   * @param {string} dataTest - the data test element
+   * @param {string} attribute - the attribute name
+   * @param {object} context - the 'core' object returned from browser.querySelector. By default
+   * uses the document
+   * returns the attribute value
+   */
+  extractAttributeValue(dataTest, attribute, context = this.browser) {
+    return this.browser.query(`[data-test="${dataTest}"]`, context).getAttribute(attribute);
+  }
+
 }
 module.exports = Page;
