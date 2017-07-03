@@ -1,12 +1,12 @@
 const request = require('supertest');
-const helper = require('./support/integrationSpecHelper');
+const { app, routes, basePath } = require('./support/integrationSpecHelper');
 const expect = require('chai').expect;
 
 describe('Response headers', () => {
   describe('for dynamic html', () => {
     before(() =>
-      request(helper.app)
-        .get('/')
+      request(app)
+        .get(routes.dashboardUrl())
         .then(response => {
           this.response = response;
         })
@@ -43,8 +43,8 @@ describe('Response headers', () => {
   ].forEach(d => {
     describe(d.title, () => {
       before(() =>
-        request(helper.app)
-          .get(d.path)
+        request(app)
+          .get(basePath + d.path)
           .then(response => {
             this.response = response;
           })

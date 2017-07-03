@@ -2,7 +2,7 @@ const {
   googleTagManagerHelper,
   detailPage,
   searchPage,
-  browser } = require('./support/integrationSpecHelper');
+  routes } = require('./support/integrationSpecHelper');
 const chai = require('chai');
 chai.use(require('chai-string'));
 const expect = chai.expect;
@@ -24,7 +24,7 @@ describe('Detail', () => {
 
     it('should link first category to search page', () =>
       expect(detailPage.categoryLink())
-        .to.equal(`${browser.site}/search?search=${sampleResource.category[0]}`));
+        .to.equal(routes.searchUrl(sampleResource.category[0])));
 
     it('should display title', () =>
       expect(detailPage.header()).to.equal(sampleResource.title)

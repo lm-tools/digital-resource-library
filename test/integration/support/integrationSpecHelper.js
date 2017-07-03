@@ -1,5 +1,6 @@
 const Zombie = require('zombie');
 const appPort = '9876';
+const basePath = process.env.EXPRESS_BASE_PATH || '';
 Zombie.site = `http://localhost:${appPort}`;
 const browser = new Zombie();
 const screenshots = require('./screenshots');
@@ -8,10 +9,14 @@ const DashboardPage = require('../../common/page_objects/dashboard-page');
 const SearchPage = require('../../common/page_objects/search-page');
 const ErrorPage = require('../../common/page_objects/error-page');
 const DetailPage = require('../../common/page_objects/detail-page');
+const routes = require('./routes')({ basePath, siteUrl: Zombie.site });
 
 process.env.GOOGLE_TAG_MANAGER_ID = 'fake-id';
 process.env.PORT = appPort;
 const app = require('../../../bin/www');
+
+/* eslint-disable no-console */
+console.log(`Integration tests against ${Zombie.site}${basePath}`);
 
 afterEach(function () {
   if (this.currentTest.state === 'failed') {
@@ -21,10 +26,12 @@ afterEach(function () {
 
 module.exports = {
   browser,
+  routes,
+  basePath,
   googleTagManagerHelper: new GoogleTagManagerHelper(browser),
-  dashboardPage: new DashboardPage(browser),
-  searchPage: new SearchPage(browser),
-  errorPage: new ErrorPage(browser),
-  detailPage: new DetailPage(browser),
+  dashboardPage: new DashboardPage({ browser, routes }),
+  searchPage: new SearchPage({ browser, routes }),
+  errorPage: new ErrorPage({ browser }),
+  detailPage: new DetailPage({ browser, routes }),
   app,
 };

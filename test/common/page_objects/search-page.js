@@ -3,7 +3,7 @@ const Page = require('./page');
 class SearchPage extends Page {
 
   visit() {
-    return this.browser.visit('/search');
+    return this.browser.visit(this.routes.searchUrl());
   }
 
   header() {
@@ -29,7 +29,7 @@ class SearchPage extends Page {
       title: this.extractText('title', resourceContext),
       summary: this.extractText('summary', resourceContext),
       categories: this.getCategories(resourceContext),
-      href: this.browser.query('[data-test^="resource-"]', resourceContext).href,
+      href: this.browser.query('[data-test^="resource-"]', resourceContext).getAttribute('href'),
     }));
   }
 

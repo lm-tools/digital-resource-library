@@ -1,10 +1,8 @@
-class DashboardPage {
-  constructor(browser) {
-    this.browser = browser;
-  }
+const Page = require('./page');
 
+class DashboardPage extends Page {
   visit() {
-    return this.browser.visit('/');
+    return this.browser.visit(this.routes.dashboardUrl());
   }
 
   header() {

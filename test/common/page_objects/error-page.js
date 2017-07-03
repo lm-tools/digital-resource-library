@@ -1,5 +1,5 @@
 class ErrorPage {
-  constructor(browser) {
+  constructor({ browser }) {
     this.browser = browser;
   }
 

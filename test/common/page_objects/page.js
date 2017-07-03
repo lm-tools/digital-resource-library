@@ -1,7 +1,8 @@
 class Page {
 
-  constructor(browser) {
+  constructor({ browser, routes }) {
     this.browser = browser;
+    this.routes = routes;
   }
 
   /**
@@ -22,7 +23,7 @@ class Page {
    * returns the text within the element
    */
   extractLink(dataTest, context = this.browser) {
-    const href = this.browser.query(`[data-test="${dataTest}"]`, context).href;
+    const href = this.browser.query(`[data-test="${dataTest}"]`, context).getAttribute('href');
     const text = this.extractText(dataTest, context);
     return { href, text };
   }
