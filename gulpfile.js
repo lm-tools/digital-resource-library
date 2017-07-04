@@ -71,7 +71,7 @@ gulp.task('server', () => {
   });
 });
 
-gulp.task('watch', ['vendor-assets', 'js', 'css', 'images', 'server'], () => {
+gulp.task('watch', ['js', 'css', 'images', 'server'], () => {
   gulp.watch(['app/**/*.js', 'bin/www'], ['server']);
   gulp.watch('app/assets/stylesheets/*.scss', ['css']);
   gulp.watch('app/assets/js/**/*.js', ['browserify']);

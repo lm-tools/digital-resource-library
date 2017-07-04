@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "compile": "gulp js css images",
+    "compile": "gulp vendor-assets js css images",
     "watch": "gulp watch",
     "lint": "eslint .",
     "pretest": "npm-shrinkwrap-check -3 && eslint . && npm run compile",
