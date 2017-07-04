@@ -46,7 +46,7 @@
     "copyJournalMessage": "Copy message to clipboard"
   },
   "breadcrumb": {
-    "dashboard": "Homepage",
-    "search": "Search"
+    "dashboard": "Home",
+    "search": "Results"
   }
 }

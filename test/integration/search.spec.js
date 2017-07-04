@@ -48,7 +48,7 @@ describe('Search', () => {
     before(() => searchPage.visit());
 
     it('should show breadcrumb on the search page', () => {
-      expect(searchPage.getBreadcrumbs()).to.eql(['Homepage', 'Search']);
+      expect(searchPage.getBreadcrumbs()).to.eql(['Home', 'Results']);
     });
   });
 
