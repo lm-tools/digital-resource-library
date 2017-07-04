@@ -146,14 +146,14 @@ body.js-enabled .copy-clipboard-link {
 }
 
 .feature-section {
-  padding: 10px 0 10px 0;
+  padding: $gutter-one-third 0 $gutter-one-third 0;
   height: 150px;
 }
 
 .feature-section .thumbnail {
   display: block;
   float: left;
-  margin-right: 20px;
+  margin-right: $gutter-two-thirds;
   outline: 5px solid $outline-shadow-1;
   -webkit-box-shadow: 0 2px 2px $outline-shadow-2;
   -moz-box-shadow: 0 2px 2px $outline-shadow-2;
