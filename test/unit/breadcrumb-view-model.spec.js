@@ -2,9 +2,9 @@ require('../../app/middleware/i18n');
 
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const breadcrumbModel = require('../../app/controllers/breadcrumb-view-model');
+const breadcrumbViewModel = require('../../app/controllers/breadcrumb-view-model');
 
-describe('breadcrumbModel', () => {
+describe('breadcrumbViewModel', () => {
   describe('build', () => {
     [
       {
@@ -48,7 +48,7 @@ describe('breadcrumbModel', () => {
 
     ].forEach(p => {
       it(`should have the correct breadcrumb information for the request ${p.request}`, () => {
-        expect(breadcrumbModel(p.request)).to.eql(p.expected);
+        expect(breadcrumbViewModel(p.request)).to.eql(p.expected);
       });
     });
   });

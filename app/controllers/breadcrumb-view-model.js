@@ -4,8 +4,8 @@ const resources = require('../data/resources');
 /* eslint-disable no-underscore-dangle */
 
 const requestToBreadcrumbMap = [
-  { requestRegEx: '/search', page: 'search', trail: ['dashboard'] },
-  { requestRegEx: '/resources', page: 'resource', trail: ['dashboard', 'search'] },
+  { requestRegEx: /\/search/, page: 'search', trail: ['dashboard'] },
+  { requestRegEx: /\/resources/, page: 'resource', trail: ['dashboard', 'search'] },
 ];
 
 const crumbDefaults = {
@@ -13,10 +13,10 @@ const crumbDefaults = {
   search: { link: '/search', title: i18n.__('breadcrumb.search') },
 };
 
-const resourceRegex = /resources\/(.*)/;
+const resourceRegEx = /resources\/(.*)/;
 
 function getResource(request) {
-  const resource = resources.find(x => x.resourceId === request.match(resourceRegex)[1]);
+  const resource = resources.find(x => x.resourceId === request.match(resourceRegEx)[1]);
   return resource ? ({ link: `${request}`, title: resource.title }) : ({});
 }
 
@@ -25,12 +25,12 @@ function getSearch(request) {
 }
 
 module.exports = function (request) {
-  const breadcrumb = [];
+  const trail = [];
   const breadcrumbRequest = requestToBreadcrumbMap.find(x => request.match(x.requestRegEx));
 
   if (breadcrumbRequest) {
     breadcrumbRequest.trail.forEach(crumb => {
-      breadcrumb.push(crumbDefaults[crumb]);
+      trail.push(crumbDefaults[crumb]);
     });
 
     switch (breadcrumbRequest.page) {
@@ -38,11 +38,11 @@ module.exports = function (request) {
         break;
       }
       case 'search': {
-        breadcrumb.push(getSearch(request));
+        trail.push(getSearch(request));
         break;
       }
       case 'resource': {
-        breadcrumb.push(getResource(request));
+        trail.push(getResource(request));
         break;
       }
       default: {
@@ -50,5 +50,5 @@ module.exports = function (request) {
       }
     }
   }
-  return breadcrumb;
+  return trail;
 };

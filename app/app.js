@@ -13,7 +13,7 @@ const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
 const healthCheckController = require('./controllers/health-check-controller');
 const helmet = require('helmet');
-const breadcrumbModel = require('./controllers/breadcrumb-view-model');
+const breadcrumbViewModel = require('./controllers/breadcrumb-view-model');
 
 const app = express();
 i18n(app);
@@ -48,7 +48,7 @@ app.use((req, res, next) => {
       govukTemplate:
         '../../vendor/govuk_template_mustache_inheritance/views/layouts/govuk_template',
       googleTagManager: 'partials/google-tag-manager',
-      breadcrumbTemplate: 'partials/breadcrumb',
+      breadcrumb: 'partials/breadcrumb',
     },
   });
   next();
@@ -72,7 +72,8 @@ app.use(assetPath, express.static(path.join(__dirname, '..',
 app.use(helmet.noCache());
 
 app.use((req, res, next) => {
-  Object.assign(res.locals, { breadcrumb: breadcrumbModel(req.originalUrl.replace(basePath, '')) });
+  Object.assign(res.locals,
+    { trail: breadcrumbViewModel(req.originalUrl.replace(basePath, '')) });
   next();
 });
 
