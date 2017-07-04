@@ -19,14 +19,14 @@ describe('breadcrumbViewModel', () => {
         request: '/search',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
+          { title: 'Results' },
         ],
       },
       {
         request: '/search?search=CV%20and%20Resumes',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
+          { title: 'Results' },
         ],
       },
       {
@@ -34,7 +34,7 @@ describe('breadcrumbViewModel', () => {
         expected: [
           { title: 'Home', link: '/' },
           { title: 'Results', link: '/search' },
-          { title: 'My world of work CV Builder', link: '/resources/octo003' },
+          { title: 'My world of work CV Builder' },
         ],
       },
       {

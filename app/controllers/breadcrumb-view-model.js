@@ -17,11 +17,11 @@ const resourceRegEx = /resources\/(.*)/;
 
 function getResource(request) {
   const resource = resources.find(x => x.resourceId === request.match(resourceRegEx)[1]);
-  return resource ? ({ link: `${request}`, title: resource.title }) : ({});
+  return resource ? ({ title: resource.title }) : ({});
 }
 
-function getSearch(request) {
-  return ({ link: `${request}`, title: i18n.__('breadcrumb.search') });
+function getSearch() {
+  return ({ title: i18n.__('breadcrumb.search') });
 }
 
 module.exports = function (request) {
@@ -38,7 +38,7 @@ module.exports = function (request) {
         break;
       }
       case 'search': {
-        trail.push(getSearch(request));
+        trail.push(getSearch());
         break;
       }
       case 'resource': {
