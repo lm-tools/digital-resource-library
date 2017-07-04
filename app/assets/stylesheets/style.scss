@@ -1,4 +1,5 @@
 @import '_govuk-elements';
+@import './_colors';
 
 /*Results page*/
 
@@ -142,6 +143,21 @@ body.js-enabled .copy-clipboard-link {
   h3.heading-medium{
     margin: $gutter-half 0 0 0;
   }
+}
+
+.feature-section {
+  padding: 10px 0 10px 0;
+  height: 150px;
+}
+
+.feature-section .thumbnail {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  outline: 5px solid $outline-shadow-1;
+  -webkit-box-shadow: 0 2px 2px $outline-shadow-2;
+  -moz-box-shadow: 0 2px 2px $outline-shadow-2;
+  box-shadow: 0 2px 2px $outline-shadow-2;
 }
 
 /*Breadcrumb*/
