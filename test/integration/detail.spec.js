@@ -56,4 +56,12 @@ describe('Detail', () => {
       .then(() => searchPage.clickOnResourse(sampleResource.resourceId))
       .then(() => expect(detailPage.header()).to.eql(sampleResource.title))
   );
+
+  describe('breadcrumb', () => {
+    before(() => detailPage.visit(sampleResource.resourceId));
+
+    it('should show breadcrumb on the details page', () => {
+      expect(detailPage.getBreadcrumbs()).to.eql(['Homepage', 'Search', sampleResource.title]);
+    });
+  });
 });

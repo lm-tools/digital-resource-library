@@ -39,5 +39,14 @@ class Page {
     return this.browser.query(`[data-test="${dataTest}"]`, context).getAttribute(attribute);
   }
 
+  /**
+   * Find array of breadcrumbs.
+   * @returns {*|Array}
+   */
+  getBreadcrumbs() {
+    const resources = this.browser.queryAll('[data-test="crumb"]');
+    return resources.map(crumb => this.extractText('title', crumb));
+  }
+
 }
 module.exports = Page;
