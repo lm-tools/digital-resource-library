@@ -9,11 +9,12 @@ const { describe, it } = require('mocha');
 const categoryListModel = require('../../app/data/categories');
 
 describe('Dashboard', () => {
-  before(() => dashboardPage.visit());
-  before(() => {
+  beforeEach(() => dashboardPage.visit());
+  beforeEach(() => {
     this.categoryList = dashboardPage.getCategories();
     this.searchableCategory = categoryListModel.find((i) => !!i.title).title;
   });
+
   it('should contain valid google tag manager data', () =>
     expect(googleTagManagerHelper.getUserVariable()).to.equal('set-me-in-controller')
   );
