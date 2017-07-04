@@ -1,4 +1,9 @@
 {
+  "cookie": {
+    "pretext": "GOV.UK uses cookies to make the site simpler",
+    "linktext": "Find out more about cookies",
+    "pagetitle": "Cookie"
+  },
   "error": {
     "404": "Page not found",
     "500": "We're experiencing technical problems."

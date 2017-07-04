@@ -8,6 +8,7 @@ const GoogleTagManagerHelper = require('../../common/page_objects/google-tag-man
 const DashboardPage = require('../../common/page_objects/dashboard-page');
 const SearchPage = require('../../common/page_objects/search-page');
 const ErrorPage = require('../../common/page_objects/error-page');
+const CookiePage = require('../../common/page_objects/cookie-page');
 const DetailPage = require('../../common/page_objects/detail-page');
 const routes = require('./routes')({ basePath, siteUrl: Zombie.site });
 
@@ -32,6 +33,7 @@ module.exports = {
   dashboardPage: new DashboardPage({ browser, routes }),
   searchPage: new SearchPage({ browser, routes }),
   errorPage: new ErrorPage({ browser }),
+  cookiePage: new CookiePage({ browser, routes }),
   detailPage: new DetailPage({ browser, routes }),
   app,
 };
