@@ -18,30 +18,30 @@ describe('breadcrumbModel', () => {
       {
         request: '/search',
         expected: [
-          { title: 'Homepage', link: '/' },
-          { title: 'Search', link: '/search' },
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search' },
         ],
       },
       {
         request: '/search?search=CV%20and%20Resumes',
         expected: [
-          { title: 'Homepage', link: '/' },
-          { title: 'Search', link: '/search?search=CV%20and%20Resumes' },
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
         ],
       },
       {
         request: '/resources/octo003',
         expected: [
-          { title: 'Homepage', link: '/' },
-          { title: 'Search', link: '/search' },
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search' },
           { title: 'My world of work CV Builder', link: '/resources/octo003' },
         ],
       },
       {
         request: '/resources/octo999999',
         expected: [
-          { title: 'Homepage', link: '/' },
-          { title: 'Search', link: '/search' },
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search' },
           {},
         ],
       },
