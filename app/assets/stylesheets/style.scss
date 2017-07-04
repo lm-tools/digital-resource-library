@@ -1,7 +1,8 @@
 @import '_govuk-elements';
 @import './_colors';
 
-/*Results page*/
+
+/*Search page*/
 
 .search-result {
   padding-bottom: $gutter-half;
@@ -125,10 +126,6 @@ pre {
   margin-bottom: $gutter-half;
 }
 
-.button-get-started {
-  background-image: url('../images/icon-pointer.png');
-}
-
 body.js-enabled .copy-clipboard-link {
   display: block;
 }
@@ -138,11 +135,8 @@ body.js-enabled .copy-clipboard-link {
 }
 
 /*Dashboard page*/
-
-.categories-list {
-  h3.heading-medium{
+.categories-list .heading-medium {
     margin: $gutter-half 0 0 0;
-  }
 }
 
 .feature-section {
@@ -160,7 +154,3 @@ body.js-enabled .copy-clipboard-link {
   box-shadow: 0 2px 2px $outline-shadow-2;
 }
 
-/*Breadcrumb*/
-.breadcrumbs li {
-  background-image: url('../images/separator.png')
-}
