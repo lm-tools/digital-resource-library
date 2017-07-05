@@ -14,7 +14,7 @@ const resultsSummaryCopy = (resourcesCount, search) => {
 const decorateWithCategories = resource => {
   const categories = resource.category.map(category => ({
     category,
-    categoryEncoded: encodeURI(category),
+    categoryEncoded: encodeURIComponent(category),
   }));
   return Object.assign({ categories }, resource);
 };
