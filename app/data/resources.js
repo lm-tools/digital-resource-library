@@ -18,7 +18,7 @@ const resourceList = [
     journalMessage: "You've said you're interested in care work. This site might be useful: \n\n http://www.skillsforcare.org.uk/Care-careers/Think-Care-Careers/Home-Page.aspx \n\n Take a look and find out more about how you might become a care worker.",
     category: ['training', 'Skills and training'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {},
+    sector: {6145: 'care workers and home carers'},
   },
   {
     resourceId: 'octo003',
@@ -282,7 +282,7 @@ const resourceList = [
     journalMessage: 'This is the place to find out about a career in energy: \n\n http://www.euskills.co.uk/careers \n\n There are links and case studies that will let find out the different kinds of work and what skills or qualifications you will need.',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo030',
@@ -292,7 +292,7 @@ const resourceList = [
     journalMessage: "Here's some information about jobs in oil, gas, energy and related areas: \n\nhttps://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy\n\n You'll find job listings linked from that page too. ",
     category: ['research', 'work search', 'listings', 'Looking for work', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo031',
@@ -302,7 +302,7 @@ const resourceList = [
     journalMessage: 'Take a look at this apprenticeship programme: \n\n http://ogtap.co.uk \n\n It would give you a start on the technical side of the gas or oil industry.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo032',
@@ -312,7 +312,7 @@ const resourceList = [
     journalMessage: "We've discussed working on machines on building sites. There's a bit of information here: \n\n https://nationalcareersservice.direct.gov.uk/job-profiles/construction-plant-operator \n\n It shows you related jobs too. ",
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo033',
