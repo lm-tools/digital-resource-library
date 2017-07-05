@@ -36,19 +36,10 @@ gulp.task('js-vendor', () => {
 
 gulp.task('js', ['browserify', 'js-vendor']);
 
-gulp.task('image-local', () =>
+gulp.task('images', () =>
   gulp.src('app/assets/images/**')
     .pipe(gulp.dest('dist/public/images'))
 );
-
-gulp.task('image-vendor', () => {
-  gulp.src([
-    'node_modules/govuk-elements-sass/node_modules/govuk_frontend_toolkit/images/*.png',
-  ])
-    .pipe(gulp.dest('dist/public/images'));
-});
-
-gulp.task('images', ['image-local', 'image-vendor']);
 
 gulp.task('css', () => {
   gulp.src('app/assets/stylesheets/*.scss')
@@ -64,6 +55,11 @@ gulp.task('css', () => {
     .pipe(gulp.dest('dist/public/stylesheets/'));
 });
 
+gulp.task('vendor-assets', () => {
+  gulp.src([
+    'node_modules/govuk-elements-sass/node_modules/govuk_frontend_toolkit/images/*.png',
+  ]).pipe(gulp.dest('vendor/govuk_frontend_toolkit/assets/images'));
+});
 
 gulp.task('server', () => {
   if (node) node.kill();

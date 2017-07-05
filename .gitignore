@@ -4,5 +4,6 @@ dist/
 node_modules/
 logs/
 screenshots/
+vendor/govuk_frontend_toolkit
 
 npm-debug.log

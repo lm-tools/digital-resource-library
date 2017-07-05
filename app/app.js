@@ -68,6 +68,8 @@ app.use(cookieParser());
 app.use(assetPath, express.static(path.join(__dirname, '..', 'dist', 'public')));
 app.use(assetPath, express.static(path.join(__dirname, '..',
   'vendor', 'govuk_template_mustache_inheritance', 'assets')));
+app.use(assetPath, express.static(path.join(__dirname, '..',
+  'vendor', 'govuk_frontend_toolkit', 'assets')));
 
 app.use(helmet.noCache());
 
