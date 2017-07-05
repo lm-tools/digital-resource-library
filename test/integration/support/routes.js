@@ -4,7 +4,8 @@ function create({ basePath, siteUrl }) {
     cookieUrl: () => `${basePath}/cookie`,
     searchUrl: (search) => `${basePath}/search${search ? `?search=${encodeURI(search)}` : ''}`,
     searchUrlAbsolute: (search) => `${siteUrl}${basePath}/search?search=${encodeURI(search)}`,
-    detailsUrl: (resourceId) => `${basePath}/resources/${resourceId}`,
+    detailsUrl: (resourceId, search) =>
+      `${basePath}/resources/${resourceId}?fromSearch=${encodeURI(search)}`,
   };
 }
 

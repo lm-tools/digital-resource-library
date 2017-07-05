@@ -28,7 +28,7 @@
     {{#resourceList}}
       <div class="search-result" data-test="resource">
         <h2 class="search-result-title" data-test="title">
-          <a href="{{ basePath }}/resources/{{ resourceId }}" data-test="resource-{{resourceId}}">
+          <a href="{{ basePath }}/resources/{{ resourceId }}?fromSearch={{search}}" data-test="resource-{{resourceId}}">
             {{ title }}
           </a>
         </h2>

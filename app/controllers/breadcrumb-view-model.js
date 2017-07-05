@@ -1,48 +1,54 @@
 const i18n = require('i18n');
+const url = require('url');
+
 const resources = require('../data/resources');
 
 /* eslint-disable no-underscore-dangle */
 
 const requestToBreadcrumbMap = [
-  { requestRegEx: '/search', page: 'search', trail: ['dashboard'] },
-  { requestRegEx: '/resources', page: 'resource', trail: ['dashboard', 'search'] },
+  { requestRegEx: /\/search/, page: 'search' },
+  { requestRegEx: /\/resources/, page: 'resource' },
 ];
 
-const crumbDefaults = {
-  dashboard: { link: '/', title: i18n.__('breadcrumb.dashboard') },
-  search: { link: '/search', title: i18n.__('breadcrumb.search') },
-};
-
-const resourceRegex = /resources\/(.*)/;
-
-function getResource(request) {
-  const resource = resources.find(x => x.resourceId === request.match(resourceRegex)[1]);
-  return resource ? ({ link: `${request}`, title: resource.title }) : ({});
+function getFromSearchParam(requestUrl) {
+  return requestUrl.query && requestUrl.query.fromSearch ?
+    encodeURI(requestUrl.query.fromSearch) : '';
 }
 
-function getSearch(request) {
-  return ({ link: `${request}`, title: i18n.__('breadcrumb.search') });
+function getHomepageCrumb() {
+  return ({ link: '/', title: i18n.__('breadcrumb.dashboard') });
+}
+
+function getSearchCrumb(requestUrl) {
+  if (requestUrl) {
+    return ({
+      link: `/search?search=${getFromSearchParam(requestUrl)}`,
+      title: i18n.__('breadcrumb.search'),
+    });
+  }
+  return ({ title: i18n.__('breadcrumb.search') });
+}
+
+function getResourceCrumb(request) {
+  const resourceId = url.parse(request, true).pathname.match(/resources\/(.*)/)[1];
+  const resource = resources.find(x => x.resourceId === resourceId);
+  return resource ? ({ title: resource.title }) : ({});
 }
 
 module.exports = function (request) {
-  const breadcrumb = [];
+  const trail = [];
   const breadcrumbRequest = requestToBreadcrumbMap.find(x => request.match(x.requestRegEx));
 
   if (breadcrumbRequest) {
-    breadcrumbRequest.trail.forEach(crumb => {
-      breadcrumb.push(crumbDefaults[crumb]);
-    });
+    const requestUrl = url.parse(request, true);
 
     switch (breadcrumbRequest.page) {
-      case 'dashboard': {
-        break;
-      }
       case 'search': {
-        breadcrumb.push(getSearch(request));
+        trail.push(getHomepageCrumb(), getSearchCrumb());
         break;
       }
       case 'resource': {
-        breadcrumb.push(getResource(request));
+        trail.push(getHomepageCrumb(), getSearchCrumb(requestUrl), getResourceCrumb(requestUrl));
         break;
       }
       default: {
@@ -50,5 +56,5 @@ module.exports = function (request) {
       }
     }
   }
-  return breadcrumb;
+  return trail;
 };

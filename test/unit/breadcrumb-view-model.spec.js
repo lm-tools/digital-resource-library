@@ -2,9 +2,9 @@ require('../../app/middleware/i18n');
 
 const { describe, it } = require('mocha');
 const { expect } = require('chai');
-const breadcrumbModel = require('../../app/controllers/breadcrumb-view-model');
+const breadcrumbViewModel = require('../../app/controllers/breadcrumb-view-model');
 
-describe('breadcrumbModel', () => {
+describe('breadcrumbViewModel', () => {
   describe('build', () => {
     [
       {
@@ -19,36 +19,44 @@ describe('breadcrumbModel', () => {
         request: '/search',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
+          { title: 'Results' },
         ],
       },
       {
         request: '/search?search=CV%20and%20Resumes',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
+          { title: 'Results' },
         ],
       },
       {
         request: '/resources/octo003',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
-          { title: 'My world of work CV Builder', link: '/resources/octo003' },
+          { title: 'Results', link: '/search?search=' },
+          { title: 'My world of work CV Builder' },
+        ],
+      },
+      {
+        request: '/resources/octo003?fromSearch=CV%20and%20Resumes',
+        expected: [
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
+          { title: 'My world of work CV Builder' },
         ],
       },
       {
         request: '/resources/octo999999',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
+          { title: 'Results', link: '/search?search=' },
           {},
         ],
       },
 
     ].forEach(p => {
       it(`should have the correct breadcrumb information for the request ${p.request}`, () => {
-        expect(breadcrumbModel(p.request)).to.eql(p.expected);
+        expect(breadcrumbViewModel(p.request)).to.eql(p.expected);
       });
     });
   });

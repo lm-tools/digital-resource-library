@@ -1,9 +1,14 @@
 <div class="breadcrumbs">
   <ul>
-    {{#breadcrumb}}
+    {{#trail}}
       <li data-test="crumb">
-        <a data-test="title" href="{{ basePath }}{{ link }} ">{{ title }}</a>
+        {{#link}}
+          <a data-test="title" href="{{ basePath }}{{ link }} ">{{ title }}</a>
+        {{/link}}
+        {{^link}}
+          <span data-test="title">{{ title }}</span>
+        {{/link}}
       </li>
-    {{/breadcrumb}}
+    {{/trail}}
   </ul>
 </div>
