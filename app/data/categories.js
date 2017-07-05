@@ -1,28 +1,28 @@
 /* eslint-disable max-len */
 const categoryList = [
   {
-    title: 'CV and Resumes',
-    summary: 'Advice and tools to help claimants with CVs',
+    title: 'CVs and interviews',
+    summary: 'Advice and tools to help claimants prepare their CVs and get ready for interview',
   },
   {
-    title: 'Finding work',
-    summary: 'Job search and agency websites',
+    title: 'Looking for work',
+    summary: 'Job boards, agency websites and advice on searching online',
   },
   {
-    title: 'Social and networking',
-    summary: 'Using sites like LinkedIn and Twitter to find work',
+    title: 'Skills, training and qualifications',
+    summary: 'Sites to help claimants improve their skills or work towards a qualification',
   },
   {
-    title: 'Getting to work',
-    summary: 'Estimating travel times and costs',
+    title: 'Young jobseekers',
+    summary: 'Resources for young jobseekers: apprenticeships, work experience, internships',
   },
   {
-    title: 'Work experience and volunteering',
-    summary: 'Websites to help claimants find unpaid work',
+    title: 'Finding out about work',
+    summary: 'Useful sites for research: job descriptions, grants, sector overviews, regulations',
   },
   {
-    title: 'Skills and training',
-    summary: 'Courses and tools to help make claimants more employable',
+    title: 'Preparing for work',
+    summary: 'Sites for claimants getting back into work: childcare support, volunteering, mentoring',
   },
 ];
 
