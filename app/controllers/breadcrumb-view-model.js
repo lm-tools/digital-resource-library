@@ -1,27 +1,38 @@
 const i18n = require('i18n');
+const url = require('url');
+
 const resources = require('../data/resources');
 
 /* eslint-disable no-underscore-dangle */
 
 const requestToBreadcrumbMap = [
-  { requestRegEx: /\/search/, page: 'search', trail: ['dashboard'] },
-  { requestRegEx: /\/resources/, page: 'resource', trail: ['dashboard', 'search'] },
+  { requestRegEx: /\/search/, page: 'search' },
+  { requestRegEx: /\/resources/, page: 'resource' },
 ];
 
-const crumbDefaults = {
-  dashboard: { link: '/', title: i18n.__('breadcrumb.dashboard') },
-  search: { link: '/search', title: i18n.__('breadcrumb.search') },
-};
-
-const resourceRegEx = /resources\/(.*)/;
-
-function getResource(request) {
-  const resource = resources.find(x => x.resourceId === request.match(resourceRegEx)[1]);
-  return resource ? ({ title: resource.title }) : ({});
+function getFromSearchParam(requestUrl) {
+  return requestUrl.query && requestUrl.query.fromSearch ?
+    encodeURI(requestUrl.query.fromSearch) : '';
 }
 
-function getSearch() {
+function getHomepageCrumb() {
+  return ({ link: '/', title: i18n.__('breadcrumb.dashboard') });
+}
+
+function getSearchCrumb(requestUrl) {
+  if (requestUrl) {
+    return ({
+      link: `/search?search=${getFromSearchParam(requestUrl)}`,
+      title: i18n.__('breadcrumb.search'),
+    });
+  }
   return ({ title: i18n.__('breadcrumb.search') });
+}
+
+function getResourceCrumb(request) {
+  const resourceId = url.parse(request, true).pathname.match(/resources\/(.*)/)[1];
+  const resource = resources.find(x => x.resourceId === resourceId);
+  return resource ? ({ title: resource.title }) : ({});
 }
 
 module.exports = function (request) {
@@ -29,20 +40,15 @@ module.exports = function (request) {
   const breadcrumbRequest = requestToBreadcrumbMap.find(x => request.match(x.requestRegEx));
 
   if (breadcrumbRequest) {
-    breadcrumbRequest.trail.forEach(crumb => {
-      trail.push(crumbDefaults[crumb]);
-    });
+    const requestUrl = url.parse(request, true);
 
     switch (breadcrumbRequest.page) {
-      case 'dashboard': {
-        break;
-      }
       case 'search': {
-        trail.push(getSearch());
+        trail.push(getHomepageCrumb(), getSearchCrumb());
         break;
       }
       case 'resource': {
-        trail.push(getResource(request));
+        trail.push(getHomepageCrumb(), getSearchCrumb(requestUrl), getResourceCrumb(requestUrl));
         break;
       }
       default: {

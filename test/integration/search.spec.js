@@ -40,7 +40,7 @@ describe('Search', () => {
     );
     it('should have correct path for all resources details page', () =>
       expect(this.resourceList.map(i => i.href))
-        .to.eql(resourcesListModel.map(i => routes.detailsUrl(i.resourceId)))
+        .to.eql(resourcesListModel.map(i => routes.detailsUrl(i.resourceId, '')))
     );
   });
 

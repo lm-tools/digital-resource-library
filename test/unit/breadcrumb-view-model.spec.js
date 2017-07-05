@@ -33,7 +33,15 @@ describe('breadcrumbViewModel', () => {
         request: '/resources/octo003',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
+          { title: 'Results', link: '/search?search=' },
+          { title: 'My world of work CV Builder' },
+        ],
+      },
+      {
+        request: '/resources/octo003?fromSearch=CV%20and%20Resumes',
+        expected: [
+          { title: 'Home', link: '/' },
+          { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
           { title: 'My world of work CV Builder' },
         ],
       },
@@ -41,7 +49,7 @@ describe('breadcrumbViewModel', () => {
         request: '/resources/octo999999',
         expected: [
           { title: 'Home', link: '/' },
-          { title: 'Results', link: '/search' },
+          { title: 'Results', link: '/search?search=' },
           {},
         ],
       },
