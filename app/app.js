@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const dashboardController = require('./controllers/dashboard-controller');
 const searchController = require('./controllers/search-controller');
 const detailController = require('./controllers/detail-controller');
+const cookieController = require('./controllers/cookie-controller');
 const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
 const healthCheckController = require('./controllers/health-check-controller');
@@ -78,6 +79,7 @@ app.use((req, res, next) => {
 app.use(`${basePath}/`, dashboardController);
 app.use(`${basePath}/`, searchController);
 app.use(`${basePath}/`, detailController);
+app.use(`${basePath}/`, cookieController);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
