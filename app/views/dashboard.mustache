@@ -27,12 +27,23 @@
 
     </div>
 
-    <h4 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h4>
-    <h3 class="heading-medium">
-      <a href="{{ basePath }}/search?search={{#__}}dashboard.featured.resourceId{{/__}}"
-         data-test="featured-resource-link">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
-    </h3>
-    <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
+    <h3 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h3>
+
+    <div class="feature-section">
+      <div class="thumbnail">
+        <a href="{{ basePath }}/resources/{{#__}}dashboard.featured.resourceId{{/__}}">
+          <img src="{{ basePath }}/images/screens/{{#__}}dashboard.featured.resourceId{{/__}}-small.png">
+        </a>
+      </div>
+
+      <div class="details">
+        <h2>
+          <a href="{{ basePath }}/resources/{{#__}}dashboard.featured.resourceId{{/__}}"
+             data-test="featured-resource-link">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
+        </h2>
+        <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
+      </div>
+    </div>
 
     <h4 class="heading-small">{{#__}}dashboard.edit.heading{{/__}}</h4>
     <a href="{{#__}}dashboard.edit.mailto{{/__}}">{{#__}}dashboard.edit.text{{/__}}</a>
