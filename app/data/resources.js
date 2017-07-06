@@ -18,7 +18,7 @@ const resourceList = [
     journalMessage: "You've said you're interested in care work. This site might be useful: \n\n http://www.skillsforcare.org.uk/Care-careers/Think-Care-Careers/Home-Page.aspx \n\n Take a look and find out more about how you might become a care worker.",
     category: ['training', 'Skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {},
+    sector: {6145:'care workers and home carers'},
   },
   {
     resourceId: 'octo003',
@@ -160,8 +160,8 @@ const resourceList = [
     category: ['research', 'work search', 'qualifications', 'Skills, training and qualifications'],
     groups: ['intensive work search'],
     sector: {
-      6122: 'Childminders and related occupations',
-      612: 'Childcare and Related Personal Services',
+      6122:'Childminders and related occupations',
+      612:'Childcare and Related Personal Services',
     },
   },
   {
@@ -172,7 +172,7 @@ const resourceList = [
     journalMessage: 'This is a guide with useful background information on becoming a teaching assistant: \n\n https://www.tes.com/articles/teaching-assistant-pay-and-conditions \n\n If you think it might suit you, follow the links on the page to find out more.',
     category: ['research', 'work search'],
     groups: ['intensive work search'],
-    sector: { 6125: 'teaching assistant' },
+    sector: { 6125:'teaching assistant' },
   },
   {
     resourceId: 'octo019',
@@ -182,7 +182,7 @@ const resourceList = [
     journalMessage: 'Here are a few tips to help you when you apply for jobs as a teaching assistant: \n\n https://www.tes.com/articles/tips-applying-teaching-assistant-roles \n\n',
     category: ['research', 'work search'],
     groups: ['intensive work search'],
-    sector: { 6125: 'teaching assistant' },
+    sector: { 6125:'teaching assistant' },
   },
   {
     resourceId: 'octo020',
@@ -192,7 +192,7 @@ const resourceList = [
     journalMessage: "If you're going for a teaching assistant job, you should prepare for the interview. There are some tips here: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-job-interview-advice \n\n ",
     category: ['research', 'work search', 'interviews', 'CVs and interviews'],
     groups: ['intensive work search'],
-    sector: { 6125: 'teaching assistant' },
+    sector: { 6125:'teaching assistant' },
   },
 
   {
@@ -202,7 +202,7 @@ const resourceList = [
     summary: 'Sample interview questions for teaching assistant roles.',
     journalMessage: 'These are the kind of questions they ask if you go for an interview as a teaching assistant: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-interview-potential-questions \n\n Take a look to prepare for your interview.',
     category: ['research', 'work search', 'interviews', 'Finding out about work', 'CVs and interviews'],
-    sector: { 6125: 'teaching assistant' },
+    sector: { 6125:'teaching assistant' },
   },
   {
     resourceId: 'octo022',
@@ -222,7 +222,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a cover supervisor in a school. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-cover-supervisor \n\n',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: { 6125: 'cover supervisor' },
+    sector: { 6125:'cover supervisor' },
   },
   {
     resourceId: 'octo024',
@@ -232,7 +232,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a school librarian. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-school-librarian \n\n',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: { 2451: 'librarian' },
+    sector: { 2451:'librarian' },
   },
   {
     resourceId: 'octo025',
@@ -242,7 +242,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a school ICT technician. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-ict-technician \n\n',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: { 3131: 'ICT technician' },
+    sector: { 3131:'ICT technician' },
   },
   {
     resourceId: 'octo026',
@@ -252,7 +252,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a midday supervisor. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-midday-supervisor \n\n',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: { 9244: 'Midday supervisor' },
+    sector: { 9244:'Midday supervisor' },
   },
   {
     resourceId: 'octo027',
@@ -262,7 +262,7 @@ const resourceList = [
     journalMessage: 'This collection of links is a good place to get started if you want a non-teaching job at a school. You can find out about various different kind of support work: \n\n https://www.tes.com/articles/how-get-a-job-school-facilities \n\n',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: { 2451: 'librarian', 3131: 'ICT technician' },
+    sector: { 2451:'librarian', 3131:'ICT technician' },
   },
   {
     resourceId: 'octo028',
@@ -272,7 +272,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a data manager at a school. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-school-data-manager \n\n',
     category: ['research', 'work search'],
     groups: ['intensive work search'],
-    sector: { 3131: 'data manager' },
+    sector: { 3131:'data manager' },
   },
   {
     resourceId: 'octo029',
@@ -282,7 +282,7 @@ const resourceList = [
     journalMessage: 'This is the place to find out about a career in energy: \n\n http://www.euskills.co.uk/careers \n\n There are links and case studies that will let find out the different kinds of work and what skills or qualifications you will need.',
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo030',
@@ -292,7 +292,7 @@ const resourceList = [
     journalMessage: "Here's some information about jobs in oil, gas, energy and related areas: \n\nhttps://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy\n\n You'll find job listings linked from that page too. ",
     category: ['research', 'work search', 'listings', 'Looking for work', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo031',
@@ -302,7 +302,7 @@ const resourceList = [
     journalMessage: 'Take a look at this apprenticeship programme: \n\n http://ogtap.co.uk \n\n It would give you a start on the technical side of the gas or oil industry.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo032',
@@ -312,7 +312,7 @@ const resourceList = [
     journalMessage: "We've discussed working on machines on building sites. There's a bit of information here: \n\n https://nationalcareersservice.direct.gov.uk/job-profiles/construction-plant-operator \n\n It shows you related jobs too. ",
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121: "civil engineers", 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo033',
@@ -322,7 +322,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists jobs in renewable energy: \n\n http://jobfinder.renewableuk.com/ \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 2121:'civil engineers', 8124:'energy plant operatives' },
   },
   {
     resourceId: 'octo034',
@@ -332,7 +332,7 @@ const resourceList = [
     journalMessage: "We've talked about apprenticeships. Here's some background on one particular area. Take a look: \n\nhttps://www.gov.uk/guidance/facilities-management-apprenticeships\n\n Use the link at the bottom of the page to start looking for an apprenticeship. ",
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 1251:'facilities managers'},
   },
   {
     resourceId: 'octo035',
@@ -342,7 +342,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.efinancialcareers.co.uk\n\n ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 353:'business, finance and related associate professionals' },
   },
   {
     resourceId: 'octo036',
@@ -352,7 +352,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.topfinancialjobs.co.uk\n\n ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 353:'business, finance and related associate professionals' },
   },
   {
     resourceId: 'octo037',
@@ -362,7 +362,7 @@ const resourceList = [
     journalMessage: 'This is the official NHS site for careers in health: \n\nhttps://www.healthcareers.nhs.uk/\n\n It explains the different jobs you could do, what skills you need, training and apprenticeship opportunities and how to get started in the field.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {  32:'health and social care associate professionals' },
   },
   {
     resourceId: 'octo038',
@@ -372,7 +372,7 @@ const resourceList = [
     journalMessage: "This is a good place to start if you're thinking about a career in health: \n\nhttps://www.stepintothenhs.nhs.uk\n\n It can give you a sense of the role that might suit you, and the best way in. ",
     category: ['apprenticeships', 'work experience', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: {  32:'health and social care associate professionals' },
   },
   {
     resourceId: 'octo039',
@@ -382,7 +382,7 @@ const resourceList = [
     journalMessage: 'This will give you an idea of the range of apprenticeships available in public services and health: \n\nhttps://www.gov.uk/government/collections/health-public-services-and-care-apprenticeships\n\n Look around so you understand your options.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: {  32:'health and social care associate professionals' },
   },
   {
     resourceId: 'octo040',
@@ -392,7 +392,7 @@ const resourceList = [
     journalMessage: "The Hospitality Guild have a lot of resources about careers in hospitality: \n\nhttp://www.hospitalityguild.co.uk/A-Career-in-Hospitality\n\n There's a personality test, CV and interview tips, career maps and lots more information.",
     category: ['research', 'work search', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 927:'other elementary services occupations', 122:'managers and proprietors in hospitality and leisure services' },
   },
   {
     resourceId: 'octo041',
@@ -402,7 +402,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in places like hotels, restaurants, cafes and gyms: \n\nhttps://www.leisurejobs.com\n\n ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 927:'other elementary services occupations', 122:'managers and proprietors in hospitality and leisure services', 344:'sports and fitness occupations' },
   },
   {
     resourceId: 'octo042',
@@ -412,7 +412,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in hospitality: \n\nhttps://www.caterer.com\n\n ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 927:'other elementary services occupations', },
   },
   {
     resourceId: 'octo043',
@@ -432,7 +432,7 @@ const resourceList = [
     journalMessage: "If you want to go into childcare, take a look at PACEY's site: \n\nhttps://www.pacey.org.uk/\n\n PACEY is a large organisation that offers support to childcarers. There's free information to get you started on the site, but some parts will only be available to paid members. ",
     category: ['work search', 'research', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 6122:'childminders and related occupations' },
   },
   {
     resourceId: 'octo045',
@@ -442,7 +442,7 @@ const resourceList = [
     journalMessage: "If you're moving into childminding, look at the Childcare Business Grants Scheme: \n\nhttps://www.childcarebusinessgrants.com/\n\n It could give you a grant to help get your new business started. ",
     category: ['grants', 'Finding out about work'],
     groups: ['intensive work search', 'self employed'],
-    sector: {},
+    sector: { 6122:'childminders and related occupations' },
   },
   {
     resourceId: 'octo046',
@@ -452,7 +452,7 @@ const resourceList = [
     journalMessage: "If you're moving into childminding, you have to read the Early years framework: \n\nhttps://www.gov.uk/government/publications/early-years-foundation-stage-framework\n\n These are the standards you have to meet as a registered childminder. ",
     category: ['work search', 'research', 'regulations', 'Finding out about work'],
     groups: ['intensive work search', 'self employed'],
-    sector: {},
+    sector: { 6122:'childminders and related occupations' },
   },
   {
     resourceId: 'octo047',
@@ -462,7 +462,7 @@ const resourceList = [
     journalMessage: 'This is short explanation of childminding agencies: \n\nhttp://www.foundationyears.org.uk/child-minders\n\n Links on the page will give you more background information and explain how to register.',
     category: ['work search', 'research', 'Finding out about work'],
     groups: ['intensive work search', 'self employed'],
-    sector: {},
+    sector: { 6122:'childminders and related occupations' },
   },
   {
     resourceId: 'octo048',
@@ -472,7 +472,7 @@ const resourceList = [
     journalMessage: "The best place to find out about getting started in building is GoConstruct: \n\nhttps://www.goconstruct.org\n\n It's the industry website, and should have everything you need. ",
     category: ['work search', 'research', 'apprenticeships', 'qualifications', 'training', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
   {
     resourceId: 'octo049',
@@ -482,7 +482,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists building and site jobs: \n\n http://jobfinder.renewableuk.com/ \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
 
   {
@@ -493,7 +493,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists building and site jobs, and has some tools like a CV checker: \n\n http://jobfinder.renewableuk.com/ \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
   {
     resourceId: 'octo051',
@@ -503,7 +503,7 @@ const resourceList = [
     journalMessage: 'This is a network and campaign that supports women in manual trades: \n\n http://womenonthetools.org.uk \n\n  Sign up to make contacts, get advice and build your support network.',
     category: ['work search', 'research', 'networking', 'Finding out about work'],
     groups: ['self employed'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
 
   {
@@ -514,7 +514,7 @@ const resourceList = [
     journalMessage: 'This will give you an idea of the range of apprenticeships available in building and planning: \n\nhttps://www.gov.uk/government/collections/construction-planning-and-the-built-environment-apprenticeships\n\n Look around so you understand your options.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 531:'construction and building trades', 2121:'civil engineers', 243:'architects, town planners and surveyors' },
   },
   {
     resourceId: 'octo053',
@@ -524,7 +524,7 @@ const resourceList = [
     journalMessage: 'This is the official site for building site cards: \n\nhttps://www.cscs.uk.com\n\n All the information you need is there, and it tells you how to apply. Some websites you overcharge for the same card - just go to this one.',
     category: ['work search', 'research', 'qualifications', 'Finding out about work', 'Skills, training and qualifications'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
   {
     resourceId: 'octo054',
@@ -534,7 +534,7 @@ const resourceList = [
     journalMessage: 'This website is a reliable source of information about apprenticeships in construction: \n\nhttp://www.citb.co.uk/bconstructive/\n\n It shows you the range of trades you can learn, and explains how to apply.',
     category: ['work search', 'research', 'qualifications', 'Finding out about work', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: { 531:'construction and building trades' },
   },
   {
     resourceId: 'octo055',
@@ -544,7 +544,7 @@ const resourceList = [
     journalMessage: "This might be useful if you're looking for pub or bar work: \n\nhttp://www.barzone.co.uk/\n\n ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: { 927:'other elementary services occupations', 9274:'bar staff' },
   },
   {
     resourceId: 'octo055',
@@ -554,7 +554,7 @@ const resourceList = [
     journalMessage: 'If IT interests you, Prospects is a good place to start: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/information-technology\n\n It explains the normal routes in, and ways to find training and work experience.',
     category: ['internships', 'volunteering', 'apprenticeships', 'work experience', 'training', 'Young Jobseekers'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {},
+    sector: { 213:'information technology and telecommunications professionals' },
   },
   {
     resourceId: 'octo056',
@@ -564,7 +564,7 @@ const resourceList = [
     journalMessage: 'If IT interests you, look at the Tech Partnership: \n\nhttps://www.thetechpartnership.com\n\n It explains ways to get started, such as apprenticeships and training, and gives you a lot of background on the industry and skills needed in it.',
     category: ['apprenticeships', 'work experience', 'training', 'skills', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {},
+    sector: { 213:'information technology and telecommunications professionals' },
   },
   {
     resourceId: 'octo057',
@@ -574,7 +574,7 @@ const resourceList = [
     journalMessage: 'This will give you an idea of the range of apprenticeships available in creative jobs: \n\nhttps://www.gov.uk/government/collections/arts-media-and-publishing-apprenticeships\n\n Look around so you understand your options.',
     category: ['apprenticeships', 'qualifications', 'training', 'research', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {},
+    sector: {247:'media professionals', 342:'design occupations' },
   },
   {
     resourceId: 'octo058',
@@ -584,7 +584,7 @@ const resourceList = [
     journalMessage: "Prospects has some good information on transport and logistics: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk\n\n Read through to find out more about the work, and possible career paths. There's also information on how to get started in the field.",
     category: ['apprenticeships', 'work experience', 'training', 'Young Jobseekers'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {},
+    sector: {116:'managers and directors in transport and logistics', 4134:'transport and distribution clerks and assistants', 82:'transport and mobile machine drivers and operatives'},
   },
   {
     resourceId: 'octo059',
@@ -594,7 +594,7 @@ const resourceList = [
     journalMessage: "Careers that move will give you a good sense of the options in a transport and travel career: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk\n\n Read around to find out more about the work, the qualifications and skills you'd need and possible career paths. There are also job adverts.",
     category: ['apprenticeships', 'qualifications', 'training', 'listings', 'Looking for work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {116:'managers and directors in transport and logistics', 4134:'transport and distribution clerks and assistants', 82:'transport and mobile machine drivers and operatives'},
   },
   {
     resourceId: 'octo060',
@@ -604,7 +604,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists logistics jobs: \n\n http://www.logisticsjobsite.co.uk \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {116:'managers and directors in transport and logistics', 4134:'transport and distribution clerks and assistants', 82:'transport and mobile machine drivers and operatives'},
   },
   {
     resourceId: 'octo061',
@@ -614,7 +614,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists logistics jobs: \n\n ttp://www.careersinlogistics.co.uk \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {116:'managers and directors in transport and logistics', 4134:'transport and distribution clerks and assistants', 82:'transport and mobile machine drivers and operatives'},
   },
   {
     resourceId: 'octo062',
@@ -624,7 +624,7 @@ const resourceList = [
     journalMessage: 'This is an explanation of what a logistics apprenticeship would cover, along with some information about pay and responsibilities: \n\n https://www.gov.uk/guidance/logistics-operations-apprenticeships\n\n ',
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {116:'managers and directors in transport and logistics', 4134:'transport and distribution clerks and assistants', 82:'transport and mobile machine drivers and operatives'},
   },
   {
     resourceId: 'octo063',
@@ -634,7 +634,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists jobs in food manufacturing: \n\n http://jobs.foodmanufacture.co.uk \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {8111:'food, drink and tobacco process operatives'},
   },
   {
     resourceId: 'octo064',
@@ -644,7 +644,7 @@ const resourceList = [
     journalMessage: 'This will give you an idea of some of the roles in the army, and which ones might suit your interests: \n\n https://www.army.mod.uk/rolefinder/ \n\n ',
     category: ['research', 'work search', 'qualifications', 'training', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {3311:'ncos and other ranks', 1171:'officers in armed forces', 4112:'national government administrative occupations'},
   },
   {
     resourceId: 'octo065',
@@ -654,7 +654,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists transport jobs: \n\n http://www.transportjobsite.co.uk \n\n  ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {82:'transport and mobile machine drivers and operatives'},
   },
 
   {
@@ -676,7 +676,7 @@ const resourceList = [
     journalMessage: "If you're looking at security work, check the SIA site. It explains what licence you'll need, and how to get it:\n\n https://www.sia.homeoffice.gov.uk/Pages/home.aspx \n\n ",
     category: ['work search', 'research', 'qualifications', 'Finding out about work'],
     groups: ['intensive work search'],
-    sector: {},
+    sector: {924:'elementary security occupations'},
   },
   {
     resourceId: 'octo068',
