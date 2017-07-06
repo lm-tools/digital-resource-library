@@ -20,7 +20,7 @@ describe('Dashboard', () => {
   );
 
   it('should display page', () =>
-    expect(dashboardPage.header()).to.equal('Explore the resource library')
+    expect(dashboardPage.header()).to.equal('Find online resources')
   );
 
   describe('category list', () => {

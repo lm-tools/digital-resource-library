@@ -9,11 +9,11 @@
     "500": "We're experiencing technical problems."
   },
   "layout": {
-    "header": "Digital resources"
+    "header": "Online resources"
   },
   "search": {
-    "pageTitle": "Explore the resource library",
-    "header": "Explore the resource library",
+    "pageTitle": "Find online resources",
+    "header": "Find online resources",
     "searchSectionAria": "Search filters",
     "searchButtonLabel": "Keywords",
     "searchButton": "Search",
@@ -23,8 +23,8 @@
     "resultsFoundWithoutKeyword": "results found"
   },
   "dashboard": {
-    "pageTitle": "Explore the resource library",
-    "header": "Explore the resource library",
+    "pageTitle": "Find online resources",
+    "header": "Find online resources",
     "categories": {
       "heading": "Browse by category"
     },
@@ -39,10 +39,10 @@
       "mailto": "mailto:lmtoolsteam@digital.uc.dwp.gov.uk?Subject=Suggested%20resource",
       "text": "Suggest a resource (email)"
     },
-    "summary": "Find approved digital resources and share them with claimants."
+    "summary": "Find approved online resources and share them with claimants."
   },
   "detail": {
-    "pageTitle": "Explore the resource library",
+    "pageTitle": "Find online resources",
     "howToUseIt": {
       "header": "How to use it",
       "description": "Paste this message into the claimant's journal"
