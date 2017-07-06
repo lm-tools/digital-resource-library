@@ -1,5 +1,6 @@
 function create({ basePath, siteUrl }) {
   return {
+    entrypointUrl: () => `${basePath}/`,
     dashboardUrl: () => `${basePath}/`,
     cookieUrl: () => `${basePath}/cookie`,
     searchUrl: (search) =>
