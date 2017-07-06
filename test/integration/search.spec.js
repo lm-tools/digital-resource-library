@@ -11,7 +11,7 @@ describe('Search', () => {
   );
 
   it('should display page', () =>
-    expect(searchPage.header()).to.equal('Explore the resource library')
+    expect(searchPage.header()).to.equal('Find online resources')
   );
 
   describe('list', () => {
