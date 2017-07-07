@@ -5,7 +5,7 @@
 /*Search page*/
 
 .search-result {
-  padding-bottom: $gutter-half;
+  padding-bottom: $gutter;
 }
 
 .search-result-excerpt {
@@ -126,12 +126,44 @@ pre {
   margin-bottom: $gutter-half;
 }
 
-body.js-enabled .copy-clipboard-link {
-  display: block;
+.copy-journal-message .toggle-switch {
+  display: none;
 }
 
-.copy-clipboard-link {
-  display: none;
+.alert {
+  border-color: $light-blue;
+  background-color: lighten($light-blue, 47%);
+}
+
+body.js-enabled .copy-journal-message .toggle-switch {
+
+  display: block;
+
+  &.toggled-once {
+    .alert {
+      display: block;
+    }
+  }
+  .alert {
+    display: none;
+  }
+
+  &.toggle {
+    .toggle-on-text {
+      display: inline;
+    }
+    .toggle-off-text {
+      display: none;
+    }
+  }
+
+  .toggle-on-text {
+    display: none;
+  }
+  .toggle-off-text {
+    display: inline;
+  }
+
 }
 
 /*Dashboard page*/

@@ -16,12 +16,21 @@
           <p class="text">{{#__}}detail.howToUseIt.description{{/__}}:</p>
           <div class="grid-row">
             <div class="column-two-thirds">
-              <div class="form-group">
+              <div class="form-group copy-journal-message">
                 <pre data-test="journal-message">{{ journalMessage }}</pre>
-                <a class="copy-clipboard-link" href="#copy-clipboard"
-                   data-clipboard-text="{{ journalMessage }}"
-                   data-test="copy-clipboard-journal-link">
-                  {{#__}}detail.copyJournalMessage{{/__}}</a>
+                <div class="toggle-switch" data-test="copy-journal-message-switch">
+                  <p>
+                    <a class="copy-clipboard-link toggler" href="#copy-clipboard"
+                       data-clipboard-text="{{ journalMessage }}"
+                       data-test="copy-clipboard-journal-link">
+                      <span class="toggle-off-text">{{#__}}detail.copyJournalMessage{{/__}}</span>
+                      <span class="toggle-on-text">{{#__}}detail.copyJournalMessageRepeat{{/__}}</span>
+                    </a>
+                  </p>
+                  <div class="panel panel-border-wide alert">
+                    <p>{{#__}}detail.copyAlertMessage{{/__}}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

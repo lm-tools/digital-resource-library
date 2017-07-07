@@ -48,5 +48,19 @@ class Page {
     return resources.map(crumb => this.extractText('title', crumb));
   }
 
+  /**
+   * Check id a data test element has a class
+   * @param {string} dataTest - the data test element
+   * @param {string} className - class to check
+   * @param {object} context - the 'core' object returned from browser.querySelector. By default
+   * uses the document
+   * returns true if matches
+   *
+   */
+  hasClass(dataTest, className, context = this.browser) {
+    return this.browser.query(`[data-test="${dataTest}"]`, context)
+        .className.split(' ').indexOf(className) > -1;
+  }
+
 }
 module.exports = Page;
