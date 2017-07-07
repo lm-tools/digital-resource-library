@@ -15,8 +15,9 @@
         </div>
         <input type="search" name="search" id="keywords" value="{{ search }}" maxlength="200" data-test="search-input">
       </div>
-
-      <button class="button" type="submit" data-test="search-button">{{#__}}search.searchButton{{/__}}</button>
+      <div class="form-group">
+        <button class="button" type="submit" data-test="search-button">{{#__}}search.searchButton{{/__}}</button>
+      </div>
     </form>
   </section>
   <section class="column-two-thirds" aria-label="{{#__}}search.resultsSectionAria{{/__}}">
