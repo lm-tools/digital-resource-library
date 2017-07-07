@@ -33,5 +33,17 @@ class DetailPage extends Page {
     return this.extractAttributeValue('copy-clipboard-journal-link', 'data-clipboard-text');
   }
 
+  copyClipboard() {
+    return this.browser.clickLink('[data-test="copy-clipboard-journal-link"]');
+  }
+
+  isMessageCopiedTextDisplayed() {
+    return this.hasClass('copy-journal-message-switch', 'toggle');
+  }
+
+  isMessageCopiedAlertBoxDisplayed() {
+    return this.hasClass('copy-journal-message-switch', 'toggled-once');
+  }
+
 }
 module.exports = DetailPage;
