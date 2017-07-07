@@ -98,6 +98,22 @@
   padding-top: 5px;
 }
 
+.button-input {
+    position: relative;
+}
+
+.input-wrapper {
+  padding-right: 90px;
+}
+
+.button-input .button {
+    width: 90px;
+    overflow: visible;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 #search-form {
   .button {
     @include core-19;
