@@ -1,18 +1,18 @@
 {{<layout}}
   {{$pageTitle}}{{#__}}dashboard.pageTitle{{/__}}{{/pageTitle}}
   {{$applicationContent}}
-    <h2 class="heading-xlarge" data-test="header">{{#__}}dashboard.header{{/__}}</h2>
+    <h1 class="heading-xlarge" data-test="header">{{#__}}dashboard.header{{/__}}</h1>
     <p class="lede">{{#__}}dashboard.summary{{/__}}</p>
 
     <form action="{{ basePath }}/search" method="GET" id="search-form">
       <div class="form-group">
-        <input type="text" name="search" id="search" class="form-control" value=""
+        <input type="search" name="search" id="search" class="form-control" value=""
                data-test="search-input">
         <input type="submit" class="button" value="Search" data-test="search-button">
       </div>
     </form>
 
-    <h4 class="heading-small">{{#__}}dashboard.categories.heading{{/__}}</h4>
+    <h2 class="heading-small">{{#__}}dashboard.categories.heading{{/__}}</h2>
     <div class="grid-row categories-list">
 
       {{#categoryList}}
@@ -27,7 +27,7 @@
 
     </div>
 
-    <h3 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h3>
+    <h2 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h2>
 
     <div class="feature-section">
       <div class="thumbnail">
@@ -37,15 +37,15 @@
       </div>
 
       <div class="details">
-        <h2>
+        <h3>
           <a href="{{ basePath }}/resources/{{#__}}dashboard.featured.resourceId{{/__}}"
              data-test="featured-resource-link">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
-        </h2>
+        </h3>
         <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
       </div>
     </div>
 
-    <h4 class="heading-small">{{#__}}dashboard.edit.heading{{/__}}</h4>
+    <h2 class="heading-small">{{#__}}dashboard.edit.heading{{/__}}</h2>
     <a href="{{#__}}dashboard.edit.mailto{{/__}}">{{#__}}dashboard.edit.text{{/__}}</a>
   {{/applicationContent}}
 
