@@ -48,7 +48,9 @@
       "description": "Paste this message into the claimant's journal"
     },
     "linkText": "Check it out",
-    "copyJournalMessage": "Copy message to clipboard"
+    "copyJournalMessage": "Copy message to clipboard",
+    "copyJournalMessageRepeat": "Copy message again",
+    "copyAlertMessage": "Message copied"
   },
   "breadcrumb": {
     "dashboard": "Home",

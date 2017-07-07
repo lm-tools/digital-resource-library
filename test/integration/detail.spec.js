@@ -49,6 +49,23 @@ describe('Detail', () => {
     it('should display link text', () =>
       expect(detailPage.link().text).to.equal('Check it out')
     );
+
+    it('should show alert and message copied text when copy message link is clicked', () =>
+      detailPage.copyClipboard().then(() => {
+        expect(detailPage.isMessageCopiedTextDisplayed()).to.equal(true);
+        expect(detailPage.isMessageCopiedAlertBoxDisplayed()).to.equal(true);
+      })
+    );
+
+    it('should keep alert and remove message copied text when copy message is clicked twice', () =>
+      detailPage.visit(sampleResource.resourceId)
+        .then(() => detailPage.copyClipboard())
+        .then(() => detailPage.copyClipboard())
+        .then(() => {
+          expect(detailPage.isMessageCopiedTextDisplayed()).to.equal(false);
+          expect(detailPage.isMessageCopiedAlertBoxDisplayed()).to.equal(true);
+        })
+    );
   });
 
   it('should link from search page', () =>
