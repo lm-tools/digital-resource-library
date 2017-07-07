@@ -15,7 +15,8 @@
 
 .search-result-category {
   display: inline-block;
-  margin: $gutter-one-third/2 $gutter-half 0 0;
+  margin: 0 $gutter-half 0 0;
+  @include core-16;
   a {
     text-decoration: none;
 
