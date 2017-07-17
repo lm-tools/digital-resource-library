@@ -47,7 +47,7 @@ describe('Detail', () => {
     );
 
     it('should display link text', () =>
-      expect(detailPage.link().text).to.equal('Check it out')
+      expect(detailPage.link().text).to.equal('Go to resource')
     );
 
     it('should show alert and message copied text when copy message link is clicked', () =>

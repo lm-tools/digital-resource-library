@@ -47,7 +47,7 @@
       "header": "How to use it",
       "description": "Paste this message into the claimant's journal"
     },
-    "linkText": "Check it out",
+    "linkText": "Go to resource",
     "copyJournalMessage": "Copy message to clipboard",
     "copyJournalMessageRepeat": "Copy message again",
     "copyAlertMessage": "Message copied"
