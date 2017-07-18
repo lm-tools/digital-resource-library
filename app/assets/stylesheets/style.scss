@@ -118,6 +118,10 @@
 .heading-secondary a {
   color: $secondary-text-colour;
   text-decoration: none;
+  
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
 }
 
 pre {
