@@ -12,6 +12,8 @@
               </h1>
           </header>
           <p class="lede text" data-test="summary">{{ summary }}</p>
+          <a href="{{ url }}" class="button button-get-started" data-test="link" target="_blank">
+            {{#__}}detail.linkText{{/__}}</a>
           <h2 class="heading-medium text">{{#__}}detail.howToUseIt.header{{/__}}</h2>
           <p class="text">{{#__}}detail.howToUseIt.description{{/__}}:</p>
           <div class="grid-row">
@@ -34,8 +36,6 @@
               </div>
             </div>
           </div>
-          <a href="{{ url }}" class="button button-get-started" data-test="link" target="_blank">
-            {{#__}}detail.linkText{{/__}}</a>
         {{/resource}}
     {{/applicationContent}}
 {{/layout}}
