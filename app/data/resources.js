@@ -468,7 +468,7 @@ const resourceList = [
     resourceId: 'octo048',
     title: 'GoConstruct',
     url: 'https://www.goconstruct.org',
-    summary: 'Comprehensive information about getting started in a construction career - apprenticeships, career change, career maps and more. ',
+    summary: 'Comprehensive information about getting started in a construction career - apprenticeships, career change, career maps and more.',
     journalMessage: "The best place to find out about getting started in building is GoConstruct: \n\nhttps://www.goconstruct.org\n\n It's the industry website, and should have everything you need. ",
     category: ['work search', 'research', 'apprenticeships', 'qualifications', 'training', 'Finding out about work', 'Young Jobseekers', 'Skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
@@ -478,7 +478,7 @@ const resourceList = [
     resourceId: 'octo049',
     title: 'Careers in construction',
     url: 'http://www.careersinconstruction.com',
-    summary: 'Job listings in the construction sector. Covers plant work, labourers, and management and engineering roles. ',
+    summary: 'Job listings in the construction sector. Covers plant work, labourers, and management and engineering roles.',
     journalMessage: "Here's a site you might find useful - it lists building and site jobs: \n\n http://www.careersinconstruction.com   ",
     category: ['work search', 'listings', 'Looking for work'],
     groups: ['intensive work search'],
@@ -763,7 +763,7 @@ const resourceList = [
     sector: { 7111: 'sales and retail assistants', 1190: 'managers and directors in retail and wholesale' },
   },
 
-{
+  {
     resourceId: 'octo077',
     title: 'Drapers Jobs',
     url: 'http://www.drapersjobs.com',
