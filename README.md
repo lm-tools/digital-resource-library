@@ -1,4 +1,4 @@
-# Digital Resource Library
+# Digital Resource Library [test]
 
 [![Build status][build status image]][ci]
 
