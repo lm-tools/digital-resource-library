@@ -36,7 +36,7 @@ describe('Search', () => {
     it('should contain correct link to all categories for all resources', () =>
       expect(this.resourceList.map(i => i.categories.map(j => j.href)))
         .to.eql(resourcesListModel.map(i =>
-                  i.category.map(j => routes.searchUrl(j))))
+        i.category.map(j => routes.searchUrl(j))))
     );
     it('should have correct path for all resources details page', () =>
       expect(this.resourceList.map(i => i.href))
@@ -100,6 +100,16 @@ describe('Search', () => {
           .then(() => expect(searchPage.getSearchSummary()).to.eql(s.summary))
       );
     });
+
+    it('should show empty results message when 0 search results', () =>
+      searchPage.search('Mr_No_Results')
+        .then(() => expect(searchPage.isEmptyResultsMessageDisplayed()).to.eql(true))
+    );
+
+    it('should not show empty results message when results found', () =>
+      searchPage.search('a')
+        .then(() => expect(searchPage.isEmptyResultsMessageDisplayed()).to.eql(false))
+    );
   });
 });
 

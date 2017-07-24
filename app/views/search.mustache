@@ -26,9 +26,11 @@
       <span class="search-summary-count">{{resourceList.length}}</span> {{resultsSummaryCopy}} <strong>{{ search }}</strong>
     </p>
 
-    <p class="search-message" data-test="search-message">
-      Please check the spelling or try a different search.
-    </p>
+    {{^hasResults}}
+      <p class="search-message" data-test="search-message">
+        {{#__}}search.emptyResults{{/__}}
+      </p>
+    {{/hasResults}}
 
 
     {{#resourceList}}

@@ -41,5 +41,9 @@ class SearchPage extends Page {
     this.browser.fill('[data-test="search-input"]', keyword);
     return this.browser.click('[data-test="search-button"]');
   }
+
+  isEmptyResultsMessageDisplayed() {
+    return this.browser.query('[data-test="search-message"]') != null;
+  }
 }
 module.exports = SearchPage;
