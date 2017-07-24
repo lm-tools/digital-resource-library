@@ -27,6 +27,7 @@ router.get('/search', (req, res) => {
       resourceList: resourceList.map(decorateWithCategories),
       search,
       resultsSummaryCopy: resultsSummaryCopy(resourceList.length, search),
+      hasResults: (resourceList.length > 0),
     }
   );
 });

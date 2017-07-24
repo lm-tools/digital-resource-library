@@ -26,6 +26,13 @@
       <span class="search-summary-count">{{resourceList.length}}</span> {{resultsSummaryCopy}} <strong>{{ search }}</strong>
     </p>
 
+    {{^hasResults}}
+      <p class="search-message" data-test="search-message">
+        {{#__}}search.emptyResults{{/__}}
+      </p>
+    {{/hasResults}}
+
+
     {{#resourceList}}
       <div class="search-result" data-test="resource">
         <h2 class="search-result-title" data-test="title">
