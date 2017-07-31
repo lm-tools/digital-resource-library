@@ -7,7 +7,7 @@
     "compile": "gulp vendor-assets js css images",
     "watch": "gulp watch",
     "lint": "eslint .",
-    "pretest": "npm-shrinkwrap-check -3 && eslint . && npm run compile",
+    "pretest": "eslint . && npm run compile",
     "test-mocha": "mocha",
     "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha",
     "heroku-postbuild": "npm run compile"
@@ -57,7 +57,6 @@
     "eslint-plugin-import": "^1.8.0",
     "mocha": "^2.4.5",
     "moment": "^2.14.1",
-    "npm-shrinkwrap-check": "git+https://git@github.com/gjvis/npm-shrinkwrap-check.git#ignore-nested-package-json-files",
     "supertest": "^3.0.0",
     "zombie": "^4.2.1"
   },

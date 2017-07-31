@@ -6,6 +6,15 @@ A digital resource library app, based on [express], which looks like [gov.uk]
 
 [![Deploy][heroku deploy image]][heroku deploy hook]
 
+## Dev Setup
+
+Use node 6.11.1 and npm >5. Setup with [nvm](https://github.com/creationix/nvm):
+
+```sh
+$ nvm install 6.11.1
+$ npm install -g npm@5.3
+``` 
+
 ## Edit digital resource data
 
 All the data lives in [app/data/resources.js](app/data/resources.js).
