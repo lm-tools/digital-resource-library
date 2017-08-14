@@ -23,7 +23,7 @@ const categoryList = [
   {
     title: 'Other support',
     summary: '*Useful sites for research: job descriptions, grants, sector overviews, regulations',
-  }
+  },
 ];
 
 module.exports = categoryList;
