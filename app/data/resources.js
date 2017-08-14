@@ -56,7 +56,7 @@ const resourceList = [
     url: 'http://www.gov.uk/find-internship',
     summary: 'A service to help new and recent graduates find a paid, government-backed internship.',
     journalMessage: "The Graduate Talent Pool can help you find an internship that's paid: \n\n http://www.gov.uk/find-internship \n\n",
-    category: ['internships', 'Young Jobseekers','Preparing for work'],
+    category: ['internships', 'Young Jobseekers', 'Preparing for work'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {},
   },
