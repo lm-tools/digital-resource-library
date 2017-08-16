@@ -2,27 +2,27 @@
 const categoryList = [
   {
     title: 'Preparing for work',
-    summary: 'Sites for claimants getting back into work: childcare support, volunteering, mentoring',
+    summary: 'Getting back into work: researching jobs, childcare support, volunteering, mentoring',
   },
   {
     title: 'CVs, cover letters and interviews',
-    summary: '*Advice and tools to help claimants prepare their CVs and get ready for interview',
+    summary: 'Advice and tools for preparing CVs, writing cover letters and getting ready for interview',
   },
   {
     title: 'Searching for work',
-    summary: 'Job boards, agency websites and advice on searching online advice on searching online advice on searching online',
+    summary: 'Sites to help claimants look for work safely and successfully',
   },
   {
     title: 'Skills, training and qualifications',
-    summary: 'Sites to help claimants improve their skills or work towards a qualification',
+    summary: 'Improving skills, working towards a qualification and finding apprenticeships',
   },
   {
     title: 'Health, mental health and wellbeing',
-    summary: '*Resources for young jobseekers: apprenticeships, work experience, internships',
+    summary: 'Helping claimants with health issues find support and get suitable work',
   },
   {
     title: 'Other support',
-    summary: '*Useful sites for research: job descriptions, grants, sector overviews, regulations',
+    summary: 'Getting through the system: legal rights, finding grants, language help',
   },
 ];
 
