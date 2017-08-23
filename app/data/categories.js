@@ -2,7 +2,7 @@
 const categoryList = [
   {
     title: 'Preparing for work',
-    summary: 'Getting back into work: researching jobs, childcare support, volunteering, mentoring',
+    summary: 'Getting ready for work: researching jobs, childcare support, volunteering, mentoring',
   },
   {
     title: 'CVs, cover letters and interviews',
