@@ -13,9 +13,23 @@
     </form>
 
     <h2 class="heading-small">{{#__}}dashboard.categories.heading{{/__}}</h2>
-    <div class="grid-row categories-list">
+    <div class="categories-list">
+      <div class="grid-row">
 
-      {{#categoryList}}
+        {{#categoryListRow1}}
+          <div class="column-one-third" data-test="category">
+            <h3 class="heading-medium">
+              <a href="{{ basePath }}/search?search={{ uriEncodedTitle }}" data-test="category-link">
+                {{ title }}</a>
+            </h3>
+            <p data-test="category-summary">{{ summary }}</p>
+          </div>
+        {{/categoryListRow1}}
+
+      </div>
+      <div class="grid-row">
+
+      {{#categoryListRow2}}
         <div class="column-one-third" data-test="category">
           <h3 class="heading-medium">
             <a href="{{ basePath }}/search?search={{ uriEncodedTitle }}" data-test="category-link">
@@ -23,8 +37,9 @@
           </h3>
           <p data-test="category-summary">{{ summary }}</p>
         </div>
-      {{/categoryList}}
+      {{/categoryListRow2}}
 
+      </div>
     </div>
 
     <h2 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h2>
