@@ -803,7 +803,7 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: {},
   },
- {
+  {
     resourceId: 'octo081',
     title: 'Find a registered childminder',
     url: 'https://www.gov.uk/find-registered-childminder',
@@ -903,7 +903,7 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: { },
   },
-   {
+  {
     resourceId: 'octo091',
     title: 'Money Advice Service money manager',
     url: 'https://www.moneyadviceservice.org.uk/en/tools/money-manager',
