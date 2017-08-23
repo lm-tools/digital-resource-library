@@ -780,7 +780,6 @@ const resourceList = [
     summary: 'Job listings in the IT and technology sectors.',
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in IT and technology: \n\nhttp://www.hays.co.uk/job/it-jobs/ ',
     category: ['work search', 'listings', 'Searching for work'],
-<<<<<<< HEAD
     groups: ['intensive work search'],
     sector: { 213: 'information technology and telecommunications professionals' },
   },
@@ -804,7 +803,7 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: {},
   },
- {
+  {
     resourceId: 'octo081',
     title: 'Find a registered childminder',
     url: 'https://www.gov.uk/find-registered-childminder',
@@ -821,8 +820,6 @@ const resourceList = [
     summary: 'Job listings in the IT and technology sector.',
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in IT and technology: \n\nhttps://www.cwjobs.co.uk ',
     category: ['work search', 'listings', 'Looking for work'],
-=======
->>>>>>> 926f23ccc4851d9cfd081b286fb4d75447ff8609
     groups: ['intensive work search'],
     sector: { 213: 'information technology and telecommunications professionals' },
   },
@@ -906,7 +903,7 @@ const resourceList = [
     groups: ['intensive work search', 'preparing for work'],
     sector: { },
   },
-   {
+  {
     resourceId: 'octo091',
     title: 'Money Advice Service money manager',
     url: 'https://www.moneyadviceservice.org.uk/en/tools/money-manager',
