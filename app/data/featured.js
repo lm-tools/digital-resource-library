@@ -31,7 +31,7 @@ const featuredList = [
       "resourceLinkText": "Mind",
       "resourceSummary": "The mental health charity has guidance and practical suggestions on work and returning to work."
     },
-    "featured04": {
+    "featured06": {
       "heading": "Featured resource",
       "resourceId": "octo080",
       "resourceLinkText": "My world of work: cover letters",
