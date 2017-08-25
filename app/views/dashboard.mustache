@@ -42,21 +42,21 @@
       </div>
     </div>
 
-    <h2 class="heading-small">{{#__}}dashboard.featured.heading{{/__}}</h2>
+    <h2 class="heading-small" data-test="featured-header">{{featured.heading}}</h2>
 
     <div class="feature-section">
       <div class="thumbnail">
-        <a href="{{ basePath }}/resources/{{#__}}dashboard.featured.resourceId{{/__}}">
-          <img src="{{ basePath }}/images/screens/{{#__}}dashboard.featured.resourceId{{/__}}-small.png">
+        <a href="{{ basePath }}/resources/{{featured.resourceId}}">
+          <img src="{{ basePath }}/images/screens/{{featured.resourceId}}-small.png">
         </a>
       </div>
 
       <div class="details">
         <h3>
-          <a href="{{ basePath }}/resources/{{#__}}dashboard.featured.resourceId{{/__}}"
-             data-test="featured-resource-link">{{#__}}dashboard.featured.resourceLinkText{{/__}}</a>
+          <a href="{{ basePath }}/resources/{{featured.resourceId}}"
+             data-test="featured-resource-link">{{featured.resourceLinkText}}</a>
         </h3>
-        <p>{{#__}}dashboard.featured.resourceSummary{{/__}}</p>
+        <p>{{featured.resourceSummary}}</p>
       </div>
     </div>
 

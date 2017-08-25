@@ -7,13 +7,12 @@ const sampleSchedule = [
   {
     start: moment('2013-02-08T09:30+01'),
     end: moment('2013-02-08T10:30+01'),
-    resource: 'featured03'
+    resource: 'featured03',
   },
 ];
 const scheduler = require('../../app/models/scheduler')({ schedule: sampleSchedule });
 
 describe('scheduler', () => {
-
   [
     {
       name: 'should return schedule when exists',
@@ -35,5 +34,4 @@ describe('scheduler', () => {
       expect(scheduler.get(s.date)).to.eql(s.result)
     );
   });
-
 });
