@@ -13,6 +13,10 @@ class DashboardPage extends Page {
     return this.browser.text(`[data-test="${name}"]`, context);
   }
 
+  getFeaturedHeader() {
+    return this.browser.text('[data-test="featured-header"]');
+  }
+
   extractRelativeLink(name, context) {
     const linkEl = this.browser.query(`[data-test="${name}"]`, context);
     return `${linkEl.pathname}${linkEl.search}`;
