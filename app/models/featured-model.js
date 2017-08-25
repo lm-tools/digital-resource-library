@@ -1,4 +1,7 @@
-module.exports = function ({ data }) {
-  const get = () => data.featured05;
+module.exports = function ({ scheduler, data }) {
+  const get = (date) => {
+    const schedule = scheduler.get(date);
+    return schedule ? data[schedule.resource] : data.featured01;
+  };
   return { get };
 };
