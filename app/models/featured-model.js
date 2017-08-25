@@ -1,7 +1,8 @@
 module.exports = function ({ scheduler, data }) {
-  const get = (date) => {
+  const getScheduled = (date) => {
     const schedule = scheduler.get(date);
     return schedule ? data[schedule.resource] : data.featured01;
   };
-  return { get };
+  const get = () => data.featured05;
+  return { get, getScheduled };
 };
