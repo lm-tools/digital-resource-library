@@ -12,7 +12,7 @@ Use node 6.11.1 and npm >5. Setup with [nvm](https://github.com/creationix/nvm):
 
 ```sh
 $ nvm install 6.11.1
-$ npm install -g npm@5.3
+$ npm install -g npm@5.2.0
 ``` 
 
 ## Edit digital resource data
