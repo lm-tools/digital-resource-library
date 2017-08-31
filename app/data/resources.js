@@ -869,7 +869,7 @@ const resourceList = [
     url: 'https://www.gov.uk/report-domestic-abuse',
     summary: 'How to report domestic abuse or violence. Includes links to organisations that can help.',
     journalMessage: 'Take a look at this link, and contact me if you need any more help: \n\nhttps://www.gov.uk/report-domestic-abuse ',
-    category: ['Other support'],
+    category: ['Other support', 'Health, mental health and wellbeing'],
     groups: [],
     sector: { },
   },
