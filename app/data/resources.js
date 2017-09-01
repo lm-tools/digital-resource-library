@@ -898,7 +898,7 @@ const resourceList = [
     title: 'GOV.UK: Work and disabled people',
     url: 'https://www.gov.uk/browse/disabilities/work',
     summary: 'An overview of the GOV.UK pages on the topic of disabled people and work. Plain English guides to workers\' rights, the law, and applying for Access to Work grants.',
-    journalMessage: ': \n\nhttps://www.gov.uk/browse/disabilities/work ',
+    journalMessage: 'Here\'s a list of the pages on GOV.UK that deal with work and disability. You\'ll find useful information there about your rights and Access to Work grants: \n\nhttps://www.gov.uk/browse/disabilities/work ',
     category: ['Health, mental health and wellbeing', 'Preparing for work'],
     groups: ['intensive work search'],
     sector: { },
