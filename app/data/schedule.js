@@ -21,8 +21,8 @@ const schedule = [
     resource: 'featured05',
   },
   {
-    start: moment('2017-09-08T13:00+01'),
-    end: moment('2017-09-11T12:59:59+01'),
+    start: moment('2017-09-07T13:00+01'),
+    end: moment('2017-09-08T12:59:59+01'),
     resource: 'featured06',
   },
 ];
