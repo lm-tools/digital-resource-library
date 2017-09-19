@@ -15,6 +15,41 @@
         </div>
         <input type="search" name="search" id="keywords" value="{{ search }}" maxlength="200" data-test="search-input">
       </div>
+
+      <div class="filter-form">
+
+
+<!-- 
+
+https://govuk-static.herokuapp.com/component-guide/option_select
+https://github.com/alphagov/static/blob/9e8795b262c948a65b798029864cbe04f193262a/app/assets/javascripts/govuk-component/option-select.js
+
+ -->
+
+<div class="govuk-option-select js-collapsible js-closed">
+  <button class="js-container-head" type="button" aria-expanded="false" aria-controls="list_of_sectors">
+    <div class="option-select-label">Category</div>
+  <div class="js-selected-counter"></div></button>
+  <div class="options-container" id="list_of_sectors">
+    <div class="js-auto-height-inner">
+      {{#categoryList}}
+      <label for="category-{{number}}">
+        <input name="categories" value="{{ title }}" id="category-{{number}}" type="checkbox">
+        {{ title }}
+        </label>
+      {{/categoryList}}
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+
       <div class="form-group">
         <button class="button" type="submit" data-test="search-button">{{#__}}search.searchButton{{/__}}</button>
       </div>
@@ -43,7 +78,7 @@
         <p class="search-result-excerpt" data-test="summary">
           {{summary}}
         </p>
-        <ul aria-label="tags" class="search-result-metadata">
+<!--         <ul aria-label="tags" class="search-result-metadata">
           {{#categories}}
             <li class="search-result-category" data-test="category">
               <a href="{{ basePath }}/search?search={{ categoryEncoded }}" data-test="category-link">{{ category }}</a>
@@ -51,11 +86,21 @@
           {{/categories}}
 
         </ul>
-      </div>
+ -->      </div>
     {{/resourceList}}
   </section>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$( ".js-collapsible" ).click(function() {
+if ($(this).hasClass( "js-closed" )) {
+  $(this).removeClass( "js-closed" );
+} else{
+  $(this).addClass( "js-closed" )
+};
 
+});
+</script>
 {{/applicationContent}}
 
 {{/layout}}

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 const express = require('express');
 const router = new express.Router();
-const { resourceModel } = require('../appContext');
+const { resourceModel, categoryModel } = require('../appContext');
 const i18n = require('i18n');
 
 const resultsSummaryCopy = (resourcesCount, search) => {
@@ -22,12 +22,14 @@ const decorateWithCategories = resource => {
 router.get('/search', (req, res) => {
   const search = (req.query.search || '').trim();
   const resourceList = resourceModel.findByKeyword(search);
+  const categoryList = categoryModel.findAll();
   res.render('search',
     {
       resourceList: resourceList.map(decorateWithCategories),
       search,
       resultsSummaryCopy: resultsSummaryCopy(resourceList.length, search),
       hasResults: (resourceList.length > 0),
+      categoryList
     }
   );
 });
