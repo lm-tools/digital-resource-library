@@ -48,7 +48,7 @@
   margin-bottom: $gutter-half;
 
   /* reference https://github.com/alphagov/digitalmarketplace-frontend-toolkit/blob/73678293a4476d75cee9cdb55e4bd859c30af22a/toolkit/scss/forms/_keyword-search.scss */
-  &.filter-field-text {
+  &.filter-field-text, &.link-select {
 
     .js-enabled & {
       /* This is required because we want padding around the search box but it gets overridden by a style from _option_select.scss */
@@ -57,7 +57,7 @@
 
     /* Mostly gotten from: https://github.com/alphagov/static/blob/bb2e0b052c15e5cfc58a0dca3a34bd4cc5caed46/app/assets/stylesheets/helpers/_header.scss#L102 */
 
-    input[type="search"] {
+    input[type="search"], ul {
       @include core-16;
       @include box-sizing(border-box);
       position: relative;
@@ -71,6 +71,28 @@
       &:focus {
         outline-offset: -2px;
       }
+    }
+    margin-bottom: 30px;
+  }
+}
+
+.govuk-option-select.link-select {
+  ul {
+    padding: 0;
+    a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: inherit; /* no underline */
+    }
+    li {
+      &:hover {
+        background-color: rgb(248, 248, 248);
+      }
+      position: relative;
+      background-color: white;
+      font-size: 19px;
+      border-bottom: 1px solid #bfc1c3;
+      padding: 11px 10px 7px 20px;
+      cursor: pointer;
     }
   }
 }
