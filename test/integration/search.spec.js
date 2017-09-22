@@ -2,6 +2,7 @@ const { searchPage, googleTagManagerHelper, routes } = require('./support/integr
 const expect = require('chai').expect;
 const { describe, it, before } = require('mocha');
 const resourcesListModel = require('../../app/data/resources');
+const categoryListModel = require('../../app/data/categories');
 
 describe('Search', () => {
   before(() => searchPage.visit());
@@ -29,15 +30,6 @@ describe('Search', () => {
     it('should display correct summary for all resources', () =>
       expect(this.resourceList.map(i => i.summary)).to.eql(resourcesListModel.map(i => i.summary))
     );
-    it('should display correct categories for all resources', () =>
-      expect(this.resourceList.map(i => i.categories.map(j => j.text)))
-        .to.eql(resourcesListModel.map(i => i.category))
-    );
-    it('should contain correct link to all categories for all resources', () =>
-      expect(this.resourceList.map(i => i.categories.map(j => j.href)))
-        .to.eql(resourcesListModel.map(i =>
-        i.category.map(j => routes.searchUrl(j))))
-    );
     it('should have correct path for all resources details page', () =>
       expect(this.resourceList.map(i => i.href))
         .to.eql(resourcesListModel.map(i => routes.detailsUrl(i.resourceId, '')))
@@ -50,6 +42,17 @@ describe('Search', () => {
     it('should show breadcrumb on the search page', () => {
       expect(searchPage.getBreadcrumbs()).to.eql(['Home', 'Results']);
     });
+  });
+
+  describe('categories', () => {
+    it('should display correct categories for all resources', () =>
+      expect(searchPage.getCategories().map(c => c.text))
+        .to.eql(categoryListModel.map(c => c.title))
+    );
+    it('should display correct categories for all resources', () =>
+      expect(searchPage.getCategories().map(c => c.href))
+        .to.eql(categoryListModel.map(c => routes.searchUrl(c.title)))
+    );
   });
 
   describe('search', () => {
