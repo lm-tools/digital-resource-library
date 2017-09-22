@@ -45,5 +45,15 @@ class DetailPage extends Page {
     return this.hasClass('copy-journal-message-switch', 'toggled-once');
   }
 
+
+  /**
+   * @param {object} resourceContext - the context object for the resource
+   * returns a list of categories as an object: { text, href }.
+   */
+  getCategories(resourceContext) {
+    return this.browser.queryAll('[data-test="category-link-wrap"]', resourceContext)
+      .map(categoryContext => this.extractLink('category-link', categoryContext));
+  }
+
 }
 module.exports = DetailPage;

@@ -14,10 +14,10 @@
           <p class="lede text" data-test="summary">{{ summary }}</p>
           <a href="{{ url }}" class="button button-get-started" data-test="link" target="_blank">
             {{#__}}detail.linkText{{/__}}</a>
-          <h2 class="heading-medium text">{{#__}}detail.howToUseIt.header{{/__}}</h2>
-          <p class="text">{{#__}}detail.howToUseIt.description{{/__}}:</p>
           <div class="grid-row">
             <div class="column-two-thirds">
+              <h2 class="heading-medium text">{{#__}}detail.howToUseIt.header{{/__}}</h2>
+              <p class="text">{{#__}}detail.howToUseIt.description{{/__}}:</p>
               <div class="form-group copy-journal-message">
                 <pre data-test="journal-message">{{ journalMessage }}</pre>
                 <div class="toggle-switch" data-test="copy-journal-message-switch">
@@ -34,8 +34,15 @@
                   </div>
                 </div>
               </div>
+              <h2 class="heading-medium text">{{#__}}detail.categories.header{{/__}}</h2>
+              {{#categories}}
+              <span data-test="category-link-wrap">
+                <a href="{{ basePath }}/search?search={{ categoryEncoded }}" data-test="category-link">{{ category }}</a>{{#hasNext}}, {{/hasNext}}
+              </span>
+              {{/categories}}
             </div>
           </div>
+
         {{/resource}}
     {{/applicationContent}}
 {{/layout}}
