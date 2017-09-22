@@ -1,6 +1,16 @@
 /* eslint-disable max-len */
 const resourceList = [
   {
+    resourceId: 'octo092',
+    title: 'Jobsearch websites',
+    url: 'https://www.cipd.co.uk/steps-ahead-mentoring',
+    summary: 'A few of the main sites for finding work.',
+    journalMessage: 'Here are a few of the main sites for finding work. \n\n Universal Jobmatch: \n https://www.gov.uk/jobsearch \n\n Monster: \n http://monster.co.uk/ \n\n Indeed: \n http://www.indeed.co.uk/ \n\n Jobsite: \n http://www.jobsite.co.uk/ \n\n Fish4jobs: \n http://www.fish4.co.uk/ \n\n Reed: \n http://www.reed.co.uk/ \n\n One2find: \n http://www.one2find.com/jobsearchuk/ \n\n Everyjobsite: \n http://www.everyjobsite.co.uk/ \n\n The Guardian: \n https://jobs.theguardian.com/ \n\n Totaljobs: \n https://www.totaljobs.com/',
+    category: ['mentoring', 'training', 'Preparing for work'],
+    groups: ['young jobseekers', 'intensive work search'],
+    sector: {},
+  },
+  {
     resourceId: 'octo001',
     title: 'Steps Ahead mentoring',
     url: 'https://www.cipd.co.uk/steps-ahead-mentoring',
