@@ -13,20 +13,6 @@
   margin-bottom: 0;
 }
 
-.search-result-category {
-  display: inline-block;
-  margin: 0 $gutter-half 0 0;
-  @include core-16;
-  a {
-    text-decoration: none;
-
-    &:hover, &:focus {
-      color: $link-colour;
-      text-decoration: underline;
-    }
-  }
-}
-
 .search-result-title {
   a {
     @include bold-24();

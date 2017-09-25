@@ -3,7 +3,6 @@ const express = require('express');
 const router = new express.Router();
 const { resourceModel } = require('../appContext');
 const i18n = require('i18n');
-const { decorateWithCategories } = require('../decorators/resource-decorator');
 
 const resultsSummaryCopy = (resourcesCount, search) => {
   if (resourcesCount === 1) {
@@ -17,7 +16,7 @@ router.get('/search', (req, res) => {
   const resourceList = resourceModel.findByKeyword(search);
   res.render('search',
     {
-      resourceList: resourceList.map(decorateWithCategories),
+      resourceList,
       search,
       resultsSummaryCopy: resultsSummaryCopy(resourceList.length, search),
       hasResults: (resourceList.length > 0),
