@@ -13,29 +13,8 @@
             {{#__}}search.searchButtonLabel{{/__}}
           </label>
         </div>
-
         <input type="search" name="search" id="keywords" value="{{ search }}" maxlength="200" data-test="search-input">
       </div>
-
-      <div class="govuk-option-select link-select">
-        <div class="container-head">
-          <label class="option-select-label" for="keywords">
-            {{#__}}search.categorySelectOptionsLabel{{/__}}
-          </label>
-        </div>
-        <ul aria-label="Search Categories">
-          {{#categories}}
-            <span data-test="category-link">
-              <a href="{{ basePath }}/search?search={{ uriEncodedTitle }}" data-test="link">
-                <li data-test="category">
-                  {{ title }}
-                </li>
-              </a>
-            </span>
-          {{/categories}}
-        </ul>
-      </div>
-
       <div class="form-group">
         <button class="button" type="submit" data-test="search-button">{{#__}}search.searchButton{{/__}}</button>
       </div>
@@ -53,6 +32,7 @@
       </p>
     {{/hasResults}}
 
+
     {{#resourceList}}
       <div class="search-result" data-test="resource">
         <h2 class="search-result-title" data-test="title">
@@ -63,6 +43,14 @@
         <p class="search-result-excerpt" data-test="summary">
           {{summary}}
         </p>
+        <ul aria-label="tags" class="search-result-metadata">
+          {{#categories}}
+            <li class="search-result-category" data-test="category">
+              <a href="{{ basePath }}/search?search={{ categoryEncoded }}" data-test="category-link">{{ category }}</a>
+            </li>
+          {{/categories}}
+
+        </ul>
       </div>
     {{/resourceList}}
   </section>
