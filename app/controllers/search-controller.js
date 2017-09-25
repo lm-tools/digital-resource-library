@@ -3,7 +3,6 @@ const express = require('express');
 const router = new express.Router();
 const { resourceModel } = require('../appContext');
 const i18n = require('i18n');
-const { decorateWithCategories } = require('../decorators/resource-decorator');
 
 const resultsSummaryCopy = (resourcesCount, search) => {
   if (resourcesCount === 1) {
