@@ -17,7 +17,7 @@ router.get('/search', (req, res) => {
   const resourceList = resourceModel.findByKeyword(search);
   res.render('search',
     {
-      resourceList: resourceList.map(decorateWithCategories),
+      resourceList,
       search,
       resultsSummaryCopy: resultsSummaryCopy(resourceList.length, search),
       hasResults: (resourceList.length > 0),

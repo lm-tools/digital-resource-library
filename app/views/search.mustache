@@ -32,7 +32,6 @@
       </p>
     {{/hasResults}}
 
-
     {{#resourceList}}
       <div class="search-result" data-test="resource">
         <h2 class="search-result-title" data-test="title">
@@ -43,14 +42,6 @@
         <p class="search-result-excerpt" data-test="summary">
           {{summary}}
         </p>
-        <ul aria-label="tags" class="search-result-metadata">
-          {{#categories}}
-            <li class="search-result-category" data-test="category">
-              <a href="{{ basePath }}/search?search={{ categoryEncoded }}" data-test="category-link">{{ category }}</a>
-            </li>
-          {{/categories}}
-
-        </ul>
       </div>
     {{/resourceList}}
   </section>
