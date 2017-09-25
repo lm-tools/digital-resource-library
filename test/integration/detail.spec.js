@@ -50,6 +50,13 @@ describe('Detail', () => {
       expect(detailPage.link().text).to.equal('Go to resource')
     );
 
+    it('should show all related categories', () =>
+      expect(detailPage.getCategories()).to.eql(sampleResource.category.map(c => ({
+        href: routes.searchUrl(c),
+        text: c,
+      })))
+    );
+
     it('should show alert and message copied text when copy message link is clicked', () =>
       detailPage.copyClipboard().then(() => {
         expect(detailPage.isMessageCopiedTextDisplayed()).to.equal(true);

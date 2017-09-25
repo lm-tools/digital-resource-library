@@ -43,6 +43,9 @@
       "header": "How to use it",
       "description": "Paste this message into the claimant's journal"
     },
+    "categories": {
+      "header": "Related categories"
+    },
     "linkText": "Go to resource",
     "copyJournalMessage": "Copy message to clipboard",
     "copyJournalMessageRepeat": "Copy message again",
