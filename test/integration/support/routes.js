@@ -9,6 +9,8 @@ function create({ basePath, siteUrl }) {
       `${siteUrl}${basePath}/search?search=${encodeURIComponent(search)}`,
     detailsUrl: (resourceId, search) =>
       `${basePath}/resources/${resourceId}?fromSearch=${encodeURIComponent(search)}`,
+    errorUrl: (errorId) =>
+      `${basePath}/error/${errorId}`,
   };
 }
 

@@ -1,0 +1,17 @@
+{{<layout}}
+{{$pageTitle}}{{#__}}404.pagetitle{{/__}}{{/pageTitle}}
+{{$applicationContent}}
+<header class="page-header">
+  <h1 class="heading-large">{{#__}}404.pagetitle{{/__}}</h1>
+</header>
+<div class="grid-row">
+  <div class="column-full">
+    <span data-test="message">
+      <p>{{#__}}404.message{{/__}}</p>
+      <p><a href="{{ basePath }}/search">{{#__}}404.searchagain.link{{/__}}</a> {{#__}}404.searchagain.subtext{{/__}}</p>
+    </span>
+  </div>
+</div>
+
+{{/applicationContent}}
+{{/layout}}

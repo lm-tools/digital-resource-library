@@ -1,4 +1,12 @@
 {
+  "404": {
+    "pagetitle": "Page not found",
+    "message": "There's nothing here. The page may have moved or been removed.",
+    "searchagain": {
+      "link": "Search again",
+      "subtext": "to find more resources."
+    }
+  },
   "cookie": {
     "pretext": "GOV.UK uses cookies to make the site simpler",
     "linktext": "Find out more about cookies",

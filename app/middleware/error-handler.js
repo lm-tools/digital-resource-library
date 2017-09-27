@@ -9,20 +9,27 @@ const logger = new winston.Logger({
   ],
 });
 
+/* eslint-disable no-underscore-dangle */
+const errorModel = (app, err) => {
+  const status = parseInt(err.status, 10) || 500;
+  const model = { message: i18n.__(`error.${status}`) };
+  if (/^development|test$/.test(app.get('env'))) model.error = err;
+  return model;
+};
+
 module.exports = app => {
-  /* eslint-disable no-underscore-dangle */
-  // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
     if (app.get('env') !== 'test') {
       // eslint-disable-next-line no-console
       logger.error(err.stack);
     }
-    const status = err.status || 500;
+    const status = parseInt(err.status, 10) || 500;
     res.status(status);
-    const model = { message: i18n.__(`error.${status}`) };
-    if (app.get('env') === 'development') {
-      model.error = err;
-    }
-    res.render('error', model);
+    if (status === 404) res.render(`${status}`, errorModel(app, err));
+    else next(err);
   });
+
+  // catch all error view
+  /* eslint-disable no-unused-vars */
+  app.use((err, req, res, next) => res.render('error', errorModel(app, err)));
 };
