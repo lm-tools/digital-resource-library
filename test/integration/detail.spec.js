@@ -2,7 +2,8 @@ const {
   googleTagManagerHelper,
   detailPage,
   searchPage,
-  routes } = require('./support/integrationSpecHelper');
+  routes,
+  browser } = require('./support/integrationSpecHelper');
 const chai = require('chai');
 chai.use(require('chai-string'));
 const expect = chai.expect;
@@ -88,4 +89,9 @@ describe('Detail', () => {
       expect(detailPage.getBreadcrumbs()).to.eql(['Home', 'Results', sampleResource.title]);
     });
   });
+
+  it('should rediredct to 404 if no resource found', () =>
+    detailPage.visit('does-not-exist').catch(() => {})
+      .then(() => expect(browser.response.status).to.equal(404))
+  );
 });
