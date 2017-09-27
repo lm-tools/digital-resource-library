@@ -14,6 +14,15 @@ class SearchPage extends Page {
     return this.browser.click(`[data-test="resource-${resourceId}"]`);
   }
 
+  /**
+   * @param {object} resourceContext - the context object for the resource
+   * returns a list of categories as an object: { text, href }.
+   */
+  getCategories() {
+    return this.browser.queryAll('[data-test="category-link"]')
+      .map(categoryContext => this.extractLink('link', categoryContext));
+  }
+
   getResults() {
     const resources = this.browser.queryAll('[data-test="resource"]');
     return resources.map(resourceContext => ({
