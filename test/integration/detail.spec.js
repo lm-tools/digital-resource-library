@@ -4,6 +4,7 @@ const {
   searchPage,
   routes,
   browser } = require('./support/integrationSpecHelper');
+const url = require('url');
 const chai = require('chai');
 chai.use(require('chai-string'));
 const expect = chai.expect;
@@ -90,8 +91,25 @@ describe('Detail', () => {
     });
   });
 
-  it('should rediredct to 404 if no resource found', () =>
-    detailPage.visit('does-not-exist').catch(() => {})
-      .then(() => expect(browser.response.status).to.equal(404))
-  );
+  describe('tidyurl', () => {
+    const sampleResourcePath = url.parse(routes.detailsUrl(sampleResource.resourceId)).pathname;
+    it('should redirect to url with duplicate slash', () =>
+      detailPage.visit(`///${sampleResource.resourceId}///`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(sampleResourcePath)
+      )
+    );
+    it('should not redirect to url without duplicate slash', () =>
+      detailPage.visit(`${sampleResource.resourceId}`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(sampleResourcePath)
+      )
+    );
+    it('should not redirect to url without duplicate slash with trailing slash', () =>
+      detailPage.visit(`${sampleResource.resourceId}/`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(`${sampleResourcePath}/`)
+      )
+    );
+  });
 });

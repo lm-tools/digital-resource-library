@@ -11,6 +11,7 @@ const detailController = require('./controllers/detail-controller');
 const cookieController = require('./controllers/cookie-controller');
 const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
+const tidyUrl = require('./middleware/tidy-url');
 const healthCheckController = require('./controllers/health-check-controller');
 const helmet = require('helmet');
 const breadcrumbViewModel = require('./controllers/breadcrumb-view-model');
@@ -72,6 +73,8 @@ app.use(assetPath, express.static(path.join(__dirname, '..',
   'vendor', 'govuk_frontend_toolkit', 'assets')));
 
 app.use(helmet.noCache());
+
+app.use('*', tidyUrl);
 
 app.use((req, res, next) => {
   Object.assign(res.locals,
