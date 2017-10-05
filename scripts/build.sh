@@ -17,7 +17,7 @@ ROOT_DIR=$(cd "$CWD/.." && pwd)
 (
   cd $ROOT_DIR
 
-  if [[ ! "$(git status 2> /dev/null)" =~ "working directory clean" ]]; then
+  if [[ ! "$(git status 2> /dev/null)" =~ "working tree clean" ]]; then
     echo "Cannot build: you have unstashed changes."
     echo "Please stash or commit them, then try again."
     exit 1
