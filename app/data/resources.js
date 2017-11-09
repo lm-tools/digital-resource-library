@@ -917,7 +917,7 @@ const resourceList = [
     resourceId: 'octo092',
     title: 'Civil Service competency framework',
     url: 'https://www.gov.uk/government/publications/civil-service-competency-framework',
-    summary: 'This sets out the skills and ways of working that the Civil Service wants from all civil servants.'
+    summary: 'This sets out the skills and ways of working that the Civil Service wants from all civil servants.',
     journalMessage: 'If you are thinking about a Civil Service job, take a look at this document:\n\nhttps://www.gov.uk/government/publications/civil-service-competency-framework\n\nIt set outs the kind of skills you\'ll need. You can use it to prepare a CV or get ready for an interview. ',
     category: ['research', 'budgeting', 'Preparing for work'],
     groups: [''],
@@ -958,7 +958,7 @@ const resourceList = [
     title: 'NHS: Healthy Start',
     url: 'https://www.healthystart.nhs.uk',
     summary: 'An NHS scheme for people who have a child under four, or are pregnant. It offers free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk',
-    journalMessage: 'You may qualify for the Healthy Start scheme - you\'ll get free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk. Take a look here:\n\nhttps://www.healthystart.nhs.uk '
+    journalMessage: 'You may qualify for the Healthy Start scheme - you\'ll get free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk. Take a look here:\n\nhttps://www.healthystart.nhs.uk ',
     category: ['childcare', 'Preparing for work', 'Health, mental health and wellbeing'],
     groups: ['parents', 'intensive work search', 'preparing for work'],
     sector: { },
@@ -1028,7 +1028,7 @@ const resourceList = [
     title: 'Prison and probation jobs',
     url: 'https://www.prisonandprobationjobs.gov.uk/',
     summary: 'Information about roles in the prison service - includes background information, how to apply and links to related poistions - for instance probation officers.',
-    journalMessage: 'If you\'re interested in becomeing a prison officer, this site has all the background information you need:\n\nhttps://www.prisonandprobationjobs.gov.uk/'
+    journalMessage: 'If you\'re interested in becoming a prison officer, this site has all the background information you need:\n\nhttps://www.prisonandprobationjobs.gov.uk/',
     category: ['research', 'qualifications', 'training', 'Preparing for work'],
     groups: ['intensive work search'],
     sector: { 3314: 'Prison service officers (below principal officer)'},
@@ -1072,7 +1072,6 @@ const resourceList = [
     category: ['work search', 'listings', 'Searching for work'],
     groups: ['intensive work search'],
     sector: {231: 'teaching and educational professionals'}
-},
   },
   {
     resourceId: 'octo108',
@@ -1103,7 +1102,7 @@ const resourceList = [
     category: ['research', 'budgeting', 'Preparing for work', 'Other support'],
     groups: [''],
     sector: { },
-];
+},
 {
     resourceId: 'octo111',
     title: 'Reed: follow up on an application',
@@ -1114,7 +1113,7 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: { },
   },
-];{
+  {
     resourceId: 'octo112',
     title: 'Reed: follow up on an application',
     url: 'https://www.reed.co.uk/career-advice/cover-letters/',
@@ -1123,7 +1122,8 @@ const resourceList = [
     category: ['interviews', 'research', 'cover letters', 'Preparing for work', 'CVs, cover letters and interviews'],
     groups: ['intensive work search'],
     sector: { },
-];{
+   }, 
+  {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
     url: 'https://www.myworldofwork.co.uk/my-career-options/career-progression',
@@ -1132,7 +1132,8 @@ const resourceList = [
     category: ['career progression', 'mentors', 'Preparing for work', 'Other support'],
     groups: [],
     sector: { },
-];{
+  },
+  {
     resourceId: 'octo114',
     title: 'My World of Work: negotiating a salary',
     url: 'https://www.myworldofwork.co.uk/getting-job/employer-advice-negotiating-your-salary',
@@ -1141,15 +1142,7 @@ const resourceList = [
     category: ['career progression', 'CVs, cover letters and interviews', 'Other support'],
     groups: [],
     sector: { },
-];{
-    resourceId: 'octo115',
-    title: '',
-    url: '',
-    summary: '',
-    journalMessage: '',
-    category: [],
-    groups: [],
-    sector: { },
+  }
 ];
 
 module.exports = resourceList;
