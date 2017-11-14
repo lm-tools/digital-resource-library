@@ -731,7 +731,7 @@ const resourceList = [
   },
   {
     resourceId: 'octo074',
-    title: 'The money advice service',
+    title: 'The Money Advice Service',
     url: 'https://www.moneyadviceservice.org.uk/en',
     summary: 'Free and impartial money advice, offering tools and guidance to help with budgeting.',
     journalMessage: 'The Money Advice Service might be a useful place to look if you want some pointers on managing your momey: \n\n https://www.moneyadviceservice.org.uk/en \n\n  They have tools that can help you budget, and offer independent advice.',
@@ -937,7 +937,7 @@ const resourceList = [
     resourceId: 'octo096',
     title: 'NHS: Healthy Start',
     url: 'https://www.healthystart.nhs.uk',
-    summary: 'An NHS scheme for people who have a child under four, or are pregnant. It offers free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk',
+    summary: 'An NHS scheme for people who have a child under four, or are pregnant. It offers free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk.',
     journalMessage: 'You may qualify for the Healthy Start scheme - you\'ll get free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk. Take a look here:\n\nhttps://www.healthystart.nhs.uk ',
     category: ['childcare', 'Preparing for work', 'Health, mental health and wellbeing'],
     groups: ['parents', 'intensive work search', 'preparing for work'],
