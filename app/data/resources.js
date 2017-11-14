@@ -924,6 +924,16 @@ const resourceList = [
     sector: { },
   },
   {
+    resourceId: 'octo091',
+    title: 'Money Advice Service money manager',
+    url: 'https://www.moneyadviceservice.org.uk/en/tools/money-manager',
+    summary: 'A budgeting tool specifically for Universal Credit. It asks claimants a sequence of questions, and offers tailored money-management advice based on their answers.',
+    journalMessage: 'This tool is useful - answer some questions and it will give you personalised advice about managing your Universal Credit payments: \n\nhttps://www.moneyadviceservice.org.uk/en/tools/money-manager ',
+    category: ['research', 'budgeting', 'preparing for work'],
+    groups: ['intensive work search'],
+    sector: { },
+  },
+  {
     resourceId: 'octo093',
     title: 'NHS Choices: tools',
     url: 'https://www.nhs.uk/tools/pages/toolslibrary.aspx',
