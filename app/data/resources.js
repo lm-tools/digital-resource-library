@@ -1042,7 +1042,7 @@ const resourceList = [
     category: ['research', 'budgeting', 'Preparing for work', 'Other support'],
     groups: [''],
     sector: { },
-},
+  },
   {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
@@ -1062,7 +1062,7 @@ const resourceList = [
     category: ['career progression', 'CVs, cover letters and interviews', 'Other support'],
     groups: [],
     sector: { },
-  }
+  },
 ];
 
 module.exports = resourceList;
