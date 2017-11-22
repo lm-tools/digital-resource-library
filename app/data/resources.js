@@ -1006,9 +1006,9 @@ const resourceList = [
   {
     resourceId: 'octo102',
     title: 'Vercida',
-    url: 'www.diversityjobs.co.uk',
+    url: 'https://www.diversityjobs.co.uk/',
     summary: 'Job website that actively promotes diversity and inclusion. Includes articles as well as job listings.',
-    journalMessage: 'Take a look at Vercida, a site with a range of jobs and articles:\n\nwww.diversityjobs.co.uk\n\n',
+    journalMessage: 'Take a look at Vercida, a site with a range of jobs and articles:\n\nhttps://www.diversityjobs.co.uk\n\n',
     category: ['work search', 'listings', 'Searching for work', 'Other support'],
     groups: ['intensive work search'],
     sector: { },
