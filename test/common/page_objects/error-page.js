@@ -1,6 +1,7 @@
-class ErrorPage {
-  constructor({ browser }) {
-    this.browser = browser;
+const Page = require('./page');
+class ErrorPage extends Page {
+  visit(id) {
+    return this.browser.visit(this.routes.errorUrl(id));
   }
 
   getMessage() {

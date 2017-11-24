@@ -2,7 +2,9 @@ const {
   googleTagManagerHelper,
   detailPage,
   searchPage,
-  routes } = require('./support/integrationSpecHelper');
+  routes,
+  browser } = require('./support/integrationSpecHelper');
+const url = require('url');
 const chai = require('chai');
 chai.use(require('chai-string'));
 const expect = chai.expect;
@@ -87,5 +89,27 @@ describe('Detail', () => {
     it('should show breadcrumb on the details page', () => {
       expect(detailPage.getBreadcrumbs()).to.eql(['Home', 'Results', sampleResource.title]);
     });
+  });
+
+  describe('tidyurl', () => {
+    const sampleResourcePath = url.parse(routes.detailsUrl(sampleResource.resourceId)).pathname;
+    it('should redirect to url with duplicate slash', () =>
+      detailPage.visit(`///${sampleResource.resourceId}///`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(sampleResourcePath)
+      )
+    );
+    it('should not redirect to url without duplicate slash', () =>
+      detailPage.visit(`${sampleResource.resourceId}`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(sampleResourcePath)
+      )
+    );
+    it('should not redirect to url without duplicate slash with trailing slash', () =>
+      detailPage.visit(`${sampleResource.resourceId}/`).catch(() => {})
+        .then(() => expect(url.parse(browser.response.url).pathname)
+          .to.equal(`${sampleResourcePath}/`)
+      )
+    );
   });
 });

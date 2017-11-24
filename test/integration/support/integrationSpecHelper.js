@@ -33,7 +33,7 @@ module.exports = {
   googleTagManagerHelper: new GoogleTagManagerHelper(browser),
   dashboardPage: new DashboardPage({ browser, routes }),
   searchPage: new SearchPage({ browser, routes }),
-  errorPage: new ErrorPage({ browser }),
+  errorPage: new ErrorPage({ browser, routes }),
   cookiePage: new CookiePage({ browser, routes }),
   detailPage: new DetailPage({ browser, routes }),
   entrypointPage: new EntrypointPage({ browser, routes }),
