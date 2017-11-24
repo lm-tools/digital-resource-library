@@ -13,7 +13,8 @@ const { lintHtml } = require('gulp-lmt-tasks');
 let node;
 
 gulp.task('lint-all-html', () =>
-  lintHtml({server: require('./bin/www'), ignoreQsParams: ['fromSearch']})
+  // eslint-disable-next-line global-require
+  lintHtml({ server: require('./bin/www'), ignoreQsParams: ['fromSearch'] })
 );
 
 gulp.task('browserify', () => {
