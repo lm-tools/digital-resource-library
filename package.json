@@ -7,9 +7,10 @@
     "compile": "gulp vendor-assets js css images",
     "watch": "gulp watch",
     "lint": "eslint .",
+    "html-lint": "gulp lint-all-html",
     "pretest": "eslint . && npm run compile",
     "test-mocha": "mocha",
-    "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha",
+    "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha && npm run html-lint",
     "heroku-postbuild": "npm run compile"
   },
   "// NOTE": [
@@ -30,6 +31,7 @@
     "govuk_frontend_toolkit": "^4.10.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-lmt-tasks": "~0.1.3",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.1",
     "gulp-streamify": "^1.0.2",

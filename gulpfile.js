@@ -8,8 +8,13 @@ const browserify = require('browserify');
 const source = require('vinyl-source-stream');
 const streamify = require('gulp-streamify');
 const uglify = require('gulp-uglify');
+const { lintHtml } = require('gulp-lmt-tasks');
 
 let node;
+
+gulp.task('lint-all-html', () =>
+  lintHtml({server: require('./bin/www'), ignoreQsParams: ['fromSearch']})
+);
 
 gulp.task('browserify', () => {
   browserify('app/assets/js/main.js')
