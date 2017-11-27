@@ -7,9 +7,10 @@
     "compile": "gulp vendor-assets js css images",
     "watch": "gulp watch",
     "lint": "eslint .",
+    "html-lint": "gulp lint-all-html",
     "pretest": "eslint . && npm run compile",
     "test-mocha": "mocha",
-    "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha",
+    "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha && npm run html-lint",
     "heroku-postbuild": "npm run compile"
   },
   "// NOTE": [
@@ -40,6 +41,7 @@
     "i18n": "^0.8.2",
     "jquery": "^2.2.4",
     "knex": "^0.11.5",
+    "lmt-utils": "^0.1.4",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "morgan": "^1.6.1",
