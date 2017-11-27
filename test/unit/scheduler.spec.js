@@ -10,28 +10,75 @@ const sampleSchedule = [
     resource: 'featured03',
   },
 ];
-const scheduler = require('../../app/models/scheduler')({ schedule: sampleSchedule });
+
+const aMonday = moment().startOf('isoWeek').toDate();
+const sampleRotation = {
+  resources: [
+    'featured01',
+    'featured02',
+    'featured03',
+  ],
+  startRotation: aMonday,
+};
+const scheduler = require('../../app/models/scheduler')(
+  { schedule: sampleSchedule, rotation: sampleRotation });
 
 describe('scheduler', () => {
-  [
-    {
-      name: 'should return schedule when exists',
-      date: new Date(),
-      result: sampleSchedule[0],
-    },
-    {
-      name: 'should return undefined when not exists',
-      date: moment().add('100', 'years').toDate(),
-      result: undefined,
-    },
-    {
-      name: 'should check time',
-      date: moment('2013-02-08T10:29+01').toDate(),
-      result: sampleSchedule[2],
-    },
-  ].forEach(s => {
-    it(s.name, () =>
-      expect(scheduler.get(s.date)).to.eql(s.result)
-    );
+  describe('getSchedule', () => {
+    [
+      {
+        name: 'should return schedule when exists',
+        date: new Date(),
+        result: sampleSchedule[0],
+      },
+      {
+        name: 'should return undefined when not exists',
+        date: moment().add('100', 'years').toDate(),
+        result: undefined,
+      },
+      {
+        name: 'should check time',
+        date: moment('2013-02-08T10:29+01').toDate(),
+        result: sampleSchedule[2],
+      },
+    ].forEach(s => {
+      it(s.name, () =>
+        expect(scheduler.getSchedule(s.date)).to.eql(s.result)
+      );
+    });
+  });
+
+  describe('getRotation', () => {
+    [
+      {
+        name: 'should return rotation when exists',
+        date: aMonday,
+        result: sampleRotation.resources[0],
+      },
+      {
+        name: 'should return 2nd resource on next day of rotation',
+        date: moment().add(1, 'day').toDate(),
+        result: sampleRotation.resources[1],
+      },
+      {
+        name: 'should rotate through resources',
+        date: moment().add(4, 'days').toDate(),
+        result: sampleRotation.resources[1],
+      },
+      {
+        name: 'should show next monday resource on saturday',
+        date: moment().add(5, 'days').toDate(),
+        result: sampleRotation.resources[2],
+      },
+      {
+        name: 'should show next monday resource on sunday',
+        date: moment().add(13, 'days').toDate(),
+        result: sampleRotation.resources[1],
+      },
+    ].forEach(s => {
+      it(s.name, () =>
+        expect(scheduler.getRotation(s.date)).to.eql(s.result)
+      );
+    });
   });
 });

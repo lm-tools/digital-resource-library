@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   const categoryList = categoryModel.findAll();
   const categoryListRow1 = categoryList.slice(0, 3);
   const categoryListRow2 = categoryList.slice(3, 6);
-  const featured = featuredModel.getScheduled(scheduleDate);
+  const featured = featuredModel.getRotation(scheduleDate);
   res.render('dashboard', { categoryListRow1, categoryListRow2, featured });
 });
 
