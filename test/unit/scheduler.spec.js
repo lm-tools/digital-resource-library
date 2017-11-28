@@ -57,22 +57,22 @@ describe('scheduler', () => {
       },
       {
         name: 'should return 2nd resource on next day of rotation',
-        date: moment().add(1, 'day').toDate(),
+        date: moment(aMonday).add(1, 'day').toDate(),
         result: sampleRotation.resources[1],
       },
       {
         name: 'should rotate through resources',
-        date: moment().add(4, 'days').toDate(),
+        date: moment(aMonday).add(4, 'days').toDate(),
         result: sampleRotation.resources[1],
       },
       {
         name: 'should show next monday resource on saturday',
-        date: moment().add(5, 'days').toDate(),
+        date: moment(aMonday).add(5, 'days').toDate(),
         result: sampleRotation.resources[2],
       },
       {
         name: 'should show next monday resource on sunday',
-        date: moment().add(13, 'days').toDate(),
+        date: moment(aMonday).add(13, 'days').toDate(),
         result: sampleRotation.resources[1],
       },
     ].forEach(s => {
