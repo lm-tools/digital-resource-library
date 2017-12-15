@@ -13,6 +13,7 @@ const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
 const healthCheckController = require('./controllers/health-check-controller');
 const helmet = require('helmet');
+const layoutAssets = require('./models/assets');
 const breadcrumbViewModel = require('./controllers/breadcrumb-view-model');
 
 const app = express();
@@ -41,6 +42,7 @@ app.use((req, res, next) => {
   // eslint-disable-next-line no-param-reassign
   Object.assign(res.locals, {
     assetPath,
+    layoutAssets: layoutAssets({ assetPath }),
     basePath,
     googleTagManagerId,
     partials: {
