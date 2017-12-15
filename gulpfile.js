@@ -10,7 +10,9 @@ const streamify = require('gulp-streamify');
 const uglify = require('gulp-uglify');
 const { lintHtml } = require('lmt-utils');
 const http = require('http');
-
+const rev = require('gulp-rev');
+const revDelOriginal = require('gulp-rev-delete-original');
+const debug = require('gulp-debug');
 let node;
 
 gulp.task('lint-all-html', () => {
@@ -29,7 +31,7 @@ gulp.task('lint-all-html', () => {
     .catch(e => gutil.log(gutil.colors.red(e)) && process.exit(1));
 });
 
-gulp.task('browserify', () => {
+gulp.task('browserify', () =>
   browserify('app/assets/js/main.js')
     .bundle()
     .on('error', function (err) {
@@ -41,16 +43,16 @@ gulp.task('browserify', () => {
     .pipe(source('main.js'))
     .pipe(streamify(babel({ presets: ['es2015'] }))) // babel doesn't support streaming
     .pipe(streamify(uglify())) // uglify doesn't support streaming
-    .pipe(gulp.dest('dist/public/js'));
-});
+    .pipe(gulp.dest('dist/public/js'))
+);
 
-gulp.task('js-vendor', () => {
+gulp.task('js-vendor', () =>
   gulp.src([
     'node_modules/govuk_frontend_toolkit/javascripts/govuk/selection-buttons.js',
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/clipboard/dist/clipboard.min.js',
-  ]).pipe(gulp.dest('dist/public/js'));
-});
+  ]).pipe(gulp.dest('dist/public/js'))
+);
 
 gulp.task('js', ['browserify', 'js-vendor']);
 
@@ -59,7 +61,7 @@ gulp.task('images', () =>
     .pipe(gulp.dest('dist/public/images'))
 );
 
-gulp.task('css', () => {
+gulp.task('css', () =>
   gulp.src('app/assets/stylesheets/*.scss')
     .pipe(plumber())
     .pipe(
@@ -70,8 +72,24 @@ gulp.task('css', () => {
           'node_modules/govuk-elements-sass/public/sass',
         ],
       }))
-    .pipe(gulp.dest('dist/public/stylesheets/'));
-});
+    .pipe(gulp.dest('dist/public/stylesheets/'))
+);
+
+gulp.task('revision:rename', ['js', 'css', 'images'], () =>
+  gulp.src([
+    'dist/public/**/*.html',
+    'dist/public/**/*.css',
+    'dist/public/**/*.js',
+    'dist/public/**/*.{jpg,png,jpeg,gif,svg}'])
+    .pipe(debug())
+    .pipe(rev())
+    .pipe(revDelOriginal())
+    .pipe(gulp.dest('./dist/public'))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./dist/public'))
+);
+
+gulp.task('compile', ['revision:rename']);
 
 gulp.task('vendor-assets', () => {
   gulp.src([
@@ -89,7 +107,7 @@ gulp.task('server', () => {
   });
 });
 
-gulp.task('watch', ['js', 'css', 'images', 'server'], () => {
+gulp.task('watch', ['compile', 'server'], () => {
   gulp.watch(['app/**/*.js', 'bin/www'], ['server']);
   gulp.watch('app/assets/stylesheets/*.scss', ['css']);
   gulp.watch('app/assets/js/**/*.js', ['browserify']);
