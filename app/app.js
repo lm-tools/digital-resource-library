@@ -13,6 +13,8 @@ const i18n = require('./middleware/i18n');
 const errorHandler = require('./middleware/error-handler');
 const healthCheckController = require('./controllers/health-check-controller');
 const helmet = require('helmet');
+const layoutAssets = require('./models/assets');
+const cacheHeaders = require('./middleware/cacheHeaders');
 const breadcrumbViewModel = require('./controllers/breadcrumb-view-model');
 
 const app = express();
@@ -41,6 +43,7 @@ app.use((req, res, next) => {
   // eslint-disable-next-line no-param-reassign
   Object.assign(res.locals, {
     assetPath,
+    layoutAssets: layoutAssets({ assetPath }),
     basePath,
     googleTagManagerId,
     partials: {
@@ -65,11 +68,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(assetPath, express.static(path.join(__dirname, '..', 'dist', 'public')));
-app.use(assetPath, express.static(path.join(__dirname, '..',
+app.use(assetPath, cacheHeaders);
+
+app.use(`${assetPath}vendor/v1`, express.static(path.join(__dirname, '..',
   'vendor', 'govuk_template_mustache_inheritance', 'assets')));
 app.use(assetPath, express.static(path.join(__dirname, '..',
   'vendor', 'govuk_frontend_toolkit', 'assets')));
+
+app.use(assetPath, express.static(path.join(__dirname, '..', 'dist', 'public')));
 
 app.use(helmet.noCache());
 
