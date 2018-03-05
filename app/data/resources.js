@@ -1031,7 +1031,7 @@ const resourceList = [
     journalMessage: 'If you\'re interested in becoming a prison officer, this site has all the background information you need:\n\nhttps://www.prisonandprobationjobs.gov.uk/',
     category: ['research', 'qualifications', 'training', 'Preparing for work'],
     groups: ['intensive work search'],
-    sector: { 3314: 'Prison service officers (below principal officer)'},
+    sector: { 3314: 'Prison service officers (below principal officer)' },
   },
   {
     resourceId: 'octo104',
@@ -1071,7 +1071,7 @@ const resourceList = [
     journalMessage: 'This agency could help you get a permanent or temporary teaching role:\n\nhttps://www.simplyeducation.co.uk/about-us',
     category: ['work search', 'listings', 'Searching for work'],
     groups: ['intensive work search'],
-    sector: {231: 'teaching and educational professionals'}
+    sector: { 231: 'teaching and educational professionals' },
   },
   {
     resourceId: 'octo108',
@@ -1122,7 +1122,7 @@ const resourceList = [
     category: ['interviews', 'research', 'cover letters', 'Preparing for work', 'CVs, cover letters and interviews'],
     groups: ['intensive work search'],
     sector: { },
-   },
+  },
   {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
