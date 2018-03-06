@@ -2,44 +2,38 @@
 const featuredList = {
   featured01: {
     heading: 'Featured resource',
-    resourceId: 'octo098',
-    resourceLinkText: 'Acas',
-    resourceSummary: 'Acas offers free and impartial information and advice on workplace relations and employment law.',
+    resourceId: 'octo094',
+    resourceLinkText: 'Prospects: interviews',
+    resourceSummary: 'Advice on preparing for interviews, including tips on how to research, how to dress and attitude. There\'s also advice on how to follow up after the interview.',
   },
   featured02: {
     heading: 'Featured resource',
-    resourceId: 'octo102',
-    resourceLinkText: 'Vercida',
-    resourceSummary: 'Job website that actively promotes diversity and inclusion. Includes articles as well as job listings.',
+    resourceId: 'octo103',
+    resourceLinkText: 'Prison and probation jobs',
+    resourceSummary: 'Information about roles in the prison service - includes background information, how to apply and links to related poistions - for instance probation officers.',
   },
 
   featured03: {
     heading: 'Featured resource',
-    resourceId: 'octo105',
-    resourceLinkText: 'ESOL courses: English for beginners',
-    resourceSummary: 'A site to help people with English as their second or other language. Simple lessons and games for beginners.',
+    resourceId: 'octo104',
+    resourceLinkText: 'Order a copy of a birth, death or marriage certificate',
+    resourceSummary: 'A service for ordering certificates you might need to apply for a job or get a qualification.',
   },
 
   featured04: {
     heading: 'Featured resource',
-    resourceId: 'octo108',
-    resourceLinkText: 'Homeless link',
-    resourceSummary: 'A charity for services for homeless people. It has a directory of services that will help the homeless, searchable by region.',
+    resourceId: 'octo107',
+    resourceLinkText: 'Simply Education',
+    resourceSummary: 'An agency for teaching staff, offering temporary and permanent roles in local schools and nurseries.',
   },
 
   featured05: {
     heading: 'Featured resource',
-    resourceId: 'octo110',
-    resourceLinkText: 'Turn2us',
-    resourceSummary: 'Financial hardship advice, along with a comprehensive benefits calculator.',
+    resourceId: 'octo111',
+    resourceLinkText: 'Reed: follow up on an application',
+    resourceSummary: 'Advice on following up on an interview or job application.',
   },
 
-  featured06: {
-    heading: 'Featured resource',
-    resourceId: 'octo097',
-    resourceLinkText: 'Entitledto benefits calculator',
-    resourceSummary: 'A comprehensive benefits calculator.',
-  },
 };
 
 module.exports = featuredList;
