@@ -34,12 +34,6 @@ const featuredList = {
     resourceSummary: 'Advice on following up on an interview or job application.',
   },
 
-  featured06: {
-    heading: 'Featured resource',
-    resourceId: 'octo112',
-    resourceLinkText: 'Reed: follow up on an application',
-    resourceSummary: 'Advice on cover letters. Includes templates, separate advice for graduates, and tips on personal statements.',
-  },
 };
 
 module.exports = featuredList;

@@ -1084,16 +1084,6 @@ const resourceList = [
     sector: { },
   },
   {
-    resourceId: 'octo112',
-    title: 'Reed: follow up on an application',
-    url: 'https://www.reed.co.uk/career-advice/cover-letters/',
-    summary: 'Advice on cover letters. Includes templates, separate advice for graduates, and tips on personal statements.',
-    journalMessage: 'There\'s useful practical advice here on cover letters:\n\nhttps://www.reed.co.uk/career-advice/cover-letters/\n\nIt includes a template you could use.',
-    category: ['interviews', 'research', 'cover letters', 'Preparing for work', 'CVs, cover letters and interviews'],
-    groups: ['intensive work search'],
-    sector: { },
-  },
-  {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
     url: 'https://www.myworldofwork.co.uk/my-career-options/career-progression',
