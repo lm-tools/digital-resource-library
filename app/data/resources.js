@@ -1044,16 +1044,6 @@ const resourceList = [
     sector: { },
   },
   {
-    resourceId: 'octo106',
-    title: 'Single parents: ways into work',
-    url: 'http://www.singleparents.org.uk/learning/ways-into-work',
-    summary: 'An online course designed to help single parents into work. No sign-in required.',
-    journalMessage: 'This is an online course designed to help single parents into work:\n\nhttp://www.singleparents.org.uk/learning/ways-into-work\n\nYou don\'t need to pay or sign up - Just download the worksheets and go through them.',
-    category: ['Preparing for work'],
-    groups: ['parents', 'intensive work search', 'preparing for work'],
-    sector: { },
-  },
-  {
     resourceId: 'octo107',
     title: 'Simply Education',
     url: 'https://www.simplyeducation.co.uk/',

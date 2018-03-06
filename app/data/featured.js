@@ -22,26 +22,19 @@ const featuredList = {
 
   featured04: {
     heading: 'Featured resource',
-    resourceId: 'octo106',
-    resourceLinkText: 'Single parents: ways into work',
-    resourceSummary: 'An online course designed to help single parents into work. No sign-in required.',
-  },
-
-  featured05: {
-    heading: 'Featured resource',
     resourceId: 'octo107',
     resourceLinkText: 'Simply Education',
     resourceSummary: 'An agency for teaching staff, offering temporary and permanent roles in local schools and nurseries.',
   },
 
-  featured06: {
+  featured05: {
     heading: 'Featured resource',
     resourceId: 'octo111',
     resourceLinkText: 'Reed: follow up on an application',
     resourceSummary: 'Advice on following up on an interview or job application.',
   },
 
-  featured07: {
+  featured06: {
     heading: 'Featured resource',
     resourceId: 'octo112',
     resourceLinkText: 'Reed: follow up on an application',
