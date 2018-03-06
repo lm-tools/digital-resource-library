@@ -1102,7 +1102,7 @@ const resourceList = [
     category: ['interviews', 'research', 'cover letters', 'Preparing for work', 'CVs, cover letters and interviews'],
     groups: ['intensive work search'],
     sector: { },
-   },
+  },
   {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
