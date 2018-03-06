@@ -7,6 +7,6 @@ const resources = [
   'featured06',
 ];
 
-const startRotation = new Date('2017-03-06T00:00:00');
+const startRotation = new Date('2018-03-06T00:00:00');
 
 module.exports = { resources, startRotation };
