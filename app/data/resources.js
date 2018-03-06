@@ -944,16 +944,6 @@ const resourceList = [
     sector: { },
   },
   {
-    resourceId: 'octo095',
-    title: 'Reed: interviews',
-    url: 'https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/',
-    summary: 'Advice on preparing for interviews, including tips',
-    journalMessage: 'There\'s useful practical advice here if you\'re getting ready for an interview:\n\n https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/\n\nIt includes example questions and help with interviews for different kinds of role.',
-    category: ['interviews', 'research', 'Preparing for work', 'CVs, cover letters and interviews'],
-    groups: ['intensive work search'],
-    sector: { },
-  },
-  {
     resourceId: 'octo096',
     title: 'NHS: Healthy Start',
     url: 'https://www.healthystart.nhs.uk',
