@@ -36,19 +36,12 @@ const featuredList = {
 
   featured06: {
     heading: 'Featured resource',
-    resourceId: 'octo109',
-    resourceLinkText: 'Women like us',
-    resourceSummary: 'A site for helping women get back to work, or fit work around family life. Includes advice on courses, part-time jobs and self-employment.',
-  },
-
-  featured07: {
-    heading: 'Featured resource',
     resourceId: 'octo111',
     resourceLinkText: 'Reed: follow up on an application',
     resourceSummary: 'Advice on following up on an interview or job application.',
   },
 
-  featured08: {
+  featured07: {
     heading: 'Featured resource',
     resourceId: 'octo112',
     resourceLinkText: 'Reed: follow up on an application',

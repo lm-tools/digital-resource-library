@@ -1074,16 +1074,6 @@ const resourceList = [
     sector: { },
   },
   {
-    resourceId: 'octo109',
-    title: 'Women like us',
-    url: 'https://www.womenlikeus.org.uk/',
-    summary: 'A site for helping women get back to work, or fit work around family life. Includes advice on courses, part-time jobs and self-employment.',
-    journalMessage: 'This is a useful site for finding out about ways to manage to work and family life:\n\n\'https://www.womenlikeus.org.uk/\n\nIt has advice, quizzes, background information and lots more.  ',
-    category: ['work search', 'research', 'networking', 'Preparing for work'],
-    groups: ['intensive work search', 'preparing for work', 'self employed'],
-    sector: { },
-  },
-  {
     resourceId: 'octo110',
     title: 'Turn2us',
     url: 'https://www.turn2us.org.uk/',
