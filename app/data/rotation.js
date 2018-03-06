@@ -5,6 +5,7 @@ const resources = [
   'featured04',
   'featured05',
   'featured06',
+  'featured07',
 ];
 
 const startRotation = new Date('2018-03-06T00:00:00');
