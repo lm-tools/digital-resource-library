@@ -944,6 +944,16 @@ const resourceList = [
     sector: { },
   },
   {
+    resourceId: 'octo095',
+    title: 'Reed: interviews',
+    url: 'https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/',
+    summary: 'Advice on preparing for interviews, including sample questions, explanation of interview types and tips on what to wear.',
+    journalMessage: 'There\'s useful practical advice here if you\'re getting ready for an interview:\n\n https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/\n\nIt includes example questions and help with interviews for different kinds of role.',
+    category: ['interviews', 'research', 'Preparing for work', 'CVs, cover letters and interviews'],
+    groups: ['intensive work search'],
+    sector: { },
+  },
+  {
     resourceId: 'octo096',
     title: 'NHS: Healthy Start',
     url: 'https://www.healthystart.nhs.uk',
@@ -1083,6 +1093,16 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: { },
   },
+  {
+    resourceId: 'octo112',
+    title: 'Reed: cover letters',
+    url: 'https://www.reed.co.uk/career-advice/cover-letters/',
+    summary: 'Advice on cover letters. Includes templates, separate advice for graduates, and tips on personal statements.',
+    journalMessage: 'There\'s useful practical advice here on cover letters:\n\nhttps://www.reed.co.uk/career-advice/cover-letters/\n\nIt includes a template you could use.',
+    category: ['interviews', 'research', 'cover letters', 'Preparing for work', 'CVs, cover letters and interviews'],
+    groups: ['intensive work search'],
+    sector: { },
+   },
   {
     resourceId: 'octo113',
     title: 'My World of Work: career progression',
