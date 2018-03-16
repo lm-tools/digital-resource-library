@@ -21,6 +21,12 @@
         <button class="button" type="submit" data-test="search-button">{{#__}}search.searchButton{{/__}}</button>
       </div>
     </form>
+    <p>
+      <a href="{{#__}}suggestResource.mailto{{/__}}">{{#__}}suggestResource.text{{/__}}</a>
+    </p>
+    <p>
+      <a href="{{#__}}suggestImprovement.mailto{{/__}}">{{#__}}suggestImprovement.text{{/__}}</a>
+    </p>
   </section>
   <section class="column-two-thirds" aria-label="{{#__}}search.resultsSectionAria{{/__}}">
 
@@ -30,7 +36,7 @@
 
     {{^hasResults}}
       <p class="search-message" data-test="search-message">
-        {{#__}}search.emptyResults{{/__}}
+        {{#__}}search.emptyResults{{/__}} <a href="{{#__}}suggestResource.mailto{{/__}}">{{#__}}search.emptyResultsLink{{/__}}</a>.
       </p>
     {{/hasResults}}
 
