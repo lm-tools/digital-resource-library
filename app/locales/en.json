@@ -21,8 +21,7 @@
     "singleResultFound": "result found containing",
     "resultsFound": "results found containing",
     "resultsFoundWithoutKeyword": "results found",
-    "emptyResults": "Please check the spelling or try a different search.",
-    "categorySelectOptionsLabel": "Category"
+    "emptyResults": "Please check the spelling or try a different search."
   },
   "dashboard": {
     "pageTitle": "Find online resources",
