@@ -21,7 +21,8 @@
     "singleResultFound": "result found containing",
     "resultsFound": "results found containing",
     "resultsFoundWithoutKeyword": "results found",
-    "emptyResults": "Please check the spelling or try a different search."
+    "emptyResults": "Check the spelling, try a different search or ",
+    "emptyResultsLink": "email us about a useful website for this search term"
   },
   "dashboard": {
     "pageTitle": "Find online resources",
@@ -29,12 +30,11 @@
     "categories": {
       "heading": "Browse by category"
     },
-    "edit": {
-      "heading": "Have something you want to add?",
-      "mailto": "mailto:digitalresourcelibrary@digital.uc.dwp.gov.uk?Subject=Suggested%20resource",
-      "text": "Suggest a resource (email)"
-    },
     "summary": "Find approved online resources and share them with claimants."
+  },
+  "suggestImprovement": {
+    "mailto": "mailto:digitalresourcelibrary@digital.uc.dwp.gov.uk?Subject=Suggest%20an%20improvement",
+    "text": "Tell us how we can make this tool better (email)"
   },
   "detail": {
     "pageTitle": "Find online resources",
@@ -53,5 +53,10 @@
   "breadcrumb": {
     "dashboard": "Home",
     "search": "Results"
+  },
+  "suggestResource": {
+    "heading": "Have something you want to add?",
+    "mailto": "mailto:digitalresourcelibrary@digital.uc.dwp.gov.uk?Subject=Suggest%20a%20resource",
+    "text": "Suggest a resource (email)"
   }
 }
