@@ -2,7 +2,6 @@ const { searchPage, googleTagManagerHelper, routes } = require('./support/integr
 const expect = require('chai').expect;
 const { describe, it, before } = require('mocha');
 const resourcesListModel = require('../../app/data/resources');
-const categoryListModel = require('../../app/data/categories');
 
 describe('Search', () => {
   before(() => searchPage.visit());
@@ -42,17 +41,6 @@ describe('Search', () => {
     it('should show breadcrumb on the search page', () => {
       expect(searchPage.getBreadcrumbs()).to.eql(['Home', 'Results']);
     });
-  });
-
-  describe('categories', () => {
-    it('should display correct categories for all resources', () =>
-      expect(searchPage.getCategories().map(c => c.text))
-        .to.eql(categoryListModel.map(c => c.title))
-    );
-    it('should display correct categories for all resources', () =>
-      expect(searchPage.getCategories().map(c => c.href))
-        .to.eql(categoryListModel.map(c => routes.searchUrl(c.title)))
-    );
   });
 
   describe('search', () => {
