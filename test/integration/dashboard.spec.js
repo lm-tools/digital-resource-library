@@ -59,7 +59,7 @@ describe('Dashboard', () => {
     before(() => dashboardPage.visit());
 
     it('should render heading', () =>
-      expect(dashboardPage.getFeaturedHeader()).to.eql('Featured resource')
+      expect(dashboardPage.getFeaturedHeader()).to.eql('New resource')
     );
   });
 
