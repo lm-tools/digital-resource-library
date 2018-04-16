@@ -6,3 +6,4 @@ logs/
 screenshots/
 
 npm-debug.log
+.DS_Store
