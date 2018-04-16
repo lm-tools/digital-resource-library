@@ -826,9 +826,9 @@ const resourceList = [
   {
     resourceId: 'octo083',
     title: 'Learndirect',
-    url: 'http://www.learndirect.com',
+    url: 'https://www.learndirect.com',
     summary: 'A major provider of training, distance learning, apprenticeships, and online and offline courses.',
-    journalMessage: 'We\'ve been talking about training - take a look at learndirect and browse some of their courses: \n\nhttps://www.cwjobs.co.uk ',
+    journalMessage: 'We\'ve been talking about training - take a look at learndirect and browse some of their courses: \n\nhttps://www.learndirect.com ',
     category: ['skills', 'training', 'qualifications', 'skills, training and qualifications'],
     groups: ['intensive work search'],
     sector: { },
