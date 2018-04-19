@@ -1,0 +1,2132 @@
+[
+  {
+    "id": "octo001",
+    "title": "Steps Ahead mentoring",
+    "url": "https://www.cipd.co.uk/steps-ahead-mentoring",
+    "summary": "Steps Ahead offers one-to-one mentoring sessions to help jobseekers improve their employability skills, boost their confidence and find work.",
+    "journalMessage": "Mentoring might help you - talking to someone with a bit of experience could be useful. \n\n Take a look at this site and sign up: \n\n https://www.cipd.co.uk/steps-ahead-mentoring",
+    "category": [
+      "mentoring",
+      "training",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo002",
+    "title": "Skills for care",
+    "url": "http://www.skillsforcare.org.uk/Home.aspx",
+    "summary": "A website offering a full introduction to careers in adult social care – guidance, training providers, job descriptions and more.",
+    "journalMessage": "If you're interested in care work, this site might be useful: \n\n http://www.skillsforcare.org.uk/Home.aspx \n\n Take a look and find out more about how you might become a care worker.",
+    "category": [
+      "training",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {
+      "6145": "care workers and home carers"
+    }
+  },
+  {
+    "id": "octo003",
+    "title": "My world of work CV Builder",
+    "url": "https://www.myworldofwork.co.uk/getting-job/building-cv",
+    "summary": "A simple tool to help a claimant build a CV",
+    "journalMessage": "Since you need to work on your CV, this site might be helpful: \n\n https://www.myworldofwork.co.uk/getting-job/building-cv \n\n You have to register, and after that it will guide you through making a new CV.",
+    "category": [
+      "CV and resumes",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo004",
+    "title": "Childcare Choices",
+    "url": "https://childcarechoices.gov.uk",
+    "summary": "A government site that shows all the options for help with childcare.",
+    "journalMessage": "You can get support for childcare as you move back into work. Take a look at this site that explains all the options and see which one suits you:\n\n https://childcarechoices.gov.uk",
+    "category": [
+      "childcare",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "parents",
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo005",
+    "title": "Do-it",
+    "url": "https://do-it.org",
+    "summary": "A website that lets you search for volunteering opportunities in your area.",
+    "journalMessage": "Volunteering might help you in your work search. Take a look a Do-it, a website that lets you look for chances to volunteer in your area:\n\n https://do-it.org",
+    "category": [
+      "volunteering",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo006",
+    "title": "Find an internship",
+    "url": "http://www.gov.uk/find-internship",
+    "summary": "A service to help new and recent graduates find a paid, government-backed internship.",
+    "journalMessage": "The Graduate Talent Pool can help you find an internship that's paid: \n\n http://www.gov.uk/find-internship \n\n",
+    "category": [
+      "internships",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo007",
+    "title": "Prospects: jobs and work experience",
+    "url": "https://www.prospects.ac.uk/jobs-and-work-experience",
+    "summary": "Information about different kinds of work experience along with links to opportunities.",
+    "journalMessage": "You might need more experience to help with your work search. To find out more about getting that experience and to see what's available, look at the Prospects site: \n\n https://www.prospects.ac.uk/jobs-and-work-experience \n\n It has information about different kinds of work experience, and will tell you what's available at the moment.",
+    "category": [
+      "internships",
+      "volunteering",
+      "apprenticeships",
+      "work experience",
+      "young jobseekers",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo008",
+    "title": "My world of work",
+    "url": "https://www.myworldofwork.co.uk/",
+    "summary": "A collection of guidance and tools that can help claimants with their work search - includes a skills check and CV builder. The focus is on Scotland, but many features can be used in the rest of the country",
+    "journalMessage": "My world of work is a website with tools to help you with getting work. There's a skills check, a CV builder, tips on interviews and a lot more: \n\n https://www.myworldofwork.co.uk/ \n\n Take a look - it could be very useful for you. ",
+    "category": [
+      "CV and resumes",
+      "skills",
+      "training",
+      "internships",
+      "volunteering",
+      "apprenticeships",
+      "work experience",
+      "interviews",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo010",
+    "title": "Glassdoor",
+    "url": "https://www.glassdoor.co.uk/index.htm",
+    "summary": "A job search site with detailed company profiles, including reviews by employees and typical interview questions.",
+    "journalMessage": "More preparation might help you in applications and interviews. To find out more about an employer, search for them on Glassdoor:  \n\n https://www.glassdoor.co.uk/index.htm \n\n The site has company profiles, reviews from employees and ex-employees, and typical interview questions.",
+    "category": [
+      "CV and resumes",
+      "interviews",
+      "research",
+      "work search",
+      "preparing for work",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo011",
+    "title": "Careersbox",
+    "url": "https://www.careersbox.co.uk",
+    "summary": "Short videos about various jobs, talking to the people who do them and showing the day-to-day work.",
+    "journalMessage": "If you want to find out what a job is like, look at Careersbox: \n\n https://www.careersbox.co.uk \n\n The videos show you what various jobs are like - what the day to day work is, and talking to people who do them.",
+    "category": [
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo012",
+    "title": "Your rights as an agency worker",
+    "url": "https://www.gov.uk/agency-workers-your-rights",
+    "summary": "A GOV.UK guide on agency worker rights, explaining the legal position in plain English.",
+    "journalMessage": "You've started looking at employment agencies and have a few questions. This guide should answer some of them: \n\n https://www.gov.uk/agency-workers-your-rights \n\n It's official GOV.UK guidance that explains what rights you have as an agency worker. ",
+    "category": [
+      "research",
+      "work search",
+      "agencies",
+      "regulations",
+      "support"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo013",
+    "title": "LinkedIn",
+    "url": "https://uk.linkedin.com/",
+    "summary": "A social network focused on work.",
+    "journalMessage": "Here's a link to LinkedIn:  \n\n https://uk.linkedin.com \n\n It's worth building a profile, looking around for useful contacts and reading advice on your career.",
+    "category": [
+      "CV and resumes",
+      "interviews",
+      "networking",
+      "research",
+      "work search",
+      "social media",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work",
+      "preparing for work"
+    ],
+    "groups": [
+      "intensive work search",
+      "preparing for work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo014",
+    "title": "National Careers Service",
+    "url": "https://nationalcareersservice.direct.gov.uk",
+    "summary": "A government-funded agency that offers information, advice and guidance to help people make decisions about learning, training and work.",
+    "journalMessage": "The National Careers Service is a good place to start if you're unsure about the direction you want to take:  \n\n https://nationalcareersservice.direct.gov.uk \n\n The website has information about roles, a course finder and a skills health check that will show you what kind of work might suit you.",
+    "category": [
+      "CV and resumes",
+      "skills",
+      "interviews",
+      "research",
+      "work search",
+      "CVs, cover letters and interviews",
+      "skills, training and qualifications",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo015",
+    "title": "BBC Skillswise",
+    "url": "http://www.bbc.co.uk/skillswise",
+    "summary": "Videos and quizzes to improve basic skills like reading, writing and maths.",
+    "journalMessage": "Take a look at Skillswise:  \n\n http://www.bbc.co.uk/skillswise \n\n The videos and quizzes on the website can help with some of your skills.",
+    "category": [
+      "skills",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo016",
+    "title": "Learndirect maths and English",
+    "url": "http://www.learndirect.com/help/about-learndirect/our-products-and-services/qualifications/maths-and-english-courses/",
+    "summary": "Learndirect provide training courses that lead to basic maths and English qualifications. This area of their site gives information about these courses and helps claimants find their nearest Learndirect centre.",
+    "journalMessage": "Getting a basic maths or English qualification will help to improve your CV and your chances of getting work. Learndirect have free courses. Read more about them here:  \n\n http://www.learndirect.com/help/about-learndirect/our-products-and-services/qualifications/maths-and-english-courses/ \n\n You can arrange to start the course yourself or we can talk next time we meet.",
+    "category": [
+      "skills",
+      "training",
+      "qualifications",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo017",
+    "title": "Register as a childminder or childcare provider (England)",
+    "url": "https://www.gov.uk/register-childminder-childcare-provider",
+    "summary": "A GOV.UK guide explaining the steps you need to take to become a registered childminder.",
+    "journalMessage": "If you want to become a childminder or childcare provider, start with this guide: \n\n https://www.gov.uk/register-childminder-childcare-provider \n\n It explains what you need to do, and has links to the forms you'll need. ",
+    "category": [
+      "research",
+      "work search",
+      "qualifications",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "612": "Childcare and Related Personal Services",
+      "6122": "Childminders and related occupations"
+    }
+  },
+  {
+    "id": "octo018",
+    "title": "Teaching assistant: pay and conditions",
+    "url": "https://www.tes.com/articles/teaching-assistant-pay-and-conditions",
+    "summary": "A guide giving basic facts about working as a teaching assistant. There is background information on pay, hours, contracts and benefits, along with links out to more information - for example, how to enter the profession.",
+    "journalMessage": "This is a guide with useful background information on becoming a teaching assistant: \n\n https://www.tes.com/articles/teaching-assistant-pay-and-conditions \n\n If you think it might suit you, follow the links on the page to find out more.",
+    "category": [
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "6125": "teaching assistant"
+    }
+  },
+  {
+    "id": "octo019",
+    "title": "Teaching assistant: tips on applying for jobs",
+    "url": "https://www.tes.com/articles/tips-applying-teaching-assistant-roles",
+    "summary": "A guide giving basic facts about working as a teaching assistant. There is background information on pay, hours, contracts and benefits, along with links out to more information - for example, how to enter the profession.",
+    "journalMessage": "Here are a few tips to help you when you apply for jobs as a teaching assistant: \n\n https://www.tes.com/articles/tips-applying-teaching-assistant-roles \n\n",
+    "category": [
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "6125": "teaching assistant"
+    }
+  },
+  {
+    "id": "octo020",
+    "title": "Teaching assistant: interview tips",
+    "url": "https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-job-interview-advice",
+    "summary": "Interview tips for claimants applying to be a teaching assistant.",
+    "journalMessage": "If you're going for a teaching assistant job, you should prepare for the interview. There are some tips here: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-job-interview-advice \n\n ",
+    "category": [
+      "research",
+      "work search",
+      "interviews",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "6125": "teaching assistant"
+    }
+  },
+  {
+    "id": "octo021",
+    "title": "Teaching assistant: interview questions",
+    "url": "https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-interview-potential-questions",
+    "summary": "Sample interview questions for teaching assistant roles.",
+    "journalMessage": "These are the kind of questions they ask if you go for an interview as a teaching assistant: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-interview-potential-questions \n\n Take a look to prepare for your interview.",
+    "category": [
+      "research",
+      "work search",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "sector": {
+      "6125": "teaching assistant"
+    }
+  },
+  {
+    "id": "octo022",
+    "title": "Non-teaching support jobs",
+    "url": "https://www.tes.com/jobs/browse/non-teaching-support",
+    "summary": "Listings for non-teaching jobs in education - for example, support staff, administrators or technicians.",
+    "journalMessage": "This might help with your job search - it's a site listing non-teaching jobs in schools: \n\n https://www.tes.com/jobs/browse/non-teaching-support \n\n",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo023",
+    "title": "Becoming a cover supervisor",
+    "url": "https://www.tes.com/articles/becoming-a-cover-supervisor",
+    "summary": "A short job profile explaining what cover supervisors do, their pay and the good and bad points of the work.",
+    "journalMessage": "We talked about working as a cover supervisor in a school. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-cover-supervisor \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "6125": "cover supervisor"
+    }
+  },
+  {
+    "id": "octo024",
+    "title": "Becoming a school librarian",
+    "url": "https://www.tes.com/articles/becoming-a-school-librarian",
+    "summary": "A short job profile explaining what school librarians do, their pay and the good and bad points of the work.",
+    "journalMessage": "This link will tell you a bit about working as a school librarian: \n\n https://www.tes.com/articles/becoming-a-school-librarian \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "2451": "librarian"
+    }
+  },
+  {
+    "id": "octo025",
+    "title": "Becoming an ICT technician",
+    "url": "https://www.tes.com/articles/becoming-ict-technician",
+    "summary": "A short job profile explaining what ICT (information and communication technology) technicians do, their pay and the good and bad points of the work.",
+    "journalMessage": "This link will tell you a bit about working as a school ICT technician: \n\n https://www.tes.com/articles/becoming-ict-technician \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "3131": "ICT technician"
+    }
+  },
+  {
+    "id": "octo026",
+    "title": "Becoming a midday supervisor",
+    "url": "https://www.tes.com/articles/becoming-a-midday-supervisor",
+    "summary": "A short job profile explaining what midday supervisors in schools do, their pay, and the good and bad points of the work.",
+    "journalMessage": "This link will tell you a bit about working as a midday supervisor: \n\n https://www.tes.com/articles/becoming-a-midday-supervisor \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "9244": "Midday supervisor"
+    }
+  },
+  {
+    "id": "octo027",
+    "title": "How to get a job in school facilities",
+    "url": "https://www.tes.com/articles/how-get-a-job-school-facilities",
+    "summary": "A collection of useful links that will guide claimants into a job in school facilities - for example, as a librarian, caretaker or technician.",
+    "journalMessage": "This collection of links is a good place to get started if you want a non-teaching job at a school. You can find out about various different kind of support work: \n\n https://www.tes.com/articles/how-get-a-job-school-facilities \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "2451": "librarian",
+      "3131": "ICT technician"
+    }
+  },
+  {
+    "id": "octo028",
+    "title": "Becoming a school data manager",
+    "url": "https://www.tes.com/articles/becoming-a-school-data-manager",
+    "summary": "A short job profile explaining what school data managers do, their pay, and the good and bad points of the work.",
+    "journalMessage": "This link will tell you a bit about working as a data manager at a school: \n\n https://www.tes.com/articles/becoming-a-school-data-manager \n\n",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "3131": "data manager"
+    }
+  },
+  {
+    "id": "octo029",
+    "title": "Energy and Utility skills: careers",
+    "url": "http://www.euskills.co.uk/careers",
+    "summary": "Information about careers in the energy and utilities sector - for instance, gas and oil jobs. It features links out to the industry's recruiting websites, and stories from people working in the sector.",
+    "journalMessage": "This is the place to find out about a career in energy: \n\n http://www.euskills.co.uk/careers \n\n There are links and case studies that will let find out the different kinds of work and what skills or qualifications you will need.",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "2121": "civil engineers",
+      "8124": "energy plant operatives"
+    }
+  },
+  {
+    "id": "octo030",
+    "title": "CareerStructure: gas, oil and energy",
+    "url": "https://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy",
+    "summary": "An overview of energy, oil and gas jobs - what the work involves, what employers look for, how the job market is doing, and links to job listings.",
+    "journalMessage": "Here's some information about jobs in oil, gas, energy and related areas: \n\nhttps://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy\n\n You'll find job listings linked from that page too. ",
+    "category": [
+      "research",
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "2121": "civil engineers",
+      "8124": "energy plant operatives"
+    }
+  },
+  {
+    "id": "octo031",
+    "title": "Oil and Gas Technical Apprentice Programme",
+    "url": "http://ogtap.co.uk",
+    "summary": "This apprenticeship programme leads to a career in the gas or oil industries and recognised qualifications (SVQ level 3).",
+    "journalMessage": "Take a look at this apprenticeship programme: \n\n http://ogtap.co.uk \n\n It would give you a start on the technical side of the gas or oil industry.",
+    "category": [
+      "apprenticeships",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "2121": "civil engineers",
+      "8124": "energy plant operatives"
+    }
+  },
+  {
+    "id": "octo032",
+    "title": "Construction plant operator",
+    "url": "https://nationalcareersservice.direct.gov.uk/job-profiles/construction-plant-operator",
+    "summary": "A basic job profile for plant operators, explaining hours, pay, responsibilities, skills and career progression. Features links to related professions.",
+    "journalMessage": "There's good information here about working on machines on building sites: \n\n https://nationalcareersservice.direct.gov.uk/job-profiles/construction-plant-operator \n\n It shows you related jobs too. ",
+    "category": [
+      "research",
+      "work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "822": "mobile machine drivers and operatives"
+    }
+  },
+  {
+    "id": "octo033",
+    "title": "RenewableUK jobfinder",
+    "url": "http://jobfinder.renewableuk.com/",
+    "summary": "Job listings in the renewable energy sector.",
+    "journalMessage": "Here's a site you might find useful - it lists jobs in renewable energy: \n\n http://jobfinder.renewableuk.com/ \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "2121": "civil engineers",
+      "8124": "energy plant operatives"
+    }
+  },
+  {
+    "id": "octo034",
+    "title": "Facilities management apprenticeships",
+    "url": "https://www.gov.uk/guidance/facilities-management-apprenticeships",
+    "summary": "The SFA's guidance on facilities management apprenticeships. It explains the work and outlines types and levels of apprenticeship. Also has a link to the Find an apprenticeship service.",
+    "journalMessage": "Here's some background on on facilities management apprenticeships: \n\nhttps://www.gov.uk/guidance/facilities-management-apprenticeships\n\n Use the link at the bottom of the page to start looking for an apprenticeship. ",
+    "category": [
+      "apprenticeships",
+      "preparing for work",
+      "preparing for and finding work",
+      "young jobseekers",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "1251": "facilities managers"
+    }
+  },
+  {
+    "id": "octo035",
+    "title": "efinancialcareers",
+    "url": "http://www.efinancialcareers.co.uk/",
+    "summary": "A site listing jobs in finance, banking, accounting and insurance.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.efinancialcareers.co.uk\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "353": "business, finance and related associate professionals"
+    }
+  },
+  {
+    "id": "octo036",
+    "title": "Topfinancialjobs",
+    "url": "http://www.topfinancialjobs.co.uk",
+    "summary": "A site listing jobs in finance, banking, accounting and insurance.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.topfinancialjobs.co.uk\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "353": "business, finance and related associate professionals"
+    }
+  },
+  {
+    "id": "octo037",
+    "title": "NHS Health Careers",
+    "url": "https://www.healthcareers.nhs.uk/",
+    "summary": "The official NHS careers site. It features job descriptions and comparisons, with more general information on how the sector works.",
+    "journalMessage": "This is the official NHS site for careers in health: \n\nhttps://www.healthcareers.nhs.uk/\n\n It explains the different jobs you could do, what skills you need, training and apprenticeship opportunities and how to get started in the field.",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "32": "health and social care associate professionals"
+    }
+  },
+  {
+    "id": "octo038",
+    "title": "Step into the NHS",
+    "url": "https://www.stepintothenhs.nhs.uk/",
+    "summary": "An NHS careers site with interactive elements, such as quizzes to find out what role would suit a claimant. Also has real stories from NHS staff, and videos.",
+    "journalMessage": "This is a good place to start if you're thinking about a career in health: \n\nhttps://www.stepintothenhs.nhs.uk\n\n It can give you a sense of the role that might suit you, and the best way in. ",
+    "category": [
+      "apprenticeships",
+      "work experience",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "32": "health and social care associate professionals"
+    }
+  },
+  {
+    "id": "octo039",
+    "title": "Health, public services and care apprenticeships",
+    "url": "https://www.gov.uk/government/collections/health-public-services-and-care-apprenticeships",
+    "summary": "A collection of SFA guidance and videos relating to apprenticeships in health, care and public services - for example, the armed forces or police.",
+    "journalMessage": "This will give you an idea of the range of apprenticeships available in public services and health: \n\nhttps://www.gov.uk/government/collections/health-public-services-and-care-apprenticeships\n\n Look around so you understand your options.",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "32": "health and social care associate professionals"
+    }
+  },
+  {
+    "id": "octo040",
+    "title": "The Hospitality Guild: hospitality careers",
+    "url": "http://www.hospitalityguild.co.uk/A-Career-in-Hospitality",
+    "summary": "A collection of resources to help people get started in hospitality. There's a careers map, a personality test and CV and interview tips. The guild's website also features job listings and training opportunities.",
+    "journalMessage": "The Hospitality Guild have a lot of resources about careers in hospitality: \n\nhttp://www.hospitalityguild.co.uk/A-Career-in-Hospitality\n\n There's a personality test, CV and interview tips, career maps and lots more information.",
+    "category": [
+      "research",
+      "work search",
+      "searching for work",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "122": "managers and proprietors in hospitality and leisure services",
+      "927": "other elementary services occupations"
+    }
+  },
+  {
+    "id": "octo041",
+    "title": "LeisureJobs",
+    "url": "https://www.leisurejobs.com",
+    "summary": "A site listing jobs in hospitality, retail, fitness and related sectors.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in places like hotels, restaurants, cafes and gyms: \n\nhttps://www.leisurejobs.com\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "122": "managers and proprietors in hospitality and leisure services",
+      "344": "sports and fitness occupations",
+      "927": "other elementary services occupations"
+    }
+  },
+  {
+    "id": "octo042",
+    "title": "Caterer.com",
+    "url": "https://www.caterer.com",
+    "summary": "A site listing jobs in the hospitality sectors.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in hospitality: \n\nhttps://www.caterer.com\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "927": "other elementary services occupations"
+    }
+  },
+  {
+    "id": "octo043",
+    "title": "DBS checks",
+    "url": "https://www.gov.uk/disclosure-barring-service-check/overview",
+    "summary": "Background information on DBS (Disclosure and Barring Service) checks (previously CRB checks).",
+    "journalMessage": "You may need a DBS check for work - here's some information about how they work: \n\nhttps://www.gov.uk/disclosure-barring-service-check/overview/\n\n ",
+    "category": [
+      "work search",
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo044",
+    "title": "PACEY (Professional Association for Childcare and Early Years)",
+    "url": "https://www.pacey.org.uk/",
+    "summary": "PACEY supports childcare professionals. Their website has a number of free resources, including an introduction to working in childcare. It also offers paid-for services, such as training leading to qualifications.",
+    "journalMessage": "If you want to go into childcare, take a look at PACEY's site: \n\nhttps://www.pacey.org.uk/\n\n PACEY is a large organisation that offers support to childcarers. There's free information to get you started on the site, but some parts will only be available to paid members. ",
+    "category": [
+      "work search",
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "6122": "childminders and related occupations"
+    }
+  },
+  {
+    "id": "octo045",
+    "title": "Childcare Business Grants Scheme",
+    "url": "https://childcarebusinessgrants.com/",
+    "summary": "A scheme open to newly registered early years childminders, childcare providers on domestic premises and Childminder Agencies in England. Offers up to £1,000 to childminders who have recently or are about to start trading. Further details, including eligibility requirements, are on the page.",
+    "journalMessage": "If you're moving into childminding, look at the Childcare Business Grants Scheme: \n\nhttps://www.childcarebusinessgrants.com/\n\n It could give you a grant to help get your new business started. ",
+    "category": [
+      "grants",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "intensive work search",
+      "self employed"
+    ],
+    "sector": {
+      "6122": "childminders and related occupations"
+    }
+  },
+  {
+    "id": "octo046",
+    "title": "Early years (under 5s) foundation stage framework (EYFS)",
+    "url": "https://www.gov.uk/government/publications/early-years-foundation-stage-framework",
+    "summary": "Any claimants moving into childminding should look at this framework - these are the standards they must meet.",
+    "journalMessage": "If you're moving into childminding, you have to read the Early years framework: \n\nhttps://www.gov.uk/government/publications/early-years-foundation-stage-framework\n\n These are the standards you have to meet as a registered childminder. ",
+    "category": [
+      "work search",
+      "research",
+      "regulations",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "intensive work search",
+      "self employed"
+    ],
+    "sector": {
+      "6122": "childminders and related occupations"
+    }
+  },
+  {
+    "id": "octo047",
+    "title": "Foundation Years: childminder agencies",
+    "url": "http://www.foundationyears.org.uk/child-minders/",
+    "summary": "An introduction to childminder agencies, explaining how to register. Links from this give more detailed information on all aspects of childminding agencies.",
+    "journalMessage": "This is short explanation of childminding agencies: \n\nhttp://www.foundationyears.org.uk/child-minders\n\n Links on the page will give you more background information and explain how to register.",
+    "category": [
+      "work search",
+      "research",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search",
+      "self employed"
+    ],
+    "sector": {
+      "6122": "childminders and related occupations"
+    }
+  },
+  {
+    "id": "octo048",
+    "title": "GoConstruct",
+    "url": "https://www.goconstruct.org",
+    "summary": "Comprehensive information about getting started in a construction career - apprenticeships, career change, career maps and more.",
+    "journalMessage": "The best place to find out about getting started in building is GoConstruct: \n\nhttps://www.goconstruct.org\n\n It's the industry website, and should have everything you need. ",
+    "category": [
+      "work search",
+      "research",
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo049",
+    "title": "Careers in construction",
+    "url": "http://www.careersinconstruction.com",
+    "summary": "Job listings in the construction sector. Covers plant work, labourers, and management and engineering roles.",
+    "journalMessage": "Here's a site you might find useful - it lists building and site jobs: \n\n http://www.careersinconstruction.com   ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo050",
+    "title": "Just construction",
+    "url": "http://www.justconstruction.net",
+    "summary": "Job listings in the construction sector, with some additional tools, such as a CV check. Covers plant drivers, labourers, and management and engineering roles.",
+    "journalMessage": "Here's a site you might find useful - it lists building and site jobs, and has some tools like a CV checker: \n\n http://www.justconstruction.net \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo051",
+    "title": "Women on the tools",
+    "url": "http://womenonthetools.org.uk",
+    "summary": "A campaign and support site that aims to get a greater number of women working in the manual trades - for example, plumbers, carpenters, electricians. Formerly called Women and Manual Trades, this provides links to the National Tradeswomen’s Network.",
+    "journalMessage": "This is a network and campaign that supports women in manual trades: \n\n http://womenonthetools.org.uk \n\n  Sign up to make contacts, get advice and build your support network.",
+    "category": [
+      "work search",
+      "research",
+      "networking",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "self employed"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo052",
+    "title": "Construction, planning and the built environment apprenticeships",
+    "url": "https://www.gov.uk/government/collections/construction-planning-and-the-built-environment-apprenticeships",
+    "summary": "A collection of SFA guidance and videos relating to apprenticeships in construction, building, planning, civil engineering and related careers.",
+    "journalMessage": "This will give you an idea of the range of apprenticeships available in building and planning: \n\nhttps://www.gov.uk/government/collections/construction-planning-and-the-built-environment-apprenticeships\n\n Look around so you understand your options.",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "243": "architects, town planners and surveyors",
+      "531": "construction and building trades",
+      "2121": "civil engineers"
+    }
+  },
+  {
+    "id": "octo053",
+    "title": "Construction Skills Certification Scheme",
+    "url": "https://www.cscs.uk.com",
+    "summary": "The official site for CSCS cards, needed on most building sites. It explains how to apply, and helps to find the right type of card.",
+    "journalMessage": "This is the official site for building site cards: \n\nhttps://www.cscs.uk.com\n\n All the information you need is there, and it tells you how to apply. Some websites you overcharge for the same card - just go to this one.",
+    "category": [
+      "work search",
+      "research",
+      "qualifications",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo054",
+    "title": "Bconstructive",
+    "url": "http://www.citb.co.uk/bconstructive/",
+    "summary": "A central site for construction apprenticeships, run by the CITB (Construction Industry Training Board). It lists the types of apprenticeship, and explains how to apply. There's also background information and case studies.",
+    "journalMessage": "This website is a reliable source of information about apprenticeships in construction: \n\nhttp://www.citb.co.uk/bconstructive/\n\n It shows you the range of trades you can learn, and explains how to apply.",
+    "category": [
+      "work search",
+      "research",
+      "qualifications",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "531": "construction and building trades"
+    }
+  },
+  {
+    "id": "octo055",
+    "title": "Barzone",
+    "url": "http://www.barzone.co.uk/",
+    "summary": "A site listing bar jobs.",
+    "journalMessage": "This might be useful if you're looking for pub or bar work: \n\nhttp://www.barzone.co.uk/\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "927": "other elementary services occupations",
+      "9274": "bar staff"
+    }
+  },
+  {
+    "id": "octo056",
+    "title": "The Tech Partnership",
+    "url": "https://www.thetechpartnership.com",
+    "summary": "A national network dedicated to improving digital and IT skills. It aims to get more young people into the sector and improve digital skills training.",
+    "journalMessage": "If IT interests you, look at the Tech Partnership: \n\nhttps://www.thetechpartnership.com\n\n It explains ways to get started, such as apprenticeships and training, and gives you a lot of background on the industry and skills needed in it.",
+    "category": [
+      "apprenticeships",
+      "work experience",
+      "training",
+      "skills",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {
+      "213": "information technology and telecommunications professionals"
+    }
+  },
+  {
+    "id": "octo057",
+    "title": "Arts, media and publishing apprenticeships",
+    "url": "https://www.gov.uk/government/collections/arts-media-and-publishing-apprenticeships",
+    "summary": "A collection of SFA guidance and videos relating to apprenticeships in arts and media and other creative industries.",
+    "journalMessage": "This will give you an idea of the range of apprenticeships available in creative jobs: \n\nhttps://www.gov.uk/government/collections/arts-media-and-publishing-apprenticeships\n\n Look around so you understand your options.",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {
+      "247": "media professionals",
+      "342": "design occupations"
+    }
+  },
+  {
+    "id": "octo058",
+    "title": "Prospects: transport and logistics",
+    "url": "https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk",
+    "summary": "Prospects information on transport and logistics - a sector overview, how to get started, work experience opportunities and more.",
+    "journalMessage": "Prospects has some good information on transport and logistics: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk\n\n Read through to find out more about the work, and possible career paths. There's also information on how to get started in the field.",
+    "category": [
+      "apprenticeships",
+      "work experience",
+      "training",
+      "young jobseekers",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives",
+      "116": "managers and directors in transport and logistics",
+      "926": "elementary storage occupations",
+      "1162": "managers and directors in storage and warehousing",
+      "4134": "transport and distribution clerks and assistants"
+    }
+  },
+  {
+    "id": "octo059",
+    "title": "Careers that move",
+    "url": "http://www.careersthatmove.co.uk",
+    "summary": "A complete guide to careers in the passenger transport and travel sector - including listings, qualifications, sector overview and career paths.",
+    "journalMessage": "Careers that move will give you a good sense of the options in a transport and travel career: \n\nhttp://www.careersthatmove.co.uk\n\n Read around to find out more about the work, the qualifications and skills you'd need and possible career paths. There are also job adverts.",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "listings",
+      "searching for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives",
+      "116": "managers and directors in transport and logistics",
+      "4134": "transport and distribution clerks and assistants"
+    }
+  },
+  {
+    "id": "octo060",
+    "title": "The logistics jobsite",
+    "url": "http://www.logisticsjobsite.co.uk",
+    "summary": "Job listings in the logistics sector. Includes driving and warehouse work.",
+    "journalMessage": "Here's a site you might find useful - it lists logistics jobs: \n\n http://www.logisticsjobsite.co.uk \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives",
+      "116": "managers and directors in transport and logistics",
+      "926": "elementary storage occupations",
+      "1162": "managers and directors in storage and warehousing",
+      "4134": "transport and distribution clerks and assistants"
+    }
+  },
+  {
+    "id": "octo061",
+    "title": "Careers in logistics",
+    "url": "http://www.careersinlogistics.co.uk",
+    "summary": "Job listings in the logistics sector. Includes driving and warehouse work.",
+    "journalMessage": "Here's a site you might find useful - it lists logistics jobs: \n\n http://www.careersinlogistics.co.uk \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives",
+      "116": "managers and directors in transport and logistics",
+      "926": "elementary storage occupations",
+      "1162": "managers and directors in storage and warehousing",
+      "4134": "transport and distribution clerks and assistants"
+    }
+  },
+  {
+    "id": "octo062",
+    "title": "Logistics operations apprenticeships",
+    "url": "https://www.gov.uk/guidance/logistics-operations-apprenticeships",
+    "summary": "The Skills Funding Agency's basic guidance on logistics operations apprenticeships - transport, stock control, warehouse work. Also has a link to apply.",
+    "journalMessage": "This is an explanation of what a logistics apprenticeship would cover, along with some information about pay and responsibilities: \n\n https://www.gov.uk/guidance/logistics-operations-apprenticeships\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives",
+      "116": "managers and directors in transport and logistics",
+      "926": "elementary storage occupations",
+      "4134": "transport and distribution clerks and assistants"
+    }
+  },
+  {
+    "id": "octo063",
+    "title": "Foodmanjobs",
+    "url": "http://jobs.foodmanufacture.co.uk",
+    "summary": "Job listings in the food manufacture sector, from engineering and production, to supply chain and logistics. Also has news and career advice for the sector.",
+    "journalMessage": "Here's a site you might find useful - it lists jobs in food manufacturing: \n\n http://jobs.foodmanufacture.co.uk \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "8111": "food, drink and tobacco process operatives"
+    }
+  },
+  {
+    "id": "octo064",
+    "title": "Army rolefinder",
+    "url": "https://www.army.mod.uk/rolefinder/",
+    "summary": "After selecting their interests, a claimant can see which roles in the British Army would suit them. For each role, there are details of duties, pay, the qualifications that they'll earn and more",
+    "journalMessage": "This will give you an idea of some of the roles in the army, and which ones might suit your interests: \n\n https://www.army.mod.uk/rolefinder/ \n\n ",
+    "category": [
+      "research",
+      "qualifications",
+      "training",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "1171": "officers in armed forces",
+      "3311": "ncos and other ranks",
+      "4112": "national government administrative occupations"
+    }
+  },
+  {
+    "id": "octo065",
+    "title": "The transport jobsite",
+    "url": "http://www.transportjobsite.co.uk",
+    "summary": "Job listings in the transport sector.",
+    "journalMessage": "Here's a site you might find useful - it lists transport jobs: \n\n http://www.transportjobsite.co.uk \n\n  ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "82": "transport and mobile machine drivers and operatives"
+    }
+  },
+  {
+    "id": "octo066",
+    "title": "National Numeracy",
+    "url": "https://www.nationalnumeracy.org.uk/",
+    "summary": "A national organisation dedicated to helping people with their basic maths skills. The site offers various ways to improve these skills.",
+    "journalMessage": "If you want to improve your maths, visit the National Numeracy website: \n\n https://www.nationalnumeracy.org.uk/ \n\n  It has quizzes, tests and advice to help you improve with numbers.",
+    "category": [
+      "skills",
+      "training",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo067",
+    "title": "Security Industry Authority",
+    "url": "https://www.sia.homeoffice.gov.uk/Pages/home.aspx",
+    "summary": "The authority overseeing private security work. Explains how to apply for an SIA licence, needed for things like door work or wheel clamping.",
+    "journalMessage": "If you're looking at security work, check the SIA site. It explains what licence you'll need, and how to get it:\n\n https://www.sia.homeoffice.gov.uk/Pages/home.aspx \n\n ",
+    "category": [
+      "work search",
+      "research",
+      "qualifications",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "924": "elementary security occupations"
+    }
+  },
+  {
+    "id": "octo068",
+    "title": "GOV.UK: Become an apprentice",
+    "url": "https://www.gov.uk/apprenticeships-guide",
+    "summary": "A GOV.UK guide explaining how to become an apprentice. Explains apprenticeship levels, pay, conditions, and links to the Find an apprenticeship service.",
+    "journalMessage": "The best place to start finding out about apprenticeships is this guide: \n\n https://www.gov.uk/apprenticeships-guide \n\n",
+    "category": [
+      "apprenticeships",
+      "qualifications",
+      "training",
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search",
+      "young jobseekers"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo069",
+    "title": "Get safe online",
+    "url": "https://www.getsafeonline.org/",
+    "summary": "A site with advice to help you stay safe online. Guidance on good security practice and avoiding scams.",
+    "journalMessage": "You'll be looking and applying for a lot of jobs online, so it's worth taking a look at Get safe online: \n\n https://www.getsafeonline.org/ \n\n It has a lot of advice that can stop you getting scammed or hacked. ",
+    "category": [
+      "searching for work",
+      "research",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo070",
+    "title": "SAFERjobs",
+    "url": "https://www.safer-jobs.com",
+    "summary": "SAFERjobs is an organisation that supports job seekers, agency staff, and contractors with any suspected fraud, malpractice, breach of legislation, or poor experience they may encounter.",
+    "journalMessage": "If you think you've seen a scam when you're looking for work online, visit: \n\n https://www.safer-jobs.com \n\n It has a lot of guidance and you can report incidents. ",
+    "category": [
+      "searching for work",
+      "research",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo071",
+    "title": "GOV.UK: working for yourself",
+    "url": "https://www.gov.uk/working-for-yourself/what-counts-as-self-employed",
+    "summary": "Basic information about self-employment - who counts as self-employed and what they need to do.",
+    "journalMessage": "Here's some simple introductory information about self-employment - what counts, the tax you have to pay, and more basic details: \n\n https://www.gov.uk/working-for-yourself/what-counts-as-self-employed \n\n  ",
+    "category": [
+      "research",
+      "preparing for work",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "self employed"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo072",
+    "title": "GOV.UK: Finance and support for your business",
+    "url": "https://www.gov.uk/business-finance-support",
+    "summary": "A searchable directory of support for businesses. It has grants, loans and advice from various organisations, and can be filtered by support kind, sector, business stage and business size.",
+    "journalMessage": "Your business might be able to get some extra support from other organisations. This site lists grants, loans and other support that's available: \n\n https://www.gov.uk/business-finance-support \n\n  You can search the list and find things that suit you - for instance, for this region or for your size of business.",
+    "category": [
+      "research",
+      "support"
+    ],
+    "groups": [
+      "self employed"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo073",
+    "title": "Mentorsme.co.uk",
+    "url": "http://www.mentorsme.co.uk/",
+    "summary": "An online gateway for small and medium-sized enterprises looking for mentoring services.",
+    "journalMessage": "If you need some personal advice or guidance on the direction your business should take, look at Mentorsme. It's a site that arranges mentoring for people with small or medium-sized businesses: \n\n http://www.mentorsme.co.uk/ \n\n  ",
+    "category": [
+      "research",
+      "mentoring",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "self employed"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo074",
+    "title": "The Money Advice Service",
+    "url": "https://www.moneyadviceservice.org.uk/en",
+    "summary": "Free and impartial money advice, offering tools and guidance to help with budgeting.",
+    "journalMessage": "The Money Advice Service might be a useful place to look if you want some pointers on managing your money: \n\n https://www.moneyadviceservice.org.uk/en \n\n  They have tools that can help you budget, and offer independent advice.",
+    "category": [
+      "research",
+      "budgeting",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "self employed",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo075",
+    "title": "Prospects: IT",
+    "url": "https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/information-technology",
+    "summary": "Prospects information on working in the IT sector - a sector overview, how to get started, work experience opportunities and more.",
+    "journalMessage": "If IT interests you, Prospects is a good place to start: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/information-technology\n\n It explains the normal routes in, and ways to find training and work experience.",
+    "category": [
+      "internships",
+      "volunteering",
+      "apprenticeships",
+      "work experience",
+      "training",
+      "preparing for work",
+      "preparing for and finding work",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {
+      "213": "information technology and telecommunications professionals"
+    }
+  },
+  {
+    "id": "octo076",
+    "title": "RetailChoice",
+    "url": "https://www.retailchoice.com",
+    "summary": "Job listings in the retail sector.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in shops and retail: \n\nhttps://www.retailchoice.com ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "1190": "managers and directors in retail and wholesale",
+      "7111": "sales and retail assistants"
+    }
+  },
+  {
+    "id": "octo077",
+    "title": "Drapers Jobs",
+    "url": "http://www.drapersjobs.com",
+    "summary": "Job listings in the fashion retail sector.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in clothes retail: \n\nhttp://www.drapersjobs.com\n\n ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "1190": "managers and directors in retail and wholesale",
+      "7111": "sales and retail assistants"
+    }
+  },
+  {
+    "id": "octo078",
+    "title": "Hays IT jobs",
+    "url": "http://www.hays.co.uk/job/it-jobs/",
+    "summary": "Job listings in the IT and technology sectors.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in IT and technology: \n\nhttp://www.hays.co.uk/job/it-jobs/ ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "213": "information technology and telecommunications professionals"
+    }
+  },
+  {
+    "id": "octo079",
+    "title": "My world of work: interviews",
+    "url": "https://www.myworldofwork.co.uk/getting-job/interviews",
+    "summary": "Advice on preparing for interviews, including competency-based interviews, with tips on how to research, dress and attitude. A video tool takes claimants through common and tricky interview questions.",
+    "journalMessage": "This is useful if you want to get ready for interviews: \n\nhttps://www.myworldofwork.co.uk/getting-job/interviews\n\nThere are lots of tips, and a video tool that takes you through common questions and gives you feedback based on your answers. ",
+    "category": [
+      "interviews",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo080",
+    "title": "My world of work: cover letters",
+    "url": "https://www.myworldofwork.co.uk/getting-job/cover-letters",
+    "summary": "Advice on cover letters, with tips on structure and what to say. There are also example letters.",
+    "journalMessage": "This website will get you started on your cover letters: \n\nhttps://www.myworldofwork.co.uk/getting-job/cover-letters\n\nIt has a lot of advice, and some examples to help you along.",
+    "category": [
+      "cover letters",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo081",
+    "title": "Find a registered childminder",
+    "url": "https://www.gov.uk/find-registered-childminder",
+    "summary": "A GOV.UK site to help find registered childcare. Based on a postcode check, it will send you to the relevant page on your local council's website.",
+    "journalMessage": "You'll need a registered childminder to get financial support for childcare. Start here: \n\nhttps://www.gov.uk/find-registered-childminder\n\nIt will direct you to the relevant page of the council's website.",
+    "category": [
+      "childcare",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "parents",
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo082",
+    "title": "CW Jobs",
+    "url": "https://www.cwjobs.co.uk",
+    "summary": "Job listings in the IT and technology sector.",
+    "journalMessage": "This might help with your job search - it's a site listing jobs in IT and technology: \n\nhttps://www.cwjobs.co.uk ",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "213": "information technology and telecommunications professionals"
+    }
+  },
+  {
+    "id": "octo083",
+    "title": "Learndirect",
+    "url": "https://www.learndirect.com",
+    "summary": "A major provider of training, distance learning, apprenticeships, and online and offline courses.",
+    "journalMessage": "We've been talking about training - take a look at learndirect and browse some of their courses: \n\nhttps://www.learndirect.com ",
+    "category": [
+      "skills",
+      "training",
+      "qualifications",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo084",
+    "title": "Gingerbread",
+    "url": "https://www.gingerbread.org.uk",
+    "summary": "A charity that gives advice and practical support for single parents.",
+    "journalMessage": "Gingerbread has a lot of support and advice for single parents: \n\nhttps://www.gingerbread.org.uk ",
+    "category": [
+      "childcare",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "parents",
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo085",
+    "title": "Mind",
+    "url": "https://www.mind.org.uk/information-support/tips-for-everyday-living/work/",
+    "summary": "The mental health charity has guidance and practical suggestions on work and returning to work.",
+    "journalMessage": "Mind is a charity with useful guidance on working and getting back to work: \n\nhttps://www.mind.org.uk/information-support/tips-for-everyday-living/work/ ",
+    "category": [
+      "health, mental health and wellbeing",
+      "support"
+    ],
+    "groups": [
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo086",
+    "title": "Prince's Trust",
+    "url": "https://www.princes-trust.org.uk",
+    "summary": "A charity that helps young people get into work, education or training.",
+    "journalMessage": "Take a look at the Prince's Trust - they offer a lot of ways into work and training: \n\nhttps://www.princes-trust.org.uk ",
+    "category": [
+      "training",
+      "preparing for work",
+      "preparing for and finding work",
+      "self-employment",
+      "skills, training and qualifications"
+    ],
+    "groups": [
+      "young jobseekers",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo087",
+    "title": "GOV.UK: report domestic abuse",
+    "url": "https://www.gov.uk/report-domestic-abuse",
+    "summary": "How to report domestic abuse or violence. Includes links to organisations that can help.",
+    "journalMessage": "Take a look at this link, and contact me if you need any more help: \n\nhttps://www.gov.uk/report-domestic-abuse ",
+    "category": [
+      "support",
+      "health, mental health and wellbeing",
+      "support"
+    ],
+    "groups": [],
+    "sector": {}
+  },
+  {
+    "id": "octo088",
+    "title": "Citizens Advice: debt and money",
+    "url": "https://www.citizensadvice.org.uk/debt-and-money/",
+    "summary": "Advice on dealing with money problems. Plain English explanations of rights and the law.",
+    "journalMessage": "Citizens Advice is a good place to start finding out about how to handle money problems: \n\nhttps://www.citizensadvice.org.uk/debt-and-money/\n\n It explains your rights, and what you can do. ",
+    "category": [
+      "research",
+      "budgeting",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "self employed",
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo089",
+    "title": "Civil Service Jobs",
+    "url": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi",
+    "summary": "The central job site for Civil Service roles. Also has background information on working in the Civil Service.",
+    "journalMessage": "You might find this site useful - it shows you all the jobs available in the Civil Service, and has some background on working for it: \n\nhttps://www.civilservicejobs.service.gov.uk/csr/index.cgi ",
+    "category": [
+      "research",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo090",
+    "title": "GOV.UK: Work and disabled people",
+    "url": "https://www.gov.uk/browse/disabilities/work",
+    "summary": "An overview of the GOV.UK pages on the topic of disabled people and work. Plain English guides to workers' rights, the law, and applying for Access to Work grants.",
+    "journalMessage": "Here's a list of the pages on GOV.UK that deal with work and disability. You'll find useful information there about your rights and Access to Work grants: \n\nhttps://www.gov.uk/browse/disabilities/work ",
+    "category": [
+      "health, mental health and wellbeing",
+      "support",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo091",
+    "title": "Money Advice Service money manager",
+    "url": "https://www.moneyadviceservice.org.uk/en/tools/money-manager",
+    "summary": "A budgeting tool specifically for Universal Credit. It asks claimants a sequence of questions, and offers tailored money-management advice based on their answers.",
+    "journalMessage": "This tool is useful - answer some questions and it will give you personalised advice about managing your Universal Credit payments: \n\nhttps://www.moneyadviceservice.org.uk/en/tools/money-manager ",
+    "category": [
+      "research",
+      "budgeting",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo092",
+    "title": "Civil Service competency framework",
+    "url": "https://www.gov.uk/government/publications/civil-service-competency-framework",
+    "summary": "This sets out the skills and ways of working that the Civil Service wants from all civil servants.",
+    "journalMessage": "If you are thinking about a Civil Service job, take a look at this document:\n\nhttps://www.gov.uk/government/publications/civil-service-competency-framework\n\nIt set outs the kind of skills you'll need. You can use it to prepare a CV or get ready for an interview. ",
+    "category": [
+      "research",
+      "budgeting",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo093",
+    "title": "NHS Choices: tools",
+    "url": "https://www.nhs.uk/tools/pages/toolslibrary.aspx",
+    "summary": "A collection of tools and guides to help with physical and mental health, showing ways to improve lifestyle, diet and exercise.",
+    "journalMessage": "From what you've said, one or two of the NHS tools might be useful for you - look through the list and try them out:\n\nhttps://www.nhs.uk/tools/pages/toolslibrary.aspx ",
+    "category": [
+      "health, mental health and wellbeing",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo094",
+    "title": "Prospects: interviews",
+    "url": "https://www.prospects.ac.uk/careers-advice/interview-tips/how-to-prepare-for-an-interview",
+    "summary": "Advice on preparing for interviews, including tips on how to research, how to dress and attitude. There's also advice on how to follow up after the interview.",
+    "journalMessage": "There's useful practical advice here if you're getting ready for an interview: \n\nhttps://www.prospects.ac.uk/careers-advice/interview-tips/how-to-prepare-for-an-interview\n\n ",
+    "category": [
+      "interviews",
+      "research",
+      "preparing for work",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo095",
+    "title": "Reed: interviews",
+    "url": "https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/",
+    "summary": "Advice on preparing for interviews, including sample questions, explanation of interview types and tips on what to wear.",
+    "journalMessage": "There's useful practical advice here if you're getting ready for an interview:\n\n https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/\n\nIt includes example questions and help with interviews for different kinds of role.",
+    "category": [
+      "interviews",
+      "research",
+      "preparing for work",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo096",
+    "title": "NHS: Healthy Start",
+    "url": "https://www.healthystart.nhs.uk",
+    "summary": "An NHS scheme for people who have a child under four, or are pregnant. It offers free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk.",
+    "journalMessage": "You may qualify for the Healthy Start scheme - you'll get free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk. Take a look here:\n\nhttps://www.healthystart.nhs.uk ",
+    "category": [
+      "childcare",
+      "preparing for work",
+      "preparing for and finding work",
+      "health, mental health and wellbeing",
+      "support"
+    ],
+    "groups": [
+      "parents",
+      "intensive work search",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo097",
+    "title": "Entitledto benefits calculator",
+    "url": "https://www.entitledto.co.uk/",
+    "summary": "A comprehensive benefits calculator.",
+    "journalMessage": "Use the entitledto benefits calculator to see what other benefits you can claim:\n\nhttps://www.entitledto.co.uk/\n\nYou'll have to put in quite a lot of information, but it will give you a good idea of what you can get.",
+    "category": [
+      "preparing for work",
+      "preparing for and finding work",
+      "support",
+      "health, mental health and wellbeing",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo098",
+    "title": "Acas",
+    "url": "http://www.acas.org.uk/",
+    "summary": "Acas offers free and impartial information and advice on workplace relations and employment law.",
+    "journalMessage": "For advice on workplace problems, look at Acas:\n\nhttp://www.acas.org.uk/\n\nThey provide free and impartial information. ",
+    "category": [
+      "research",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo099",
+    "title": "Maternity Allowance",
+    "url": "https://www.gov.uk/maternity-allowance",
+    "summary": "GOV.UK guidance on the Maternity Allowance, including eligibility, what you'll get and how to claim.",
+    "journalMessage": "Take a look at the guidance on the Maternity Allowance:\n\nhttps://www.gov.uk/maternity-allowance\n\nIt explains what you'll get and how to get it.",
+    "category": [
+      "pregnancy",
+      "benefits",
+      "childcare",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo100",
+    "title": "DBS update service",
+    "url": "https://www.gov.uk/dbs-update-service",
+    "summary": "The Disclosure and Barring Service (DBS) has this online tool for updating a DBS certificate.",
+    "journalMessage": "You can update your Disclosure and Barring Service details online:\n\nhttps://www.gov.uk/dbs-update-service ",
+    "category": [
+      "support",
+      "preparing for work",
+      "preparing for and finding work",
+      "Skills, training and qualifications"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo101",
+    "title": "Set up as a sole trader",
+    "url": "https://www.gov.uk/set-up-sole-trader",
+    "summary": "GOV.UK guidance about becoming a self-employed sole trader - information about tax and paperwork.",
+    "journalMessage": "If you're going to be self-employed, take a look at this information about becoming a 'sole trader'\n\nhttps://www.gov.uk/set-up-sole-trader\n\n It's the simplest kind of self-employment.",
+    "category": [
+      "research",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "self employed"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo102",
+    "title": "Vercida",
+    "url": "https://www.vercida.com/uk/",
+    "summary": "Job website that actively promotes diversity and inclusion. Includes articles as well as job listings.",
+    "journalMessage": "Take a look at Vercida, a site with a range of jobs and articles:\n\nhttps://www.vercida.com/uk/\n\n",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo103",
+    "title": "Prison and probation jobs",
+    "url": "https://www.prisonandprobationjobs.gov.uk/",
+    "summary": "Information about roles in the prison service - includes background information, how to apply and links to related positions - for instance probation officers.",
+    "journalMessage": "If you're interested in becoming a prison officer, this site has all the background information you need:\n\nhttps://www.prisonandprobationjobs.gov.uk/",
+    "category": [
+      "research",
+      "qualifications",
+      "training",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "3314": "Prison service officers (below principal officer)"
+    }
+  },
+  {
+    "id": "octo104",
+    "title": "Order a copy of a birth, death or marriage certificate",
+    "url": "https://www.gov.uk/order-copy-birth-death-marriage-certificate",
+    "summary": "A service for ordering certificates you might need to apply for a job or get a qualification.",
+    "journalMessage": "If you need a copy of a birth, death or marriage certificate, use the government service:\n\nhttps://www.gov.uk/order-copy-birth-death-marriage-certificate",
+    "category": [
+      "research",
+      "qualifications",
+      "training",
+      "preparing for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo105",
+    "title": "ESOL courses: English for beginners",
+    "url": "https://www.esolcourses.com/content/topicsmenu/beginners.html",
+    "summary": "A site to help people with English as their second or other language. Simple lessons and games for beginners.",
+    "journalMessage": "This can help with your English:\n\nhttps://www.esolcourses.com/content/topicsmenu/beginners.html\n\nTry the games and lessons.",
+    "category": [
+      "skills",
+      "training",
+      "ESOL",
+      "language",
+      "Skills, training and qualifications",
+      "support"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo107",
+    "title": "Simply Education",
+    "url": "https://www.simplyeducation.co.uk/",
+    "summary": "An agency for teaching staff, offering temporary and permanent roles in local schools and nurseries.",
+    "journalMessage": "This agency could help you get a permanent or temporary teaching role:\n\nhttps://www.simplyeducation.co.uk/",
+    "category": [
+      "work search",
+      "listings",
+      "searching for work",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {
+      "231": "teaching and educational professionals"
+    }
+  },
+  {
+    "id": "octo108",
+    "title": "Homeless link",
+    "url": "http://www.homeless.org.uk/homeless-england/search-near-me",
+    "summary": "A charity for services for homeless people. It has a directory of services that will help the homeless, searchable by region.",
+    "journalMessage": "If you search on Homeless Link you will be able to find services to help you:\n\nhttp://www.homeless.org.uk/homeless-england/search-near-me",
+    "category": [
+      "housing",
+      "homeless",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo110",
+    "title": "Turn2us",
+    "url": "https://www.turn2us.org.uk/",
+    "summary": "Financial hardship advice, along with a comprehensive benefits calculator.",
+    "journalMessage": "If you're worried about money, look at Turn2us:\n\nhttps://www.turn2us.org.uk/\n\nIt's got a lot of guidance for people in difficult situations, and there's a benefits calculator too.",
+    "category": [
+      "research",
+      "budgeting",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [
+      ""
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo111",
+    "title": "Reed: follow up on an application",
+    "url": "https://www.reed.co.uk/career-advice/four-ways-to-follow-up-after-an-application/",
+    "summary": "Advice on following up on an interview or job application.",
+    "journalMessage": "There's useful practical advice here on following up an interview or job application:\n\n https://www.reed.co.uk/career-advice/four-ways-to-follow-up-after-an-application/\n\nYou should always try to follow up if you didn't get a job - it helps for the next time.",
+    "category": [
+      "interviews",
+      "research",
+      "cover letters",
+      "preparing for work",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo112",
+    "title": "Reed: cover letters",
+    "url": "https://www.reed.co.uk/career-advice/cover-letters/",
+    "summary": "Advice on cover letters. Includes templates, separate advice for graduates, and tips on personal statements.",
+    "journalMessage": "There's useful practical advice here on cover letters:\n\nhttps://www.reed.co.uk/career-advice/cover-letters/\n\nIt includes a template you could use.",
+    "category": [
+      "interviews",
+      "research",
+      "cover letters",
+      "preparing for work",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work"
+    ],
+    "groups": [
+      "intensive work search"
+    ],
+    "sector": {}
+  },
+  {
+    "id": "octo113",
+    "title": "My World of Work: career progression",
+    "url": "https://www.myworldofwork.co.uk/my-career-options/career-progression",
+    "summary": "Advice on moving your career forward - goals, how to plan, how to get and use feedback, and tips on finding a mentor.",
+    "journalMessage": "If you want to move forward with work, this might be of use:\n\nhttps://www.myworldofwork.co.uk/my-career-options/career-progression\n\n",
+    "category": [
+      "career progression",
+      "mentors",
+      "preparing for work",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [],
+    "sector": {}
+  },
+  {
+    "id": "octo114",
+    "title": "My World of Work: negotiating a salary",
+    "url": "https://www.myworldofwork.co.uk/getting-job/employer-advice-negotiating-your-salary",
+    "summary": "Advice on how to ask for a raise, or a higher starting salary.",
+    "journalMessage": "If you want to earn more, here's some advice on how to ask for raise or to negotiate how much you'll be paid:\n\nhttps://www.myworldofwork.co.uk/getting-job/employer-advice-negotiating-your-salary\n\n",
+    "category": [
+      "career progression",
+      "CVs, cover letters and interviews",
+      "preparing for and finding work",
+      "support"
+    ],
+    "groups": [],
+    "sector": {}
+  }
+]
