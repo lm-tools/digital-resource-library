@@ -1,4 +1,6 @@
 const _ = require('lodash');
+const esIndex = 'drl-resources';
+const searchService = new (require('../services/search-service'))(esIndex);
 
 module.exports = function ({ data }) {
   const searchableFields = ['title', 'url', 'summary', 'journalMessage', 'category', 'groups'];
@@ -10,8 +12,11 @@ module.exports = function ({ data }) {
     return foundFields.length > 0;
   };
 
-  const findAll = () => data;
-  const findByKeyword = (keyword) => _.values(data).filter(it => searchInSingleItem(it, keyword));
+  const esType = 'resource';
+  const resourceIdProperty = 'resourceId';
+
+  const findAll = () => searchService.findAll();
+  const findByKeyword = keyword => searchService.find(keyword);
   const findById = (id) => data.find(i => i.resourceId === id);
-  return { findAll, findByKeyword, findById };
+  return { findAll, findByKeyword, findById, esIndex, esType, resourceIdProperty };
 };
