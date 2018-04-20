@@ -1,7 +1,8 @@
 /* eslint-disable no-underscore-dangle */
 const express = require('express');
 const router = new express.Router();
-const { resourceModel, searchService } = require('../appContext');
+const { resourceModel } = require('../appContext');
+const searchService = new (require('./../services/search-service'))(resourceModel.esIndex);
 const i18n = require('i18n');
 
 const resultsSummaryCopy = (resourcesCount, search) => {
@@ -12,7 +13,7 @@ const resultsSummaryCopy = (resourcesCount, search) => {
 };
 
 router.get('/index', (req, res) => {
-  searchService.bulkIndex(resourceModel.esType, resourceModel.findAll(), resourceModel.resourceIdProperty)
+  searchService.bulkIndex(resourceModel.esType, resourceModel.raw, resourceModel.resourceIdProperty)
     .then(({errorCount, successCount}) => {
       if (errorCount) {
         res.status(400).send(`ERROR: ${errorCount} out of ${successCount} failed. Check logs`);
