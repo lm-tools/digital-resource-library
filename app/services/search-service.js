@@ -1,6 +1,14 @@
 const elasticsearch = require('elasticsearch');
+const esHost = process.env.ES_ENDPOINT || (process.env.NODE_ENV !== 'production' &&
+  'https://search-drl-dev-im47pucexv7nd5grs35lkejah4.eu-west-1.es.amazonaws.com');
+
+if (!esHost) {
+  console.error('no elasticsearch endpoint set. In production env, the ES_ENDPOINT env variable' +
+    'must be set');
+}
+
 const esClient = new elasticsearch.Client({
-  host: 'https://search-drl-stage-lmqxl6kqabcoph56uaoug5nshu.eu-west-1.es.amazonaws.com',
+  host: esHost,
   log: 'error'
 });
 
