@@ -12,6 +12,8 @@ const esClient = new elasticsearch.Client({
   log: 'error'
 });
 
+console.info(`using esHost: ${esHost}`);
+
 class SearchClient {
   constructor(index) {
     this.index = index;
