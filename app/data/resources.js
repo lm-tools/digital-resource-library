@@ -18,7 +18,7 @@ const resourceList = [
     journalMessage: "If you're interested in care work, this site might be useful: \n\n http://www.skillsforcare.org.uk/Home.aspx \n\n Take a look and find out more about how you might become a care worker.",
     category: ['training', 'skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {6145: 'care workers and home carers'},
+    sector: { 6145: 'care workers and home carers' },
   },
   {
     resourceId: 'octo003',
@@ -26,7 +26,8 @@ const resourceList = [
     url: 'https://www.myworldofwork.co.uk/getting-job/building-cv',
     summary: 'A simple tool to help a claimant build a CV',
     journalMessage: 'Since you need to work on your CV, this site might be helpful: \n\n https://www.myworldofwork.co.uk/getting-job/building-cv \n\n You have to register, and after that it will guide you through making a new CV.',
-    category: ['CV and resumes', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['CV and resumes', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {},
   },
@@ -37,7 +38,8 @@ const resourceList = [
     summary: 'A government site that shows all the options for help with childcare.',
     journalMessage: 'You can get support for childcare as you move back into work. Take a look at this site that explains all the options and see which one suits you:\n\n https://childcarechoices.gov.uk',
     category: ['childcare', 'preparing for work', 'preparing for and finding work'],
-    groups: ['parents', 'intensive work search', 'preparing for work', 'preparing for and finding work'],
+    groups: ['parents', 'intensive work search', 'preparing for work',
+      'preparing for and finding work'],
     sector: {},
   },
   {
@@ -66,7 +68,8 @@ const resourceList = [
     url: 'https://www.prospects.ac.uk/jobs-and-work-experience',
     summary: 'Information about different kinds of work experience along with links to opportunities.',
     journalMessage: "You might need more experience to help with your work search. To find out more about getting that experience and to see what's available, look at the Prospects site: \n\n https://www.prospects.ac.uk/jobs-and-work-experience \n\n It has information about different kinds of work experience, and will tell you what's available at the moment.",
-    category: ['internships', 'volunteering', 'apprenticeships', 'work experience', 'young jobseekers', 'preparing for work', 'preparing for and finding work'],
+    category: ['internships', 'volunteering', 'apprenticeships', 'work experience',
+      'young jobseekers', 'preparing for work', 'preparing for and finding work'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {},
   },
@@ -76,7 +79,9 @@ const resourceList = [
     url: 'https://www.myworldofwork.co.uk/',
     summary: 'A collection of guidance and tools that can help claimants with their work search - includes a skills check and CV builder. The focus is on Scotland, but many features can be used in the rest of the country',
     journalMessage: "My world of work is a website with tools to help you with getting work. There's a skills check, a CV builder, tips on interviews and a lot more: \n\n https://www.myworldofwork.co.uk/ \n\n Take a look - it could be very useful for you. ",
-    category: ['CV and resumes', 'skills', 'training', 'internships', 'volunteering', 'apprenticeships', 'work experience', 'interviews', 'CVs, cover letters and interviews', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['CV and resumes', 'skills', 'training', 'internships', 'volunteering',
+      'apprenticeships', 'work experience', 'interviews', 'CVs, cover letters and interviews',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {},
   },
@@ -87,7 +92,8 @@ const resourceList = [
     url: 'https://www.glassdoor.co.uk/index.htm',
     summary: 'A job search site with detailed company profiles, including reviews by employees and typical interview questions.',
     journalMessage: 'More preparation might help you in applications and interviews. To find out more about an employer, search for them on Glassdoor:  \n\n https://www.glassdoor.co.uk/index.htm \n\n The site has company profiles, reviews from employees and ex-employees, and typical interview questions.',
-    category: ['CV and resumes', 'interviews', 'research', 'work search', 'preparing for work', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['CV and resumes', 'interviews', 'research', 'work search', 'preparing for work',
+      'CVs, cover letters and interviews', 'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -117,7 +123,9 @@ const resourceList = [
     url: 'https://uk.linkedin.com/',
     summary: 'A social network focused on work.',
     journalMessage: "Here's a link to LinkedIn:  \n\n https://uk.linkedin.com \n\n It's worth building a profile, looking around for useful contacts and reading advice on your career.",
-    category: ['CV and resumes', 'interviews', 'networking', 'research', 'work search', 'social media', 'CVs, cover letters and interviews', 'preparing for and finding work', 'preparing for work'],
+    category: ['CV and resumes', 'interviews', 'networking', 'research', 'work search',
+      'social media', 'CVs, cover letters and interviews', 'preparing for and finding work',
+      'preparing for work'],
     groups: ['intensive work search', 'preparing for work'],
     sector: {},
   },
@@ -127,7 +135,9 @@ const resourceList = [
     url: 'https://nationalcareersservice.direct.gov.uk',
     summary: 'A government-funded agency that offers information, advice and guidance to help people make decisions about learning, training and work.',
     journalMessage: "The National Careers Service is a good place to start if you're unsure about the direction you want to take:  \n\n https://nationalcareersservice.direct.gov.uk \n\n The website has information about roles, a course finder and a skills health check that will show you what kind of work might suit you.",
-    category: ['CV and resumes', 'skills', 'interviews', 'research', 'work search', 'CVs, cover letters and interviews', 'skills, training and qualifications', 'preparing for work', 'preparing for and finding work'],
+    category: ['CV and resumes', 'skills', 'interviews', 'research', 'work search',
+      'CVs, cover letters and interviews', 'skills, training and qualifications',
+      'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -172,7 +182,7 @@ const resourceList = [
     journalMessage: 'This is a guide with useful background information on becoming a teaching assistant: \n\n https://www.tes.com/articles/teaching-assistant-pay-and-conditions \n\n If you think it might suit you, follow the links on the page to find out more.',
     category: ['research', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {6125: 'teaching assistant'},
+    sector: { 6125: 'teaching assistant' },
   },
   {
     resourceId: 'octo019',
@@ -182,7 +192,7 @@ const resourceList = [
     journalMessage: 'Here are a few tips to help you when you apply for jobs as a teaching assistant: \n\n https://www.tes.com/articles/tips-applying-teaching-assistant-roles \n\n',
     category: ['research', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {6125: 'teaching assistant'},
+    sector: { 6125: 'teaching assistant' },
   },
   {
     resourceId: 'octo020',
@@ -190,9 +200,10 @@ const resourceList = [
     url: 'https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-job-interview-advice',
     summary: 'Interview tips for claimants applying to be a teaching assistant.',
     journalMessage: "If you're going for a teaching assistant job, you should prepare for the interview. There are some tips here: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-job-interview-advice \n\n ",
-    category: ['research', 'work search', 'interviews', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['research', 'work search', 'interviews', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {6125: 'teaching assistant'},
+    sector: { 6125: 'teaching assistant' },
   },
 
   {
@@ -201,8 +212,9 @@ const resourceList = [
     url: 'https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-interview-potential-questions',
     summary: 'Sample interview questions for teaching assistant roles.',
     journalMessage: 'These are the kind of questions they ask if you go for an interview as a teaching assistant: \n\n https://www.tes.com/jobs/careers-advice/latest-advice/teaching-assistant-interview-potential-questions \n\n Take a look to prepare for your interview.',
-    category: ['research', 'work search', 'CVs, cover letters and interviews', 'preparing for and finding work'],
-    sector: {6125: 'teaching assistant'},
+    category: ['research', 'work search', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
+    sector: { 6125: 'teaching assistant' },
   },
   {
     resourceId: 'octo022',
@@ -222,7 +234,7 @@ const resourceList = [
     journalMessage: 'We talked about working as a cover supervisor in a school. This link will tell you a bit about that kind of job: \n\n https://www.tes.com/articles/becoming-a-cover-supervisor \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {6125: 'cover supervisor'},
+    sector: { 6125: 'cover supervisor' },
   },
   {
     resourceId: 'octo024',
@@ -232,7 +244,7 @@ const resourceList = [
     journalMessage: 'This link will tell you a bit about working as a school librarian: \n\n https://www.tes.com/articles/becoming-a-school-librarian \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {2451: 'librarian'},
+    sector: { 2451: 'librarian' },
   },
   {
     resourceId: 'octo025',
@@ -242,7 +254,7 @@ const resourceList = [
     journalMessage: 'This link will tell you a bit about working as a school ICT technician: \n\n https://www.tes.com/articles/becoming-ict-technician \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {3131: 'ICT technician'},
+    sector: { 3131: 'ICT technician' },
   },
   {
     resourceId: 'octo026',
@@ -252,7 +264,7 @@ const resourceList = [
     journalMessage: 'This link will tell you a bit about working as a midday supervisor: \n\n https://www.tes.com/articles/becoming-a-midday-supervisor \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {9244: 'Midday supervisor'},
+    sector: { 9244: 'Midday supervisor' },
   },
   {
     resourceId: 'octo027',
@@ -262,7 +274,7 @@ const resourceList = [
     journalMessage: 'This collection of links is a good place to get started if you want a non-teaching job at a school. You can find out about various different kind of support work: \n\n https://www.tes.com/articles/how-get-a-job-school-facilities \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {2451: 'librarian', 3131: 'ICT technician'},
+    sector: { 2451: 'librarian', 3131: 'ICT technician' },
   },
   {
     resourceId: 'octo028',
@@ -272,7 +284,7 @@ const resourceList = [
     journalMessage: 'This link will tell you a bit about working as a data manager at a school: \n\n https://www.tes.com/articles/becoming-a-school-data-manager \n\n',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {3131: 'data manager'},
+    sector: { 3131: 'data manager' },
   },
   {
     resourceId: 'octo029',
@@ -282,7 +294,7 @@ const resourceList = [
     journalMessage: 'This is the place to find out about a career in energy: \n\n http://www.euskills.co.uk/careers \n\n There are links and case studies that will let find out the different kinds of work and what skills or qualifications you will need.',
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {2121: 'civil engineers', 8124: 'energy plant operatives'},
+    sector: { 2121: 'civil engineers', 8124: 'energy plant operatives' },
   },
   {
     resourceId: 'octo030',
@@ -290,9 +302,10 @@ const resourceList = [
     url: 'https://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy',
     summary: 'An overview of energy, oil and gas jobs - what the work involves, what employers look for, how the job market is doing, and links to job listings.',
     journalMessage: "Here's some information about jobs in oil, gas, energy and related areas: \n\nhttps://www.careerstructure.com/careers-advice/profiles/gas-oil-and-energy\n\n You'll find job listings linked from that page too. ",
-    category: ['research', 'work search', 'listings', 'searching for work', 'preparing for work', 'preparing for and finding work'],
+    category: ['research', 'work search', 'listings', 'searching for work', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {2121: 'civil engineers', 8124: 'energy plant operatives'},
+    sector: { 2121: 'civil engineers', 8124: 'energy plant operatives' },
   },
   {
     resourceId: 'octo031',
@@ -300,9 +313,10 @@ const resourceList = [
     url: 'http://ogtap.co.uk',
     summary: 'This apprenticeship programme leads to a career in the gas or oil industries and recognised qualifications (SVQ level 3).',
     journalMessage: 'Take a look at this apprenticeship programme: \n\n http://ogtap.co.uk \n\n It would give you a start on the technical side of the gas or oil industry.',
-    category: ['apprenticeships', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'training', 'research', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {2121: 'civil engineers', 8124: 'energy plant operatives'},
+    sector: { 2121: 'civil engineers', 8124: 'energy plant operatives' },
   },
   {
     resourceId: 'octo032',
@@ -312,7 +326,7 @@ const resourceList = [
     journalMessage: "There's good information here about working on machines on building sites: \n\n https://nationalcareersservice.direct.gov.uk/job-profiles/construction-plant-operator \n\n It shows you related jobs too. ",
     category: ['research', 'work search', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {822: 'mobile machine drivers and operatives'},
+    sector: { 822: 'mobile machine drivers and operatives' },
   },
   {
     resourceId: 'octo033',
@@ -322,7 +336,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists jobs in renewable energy: \n\n http://jobfinder.renewableuk.com/ \n\n  ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {2121: 'civil engineers', 8124: 'energy plant operatives'},
+    sector: { 2121: 'civil engineers', 8124: 'energy plant operatives' },
   },
   {
     resourceId: 'octo034',
@@ -330,9 +344,10 @@ const resourceList = [
     url: 'https://www.gov.uk/guidance/facilities-management-apprenticeships',
     summary: "The SFA's guidance on facilities management apprenticeships. It explains the work and outlines types and levels of apprenticeship. Also has a link to the Find an apprenticeship service.",
     journalMessage: "Here's some background on on facilities management apprenticeships: \n\nhttps://www.gov.uk/guidance/facilities-management-apprenticeships\n\n Use the link at the bottom of the page to start looking for an apprenticeship. ",
-    category: ['apprenticeships', 'preparing for work', 'preparing for and finding work', 'young jobseekers', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'preparing for work', 'preparing for and finding work',
+      'young jobseekers', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {1251: 'facilities managers'},
+    sector: { 1251: 'facilities managers' },
   },
   {
     resourceId: 'octo035',
@@ -342,7 +357,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.efinancialcareers.co.uk\n\n ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {353: 'business, finance and related associate professionals'},
+    sector: { 353: 'business, finance and related associate professionals' },
   },
   {
     resourceId: 'octo036',
@@ -352,7 +367,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in finance, banking, accounting and insurance: \n\nhttp://www.topfinancialjobs.co.uk\n\n ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {353: 'business, finance and related associate professionals'},
+    sector: { 353: 'business, finance and related associate professionals' },
   },
   {
     resourceId: 'octo037',
@@ -360,9 +375,10 @@ const resourceList = [
     url: 'https://www.healthcareers.nhs.uk/',
     summary: 'The official NHS careers site. It features job descriptions and comparisons, with more general information on how the sector works.',
     journalMessage: 'This is the official NHS site for careers in health: \n\nhttps://www.healthcareers.nhs.uk/\n\n It explains the different jobs you could do, what skills you need, training and apprenticeship opportunities and how to get started in the field.',
-    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work'],
+    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {32: 'health and social care associate professionals'},
+    sector: { 32: 'health and social care associate professionals' },
   },
   {
     resourceId: 'octo038',
@@ -370,9 +386,11 @@ const resourceList = [
     url: 'https://www.stepintothenhs.nhs.uk/',
     summary: 'An NHS careers site with interactive elements, such as quizzes to find out what role would suit a claimant. Also has real stories from NHS staff, and videos.',
     journalMessage: "This is a good place to start if you're thinking about a career in health: \n\nhttps://www.stepintothenhs.nhs.uk\n\n It can give you a sense of the role that might suit you, and the best way in. ",
-    category: ['apprenticeships', 'work experience', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'work experience', 'qualifications', 'training', 'research',
+      'preparing for work', 'preparing for and finding work',
+      'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {32: 'health and social care associate professionals'},
+    sector: { 32: 'health and social care associate professionals' },
   },
   {
     resourceId: 'octo039',
@@ -380,9 +398,10 @@ const resourceList = [
     url: 'https://www.gov.uk/government/collections/health-public-services-and-care-apprenticeships',
     summary: 'A collection of SFA guidance and videos relating to apprenticeships in health, care and public services - for example, the armed forces or police.',
     journalMessage: 'This will give you an idea of the range of apprenticeships available in public services and health: \n\nhttps://www.gov.uk/government/collections/health-public-services-and-care-apprenticeships\n\n Look around so you understand your options.',
-    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {32: 'health and social care associate professionals'},
+    sector: { 32: 'health and social care associate professionals' },
   },
   {
     resourceId: 'octo040',
@@ -390,11 +409,12 @@ const resourceList = [
     url: 'http://www.hospitalityguild.co.uk/A-Career-in-Hospitality',
     summary: "A collection of resources to help people get started in hospitality. There's a careers map, a personality test and CV and interview tips. The guild's website also features job listings and training opportunities.",
     journalMessage: "The Hospitality Guild have a lot of resources about careers in hospitality: \n\nhttp://www.hospitalityguild.co.uk/A-Career-in-Hospitality\n\n There's a personality test, CV and interview tips, career maps and lots more information.",
-    category: ['research', 'work search', 'searching for work', 'preparing for work', 'preparing for and finding work'],
+    category: ['research', 'work search', 'searching for work', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {
       927: 'other elementary services occupations',
-      122: 'managers and proprietors in hospitality and leisure services'
+      122: 'managers and proprietors in hospitality and leisure services',
     },
   },
   {
@@ -408,7 +428,7 @@ const resourceList = [
     sector: {
       927: 'other elementary services occupations',
       122: 'managers and proprietors in hospitality and leisure services',
-      344: 'sports and fitness occupations'
+      344: 'sports and fitness occupations',
     },
   },
   {
@@ -419,7 +439,7 @@ const resourceList = [
     journalMessage: "This might help with your job search - it's a site listing jobs in hospitality: \n\nhttps://www.caterer.com\n\n ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {927: 'other elementary services occupations'},
+    sector: { 927: 'other elementary services occupations' },
   },
   {
     resourceId: 'octo043',
@@ -439,7 +459,7 @@ const resourceList = [
     journalMessage: "If you want to go into childcare, take a look at PACEY's site: \n\nhttps://www.pacey.org.uk/\n\n PACEY is a large organisation that offers support to childcarers. There's free information to get you started on the site, but some parts will only be available to paid members. ",
     category: ['work search', 'research', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {6122: 'childminders and related occupations'},
+    sector: { 6122: 'childminders and related occupations' },
   },
   {
     resourceId: 'octo045',
@@ -449,7 +469,7 @@ const resourceList = [
     journalMessage: "If you're moving into childminding, look at the Childcare Business Grants Scheme: \n\nhttps://www.childcarebusinessgrants.com/\n\n It could give you a grant to help get your new business started. ",
     category: ['grants', 'preparing for work', 'preparing for and finding work', 'support'],
     groups: ['intensive work search', 'self employed'],
-    sector: {6122: 'childminders and related occupations'},
+    sector: { 6122: 'childminders and related occupations' },
   },
   {
     resourceId: 'octo046',
@@ -457,9 +477,10 @@ const resourceList = [
     url: 'https://www.gov.uk/government/publications/early-years-foundation-stage-framework',
     summary: 'Any claimants moving into childminding should look at this framework - these are the standards they must meet.',
     journalMessage: "If you're moving into childminding, you have to read the Early years framework: \n\nhttps://www.gov.uk/government/publications/early-years-foundation-stage-framework\n\n These are the standards you have to meet as a registered childminder. ",
-    category: ['work search', 'research', 'regulations', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['work search', 'research', 'regulations', 'preparing for work',
+      'preparing for and finding work', 'support'],
     groups: ['intensive work search', 'self employed'],
-    sector: {6122: 'childminders and related occupations'},
+    sector: { 6122: 'childminders and related occupations' },
   },
   {
     resourceId: 'octo047',
@@ -469,7 +490,7 @@ const resourceList = [
     journalMessage: 'This is short explanation of childminding agencies: \n\nhttp://www.foundationyears.org.uk/child-minders\n\n Links on the page will give you more background information and explain how to register.',
     category: ['work search', 'research', 'preparing for work', 'preparing for and finding work'],
     groups: ['intensive work search', 'self employed'],
-    sector: {6122: 'childminders and related occupations'},
+    sector: { 6122: 'childminders and related occupations' },
   },
   {
     resourceId: 'octo048',
@@ -477,9 +498,11 @@ const resourceList = [
     url: 'https://www.goconstruct.org',
     summary: 'Comprehensive information about getting started in a construction career - apprenticeships, career change, career maps and more.',
     journalMessage: "The best place to find out about getting started in building is GoConstruct: \n\nhttps://www.goconstruct.org\n\n It's the industry website, and should have everything you need. ",
-    category: ['work search', 'research', 'apprenticeships', 'qualifications', 'training', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['work search', 'research', 'apprenticeships', 'qualifications', 'training',
+      'preparing for work', 'preparing for and finding work',
+      'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
   {
     resourceId: 'octo049',
@@ -489,7 +512,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists building and site jobs: \n\n http://www.careersinconstruction.com   ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
 
   {
@@ -500,7 +523,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists building and site jobs, and has some tools like a CV checker: \n\n http://www.justconstruction.net \n\n  ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
   {
     resourceId: 'octo051',
@@ -508,9 +531,10 @@ const resourceList = [
     url: 'http://womenonthetools.org.uk',
     summary: 'A campaign and support site that aims to get a greater number of women working in the manual trades - for example, plumbers, carpenters, electricians. Formerly called Women and Manual Trades, this provides links to the National Tradeswomen’s Network.',
     journalMessage: 'This is a network and campaign that supports women in manual trades: \n\n http://womenonthetools.org.uk \n\n  Sign up to make contacts, get advice and build your support network.',
-    category: ['work search', 'research', 'networking', 'preparing for work', 'preparing for and finding work'],
+    category: ['work search', 'research', 'networking', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['self employed'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
 
   {
@@ -519,12 +543,13 @@ const resourceList = [
     url: 'https://www.gov.uk/government/collections/construction-planning-and-the-built-environment-apprenticeships',
     summary: 'A collection of SFA guidance and videos relating to apprenticeships in construction, building, planning, civil engineering and related careers.',
     journalMessage: 'This will give you an idea of the range of apprenticeships available in building and planning: \n\nhttps://www.gov.uk/government/collections/construction-planning-and-the-built-environment-apprenticeships\n\n Look around so you understand your options.',
-    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
     sector: {
       531: 'construction and building trades',
       2121: 'civil engineers',
-      243: 'architects, town planners and surveyors'
+      243: 'architects, town planners and surveyors',
     },
   },
   {
@@ -533,9 +558,10 @@ const resourceList = [
     url: 'https://www.cscs.uk.com',
     summary: 'The official site for CSCS cards, needed on most building sites. It explains how to apply, and helps to find the right type of card.',
     journalMessage: 'This is the official site for building site cards: \n\nhttps://www.cscs.uk.com\n\n All the information you need is there, and it tells you how to apply. Some websites you overcharge for the same card - just go to this one.',
-    category: ['work search', 'research', 'qualifications', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['work search', 'research', 'qualifications', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
   {
     resourceId: 'octo054',
@@ -543,9 +569,10 @@ const resourceList = [
     url: 'http://www.citb.co.uk/bconstructive/',
     summary: "A central site for construction apprenticeships, run by the CITB (Construction Industry Training Board). It lists the types of apprenticeship, and explains how to apply. There's also background information and case studies.",
     journalMessage: 'This website is a reliable source of information about apprenticeships in construction: \n\nhttp://www.citb.co.uk/bconstructive/\n\n It shows you the range of trades you can learn, and explains how to apply.',
-    category: ['work search', 'research', 'qualifications', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['work search', 'research', 'qualifications', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {531: 'construction and building trades'},
+    sector: { 531: 'construction and building trades' },
   },
   {
     resourceId: 'octo055',
@@ -555,7 +582,7 @@ const resourceList = [
     journalMessage: "This might be useful if you're looking for pub or bar work: \n\nhttp://www.barzone.co.uk/\n\n ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {927: 'other elementary services occupations', 9274: 'bar staff'},
+    sector: { 927: 'other elementary services occupations', 9274: 'bar staff' },
   },
 
   {
@@ -564,9 +591,10 @@ const resourceList = [
     url: 'https://www.thetechpartnership.com',
     summary: 'A national network dedicated to improving digital and IT skills. It aims to get more young people into the sector and improve digital skills training.',
     journalMessage: 'If IT interests you, look at the Tech Partnership: \n\nhttps://www.thetechpartnership.com\n\n It explains ways to get started, such as apprenticeships and training, and gives you a lot of background on the industry and skills needed in it.',
-    category: ['apprenticeships', 'work experience', 'training', 'skills', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'work experience', 'training', 'skills',
+      'skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {213: 'information technology and telecommunications professionals'},
+    sector: { 213: 'information technology and telecommunications professionals' },
   },
   {
     resourceId: 'octo057',
@@ -574,9 +602,10 @@ const resourceList = [
     url: 'https://www.gov.uk/government/collections/arts-media-and-publishing-apprenticeships',
     summary: 'A collection of SFA guidance and videos relating to apprenticeships in arts and media and other creative industries.',
     journalMessage: 'This will give you an idea of the range of apprenticeships available in creative jobs: \n\nhttps://www.gov.uk/government/collections/arts-media-and-publishing-apprenticeships\n\n Look around so you understand your options.',
-    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {247: 'media professionals', 342: 'design occupations'},
+    sector: { 247: 'media professionals', 342: 'design occupations' },
   },
   {
     resourceId: 'octo058',
@@ -584,14 +613,15 @@ const resourceList = [
     url: 'https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk',
     summary: 'Prospects information on transport and logistics - a sector overview, how to get started, work experience opportunities and more.',
     journalMessage: "Prospects has some good information on transport and logistics: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/transport-and-logistics/overview-of-the-transport-and-logistics-sector-in-the-uk\n\n Read through to find out more about the work, and possible career paths. There's also information on how to get started in the field.",
-    category: ['apprenticeships', 'work experience', 'training', 'young jobseekers', 'preparing for work', 'preparing for and finding work'],
+    category: ['apprenticeships', 'work experience', 'training', 'young jobseekers',
+      'preparing for work', 'preparing for and finding work'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {
       116: 'managers and directors in transport and logistics',
       4134: 'transport and distribution clerks and assistants',
       82: 'transport and mobile machine drivers and operatives',
       926: 'elementary storage occupations',
-      1162: 'managers and directors in storage and warehousing'
+      1162: 'managers and directors in storage and warehousing',
     },
   },
   {
@@ -600,12 +630,13 @@ const resourceList = [
     url: 'http://www.careersthatmove.co.uk',
     summary: 'A complete guide to careers in the passenger transport and travel sector - including listings, qualifications, sector overview and career paths.',
     journalMessage: "Careers that move will give you a good sense of the options in a transport and travel career: \n\nhttp://www.careersthatmove.co.uk\n\n Read around to find out more about the work, the qualifications and skills you'd need and possible career paths. There are also job adverts.",
-    category: ['apprenticeships', 'qualifications', 'training', 'listings', 'searching for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'qualifications', 'training', 'listings', 'searching for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search'],
     sector: {
       116: 'managers and directors in transport and logistics',
       4134: 'transport and distribution clerks and assistants',
-      82: 'transport and mobile machine drivers and operatives'
+      82: 'transport and mobile machine drivers and operatives',
     },
   },
   {
@@ -621,7 +652,7 @@ const resourceList = [
       4134: 'transport and distribution clerks and assistants',
       82: 'transport and mobile machine drivers and operatives',
       926: 'elementary storage occupations',
-      1162: 'managers and directors in storage and warehousing'
+      1162: 'managers and directors in storage and warehousing',
     },
   },
   {
@@ -637,7 +668,7 @@ const resourceList = [
       4134: 'transport and distribution clerks and assistants',
       82: 'transport and mobile machine drivers and operatives',
       926: 'elementary storage occupations',
-      1162: 'managers and directors in storage and warehousing'
+      1162: 'managers and directors in storage and warehousing',
     },
   },
   {
@@ -652,7 +683,7 @@ const resourceList = [
       116: 'managers and directors in transport and logistics',
       4134: 'transport and distribution clerks and assistants',
       82: 'transport and mobile machine drivers and operatives',
-      926: 'elementary storage occupations'
+      926: 'elementary storage occupations',
     },
   },
   {
@@ -663,7 +694,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists jobs in food manufacturing: \n\n http://jobs.foodmanufacture.co.uk \n\n  ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {8111: 'food, drink and tobacco process operatives'},
+    sector: { 8111: 'food, drink and tobacco process operatives' },
   },
   {
     resourceId: 'octo064',
@@ -671,12 +702,13 @@ const resourceList = [
     url: 'https://www.army.mod.uk/rolefinder/',
     summary: "After selecting their interests, a claimant can see which roles in the British Army would suit them. For each role, there are details of duties, pay, the qualifications that they'll earn and more",
     journalMessage: 'This will give you an idea of some of the roles in the army, and which ones might suit your interests: \n\n https://www.army.mod.uk/rolefinder/ \n\n ',
-    category: ['research', 'qualifications', 'training', 'preparing for work', 'preparing for and finding work'],
+    category: ['research', 'qualifications', 'training', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {
       3311: 'ncos and other ranks',
       1171: 'officers in armed forces',
-      4112: 'national government administrative occupations'
+      4112: 'national government administrative occupations',
     },
   },
   {
@@ -687,7 +719,7 @@ const resourceList = [
     journalMessage: "Here's a site you might find useful - it lists transport jobs: \n\n http://www.transportjobsite.co.uk \n\n  ",
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {82: 'transport and mobile machine drivers and operatives'},
+    sector: { 82: 'transport and mobile machine drivers and operatives' },
   },
 
   {
@@ -697,7 +729,8 @@ const resourceList = [
     summary: 'A national organisation dedicated to helping people with their basic maths skills. The site offers various ways to improve these skills.',
     journalMessage: 'If you want to improve your maths, visit the National Numeracy website: \n\n https://www.nationalnumeracy.org.uk/ \n\n  It has quizzes, tests and advice to help you improve with numbers.',
     category: ['skills', 'training', 'skills, training and qualifications'],
-    groups: ['young jobseekers', 'intensive work search', 'preparing for work', 'preparing for and finding work'],
+    groups: ['young jobseekers', 'intensive work search', 'preparing for work',
+      'preparing for and finding work'],
     sector: {},
   },
 
@@ -707,9 +740,10 @@ const resourceList = [
     url: 'https://www.sia.homeoffice.gov.uk/Pages/home.aspx',
     summary: 'The authority overseeing private security work. Explains how to apply for an SIA licence, needed for things like door work or wheel clamping.',
     journalMessage: "If you're looking at security work, check the SIA site. It explains what licence you'll need, and how to get it:\n\n https://www.sia.homeoffice.gov.uk/Pages/home.aspx \n\n ",
-    category: ['work search', 'research', 'qualifications', 'preparing for work', 'preparing for and finding work'],
+    category: ['work search', 'research', 'qualifications', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {924: 'elementary security occupations'},
+    sector: { 924: 'elementary security occupations' },
   },
   {
     resourceId: 'octo068',
@@ -717,7 +751,8 @@ const resourceList = [
     url: 'https://www.gov.uk/apprenticeships-guide',
     summary: 'A GOV.UK guide explaining how to become an apprentice. Explains apprenticeship levels, pay, conditions, and links to the Find an apprenticeship service.',
     journalMessage: 'The best place to start finding out about apprenticeships is this guide: \n\n https://www.gov.uk/apprenticeships-guide \n\n',
-    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['apprenticeships', 'qualifications', 'training', 'research', 'preparing for work',
+      'preparing for and finding work', 'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
     sector: {},
   },
@@ -727,7 +762,8 @@ const resourceList = [
     url: 'https://www.getsafeonline.org/',
     summary: 'A site with advice to help you stay safe online. Guidance on good security practice and avoiding scams.',
     journalMessage: "You'll be looking and applying for a lot of jobs online, so it's worth taking a look at Get safe online: \n\n https://www.getsafeonline.org/ \n\n It has a lot of advice that can stop you getting scammed or hacked. ",
-    category: ['searching for work', 'research', 'searching for work', 'preparing for and finding work'],
+    category: ['searching for work', 'research', 'searching for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -737,7 +773,8 @@ const resourceList = [
     url: 'https://www.safer-jobs.com',
     summary: 'SAFERjobs is an organisation that supports job seekers, agency staff, and contractors with any suspected fraud, malpractice, breach of legislation, or poor experience they may encounter.',
     journalMessage: "If you think you've seen a scam when you're looking for work online, visit: \n\n https://www.safer-jobs.com \n\n It has a lot of guidance and you can report incidents. ",
-    category: ['searching for work', 'research', 'searching for work', 'preparing for and finding work'],
+    category: ['searching for work', 'research', 'searching for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -747,7 +784,8 @@ const resourceList = [
     url: 'https://www.gov.uk/working-for-yourself/what-counts-as-self-employed',
     summary: 'Basic information about self-employment - who counts as self-employed and what they need to do.',
     journalMessage: "Here's some simple introductory information about self-employment - what counts, the tax you have to pay, and more basic details: \n\n https://www.gov.uk/working-for-yourself/what-counts-as-self-employed \n\n  ",
-    category: ['research', 'preparing for work', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['research', 'preparing for work', 'preparing for work',
+      'preparing for and finding work', 'support'],
     groups: ['self employed'],
     sector: {},
   },
@@ -767,7 +805,8 @@ const resourceList = [
     url: 'http://www.mentorsme.co.uk/',
     summary: 'An online gateway for small and medium-sized enterprises looking for mentoring services.',
     journalMessage: "If you need some personal advice or guidance on the direction your business should take, look at Mentorsme. It's a site that arranges mentoring for people with small or medium-sized businesses: \n\n http://www.mentorsme.co.uk/ \n\n  ",
-    category: ['research', 'mentoring', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['research', 'mentoring', 'preparing for work', 'preparing for and finding work',
+      'support'],
     groups: ['self employed'],
     sector: {},
   },
@@ -777,7 +816,8 @@ const resourceList = [
     url: 'https://www.moneyadviceservice.org.uk/en',
     summary: 'Free and impartial money advice, offering tools and guidance to help with budgeting.',
     journalMessage: 'The Money Advice Service might be a useful place to look if you want some pointers on managing your money: \n\n https://www.moneyadviceservice.org.uk/en \n\n  They have tools that can help you budget, and offer independent advice.',
-    category: ['research', 'budgeting', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['research', 'budgeting', 'preparing for work', 'preparing for and finding work',
+      'support'],
     groups: ['self employed', 'intensive work search'],
     sector: {},
   },
@@ -788,9 +828,11 @@ const resourceList = [
     url: 'https://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/information-technology',
     summary: 'Prospects information on working in the IT sector - a sector overview, how to get started, work experience opportunities and more.',
     journalMessage: 'If IT interests you, Prospects is a good place to start: \n\nhttps://www.prospects.ac.uk/jobs-and-work-experience/job-sectors/information-technology\n\n It explains the normal routes in, and ways to find training and work experience.',
-    category: ['internships', 'volunteering', 'apprenticeships', 'work experience', 'training', 'preparing for work', 'preparing for and finding work', 'skills, training and qualifications'],
+    category: ['internships', 'volunteering', 'apprenticeships', 'work experience', 'training',
+      'preparing for work', 'preparing for and finding work',
+      'skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
-    sector: {213: 'information technology and telecommunications professionals'},
+    sector: { 213: 'information technology and telecommunications professionals' },
   },
 
 
@@ -802,7 +844,10 @@ const resourceList = [
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in shops and retail: \n\nhttps://www.retailchoice.com ',
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {7111: 'sales and retail assistants', 1190: 'managers and directors in retail and wholesale'},
+    sector: {
+      7111: 'sales and retail assistants',
+      1190: 'managers and directors in retail and wholesale',
+    },
   },
 
   {
@@ -813,7 +858,10 @@ const resourceList = [
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in clothes retail: \n\nhttp://www.drapersjobs.com\n\n ',
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {7111: 'sales and retail assistants', 1190: 'managers and directors in retail and wholesale'},
+    sector: {
+      7111: 'sales and retail assistants',
+      1190: 'managers and directors in retail and wholesale',
+    },
   },
   {
     resourceId: 'octo078',
@@ -823,7 +871,7 @@ const resourceList = [
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in IT and technology: \n\nhttp://www.hays.co.uk/job/it-jobs/ ',
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {213: 'information technology and telecommunications professionals'},
+    sector: { 213: 'information technology and telecommunications professionals' },
   },
   {
     resourceId: 'octo079',
@@ -841,7 +889,8 @@ const resourceList = [
     url: 'https://www.myworldofwork.co.uk/getting-job/cover-letters',
     summary: 'Advice on cover letters, with tips on structure and what to say. There are also example letters.',
     journalMessage: 'This website will get you started on your cover letters: \n\nhttps://www.myworldofwork.co.uk/getting-job/cover-letters\n\nIt has a lot of advice, and some examples to help you along.',
-    category: ['cover letters', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['cover letters', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -852,7 +901,8 @@ const resourceList = [
     summary: 'A GOV.UK site to help find registered childcare. Based on a postcode check, it will send you to the relevant page on your local council\'s website.',
     journalMessage: 'You\'ll need a registered childminder to get financial support for childcare. Start here: \n\nhttps://www.gov.uk/find-registered-childminder\n\nIt will direct you to the relevant page of the council\'s website.',
     category: ['childcare', 'preparing for work', 'preparing for and finding work'],
-    groups: ['parents', 'intensive work search', 'preparing for work', 'preparing for and finding work'],
+    groups: ['parents', 'intensive work search', 'preparing for work',
+      'preparing for and finding work'],
     sector: {},
   },
   {
@@ -863,7 +913,7 @@ const resourceList = [
     journalMessage: 'This might help with your job search - it\'s a site listing jobs in IT and technology: \n\nhttps://www.cwjobs.co.uk ',
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {213: 'information technology and telecommunications professionals'},
+    sector: { 213: 'information technology and telecommunications professionals' },
   },
   {
     resourceId: 'octo083',
@@ -882,7 +932,8 @@ const resourceList = [
     summary: 'A charity that gives advice and practical support for single parents.',
     journalMessage: 'Gingerbread has a lot of support and advice for single parents: \n\nhttps://www.gingerbread.org.uk ',
     category: ['childcare', 'preparing for work', 'preparing for and finding work'],
-    groups: ['parents', 'intensive work search', 'preparing for work', 'preparing for and finding work'],
+    groups: ['parents', 'intensive work search', 'preparing for work',
+      'preparing for and finding work'],
     sector: {},
   },
   {
@@ -901,7 +952,8 @@ const resourceList = [
     url: 'https://www.princes-trust.org.uk',
     summary: 'A charity that helps young people get into work, education or training.',
     journalMessage: 'Take a look at the Prince\'s Trust - they offer a lot of ways into work and training: \n\nhttps://www.princes-trust.org.uk ',
-    category: ['training', 'preparing for work', 'preparing for and finding work', 'self-employment', 'skills, training and qualifications'],
+    category: ['training', 'preparing for work', 'preparing for and finding work',
+      'self-employment', 'skills, training and qualifications'],
     groups: ['young jobseekers', 'intensive work search'],
     sector: {},
   },
@@ -941,7 +993,8 @@ const resourceList = [
     url: 'https://www.gov.uk/browse/disabilities/work',
     summary: 'An overview of the GOV.UK pages on the topic of disabled people and work. Plain English guides to workers\' rights, the law, and applying for Access to Work grants.',
     journalMessage: 'Here\'s a list of the pages on GOV.UK that deal with work and disability. You\'ll find useful information there about your rights and Access to Work grants: \n\nhttps://www.gov.uk/browse/disabilities/work ',
-    category: ['health, mental health and wellbeing', 'support', 'preparing for work', 'preparing for and finding work'],
+    category: ['health, mental health and wellbeing', 'support', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -981,7 +1034,8 @@ const resourceList = [
     url: 'https://www.prospects.ac.uk/careers-advice/interview-tips/how-to-prepare-for-an-interview',
     summary: 'Advice on preparing for interviews, including tips on how to research, how to dress and attitude. There\'s also advice on how to follow up after the interview.',
     journalMessage: 'There\'s useful practical advice here if you\'re getting ready for an interview: \n\nhttps://www.prospects.ac.uk/careers-advice/interview-tips/how-to-prepare-for-an-interview\n\n ',
-    category: ['interviews', 'research', 'preparing for work', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['interviews', 'research', 'preparing for work', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
     groups: [''],
     sector: {},
   },
@@ -991,7 +1045,8 @@ const resourceList = [
     url: 'https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/',
     summary: 'Advice on preparing for interviews, including sample questions, explanation of interview types and tips on what to wear.',
     journalMessage: 'There\'s useful practical advice here if you\'re getting ready for an interview:\n\n https://www.reed.co.uk/career-advice/interview-techniques/preparing-for-a-job-interview/\n\nIt includes example questions and help with interviews for different kinds of role.',
-    category: ['interviews', 'research', 'preparing for work', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['interviews', 'research', 'preparing for work', 'CVs, cover letters and interviews',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1001,8 +1056,10 @@ const resourceList = [
     url: 'https://www.healthystart.nhs.uk',
     summary: 'An NHS scheme for people who have a child under four, or are pregnant. It offers free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk.',
     journalMessage: 'You may qualify for the Healthy Start scheme - you\'ll get free vouchers every week to spend on milk, plain fresh and frozen fruit and vegetables, and infant formula milk. Take a look here:\n\nhttps://www.healthystart.nhs.uk ',
-    category: ['childcare', 'preparing for work', 'preparing for and finding work', 'health, mental health and wellbeing', 'support'],
-    groups: ['parents', 'intensive work search', 'preparing for work', 'preparing for and finding work'],
+    category: ['childcare', 'preparing for work', 'preparing for and finding work',
+      'health, mental health and wellbeing', 'support'],
+    groups: ['parents', 'intensive work search', 'preparing for work',
+      'preparing for and finding work'],
     sector: {},
   },
   {
@@ -1011,7 +1068,8 @@ const resourceList = [
     url: 'https://www.entitledto.co.uk/',
     summary: 'A comprehensive benefits calculator.',
     journalMessage: 'Use the entitledto benefits calculator to see what other benefits you can claim:\n\nhttps://www.entitledto.co.uk/\n\nYou\'ll have to put in quite a lot of information, but it will give you a good idea of what you can get.',
-    category: ['preparing for work', 'preparing for and finding work', 'support', 'health, mental health and wellbeing', 'support'],
+    category: ['preparing for work', 'preparing for and finding work', 'support',
+      'health, mental health and wellbeing', 'support'],
     groups: [''],
     sector: {},
   },
@@ -1041,7 +1099,8 @@ const resourceList = [
     url: 'https://www.gov.uk/dbs-update-service',
     summary: 'The Disclosure and Barring Service (DBS) has this online tool for updating a DBS certificate.',
     journalMessage: 'You can update your Disclosure and Barring Service details online:\n\nhttps://www.gov.uk/dbs-update-service ',
-    category: ['support', 'preparing for work', 'preparing for and finding work', 'Skills, training and qualifications'],
+    category: ['support', 'preparing for work', 'preparing for and finding work',
+      'Skills, training and qualifications'],
     groups: [''],
     sector: {},
   },
@@ -1061,7 +1120,8 @@ const resourceList = [
     url: 'https://www.vercida.com/uk/',
     summary: 'Job website that actively promotes diversity and inclusion. Includes articles as well as job listings.',
     journalMessage: 'Take a look at Vercida, a site with a range of jobs and articles:\n\nhttps://www.vercida.com/uk/\n\n',
-    category: ['work search', 'listings', 'searching for work', 'preparing for and finding work', 'support'],
+    category: ['work search', 'listings', 'searching for work', 'preparing for and finding work',
+      'support'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1071,9 +1131,10 @@ const resourceList = [
     url: 'https://www.prisonandprobationjobs.gov.uk/',
     summary: 'Information about roles in the prison service - includes background information, how to apply and links to related positions - for instance probation officers.',
     journalMessage: 'If you\'re interested in becoming a prison officer, this site has all the background information you need:\n\nhttps://www.prisonandprobationjobs.gov.uk/',
-    category: ['research', 'qualifications', 'training', 'preparing for work', 'preparing for and finding work'],
+    category: ['research', 'qualifications', 'training', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {3314: 'Prison service officers (below principal officer)'},
+    sector: { 3314: 'Prison service officers (below principal officer)' },
   },
   {
     resourceId: 'octo104',
@@ -1081,7 +1142,8 @@ const resourceList = [
     url: 'https://www.gov.uk/order-copy-birth-death-marriage-certificate',
     summary: 'A service for ordering certificates you might need to apply for a job or get a qualification.',
     journalMessage: 'If you need a copy of a birth, death or marriage certificate, use the government service:\n\nhttps://www.gov.uk/order-copy-birth-death-marriage-certificate',
-    category: ['research', 'qualifications', 'training', 'preparing for work', 'preparing for and finding work'],
+    category: ['research', 'qualifications', 'training', 'preparing for work',
+      'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1091,7 +1153,8 @@ const resourceList = [
     url: 'https://www.esolcourses.com/content/topicsmenu/beginners.html',
     summary: 'A site to help people with English as their second or other language. Simple lessons and games for beginners.',
     journalMessage: 'This can help with your English:\n\nhttps://www.esolcourses.com/content/topicsmenu/beginners.html\n\nTry the games and lessons.',
-    category: ['skills', 'training', 'ESOL', 'language', 'Skills, training and qualifications', 'support'],
+    category: ['skills', 'training', 'ESOL', 'language', 'Skills, training and qualifications',
+      'support'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1103,7 +1166,7 @@ const resourceList = [
     journalMessage: 'This agency could help you get a permanent or temporary teaching role:\n\nhttps://www.simplyeducation.co.uk/',
     category: ['work search', 'listings', 'searching for work', 'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {231: 'teaching and educational professionals'},
+    sector: { 231: 'teaching and educational professionals' },
   },
   {
     resourceId: 'octo108',
@@ -1121,7 +1184,8 @@ const resourceList = [
     url: 'https://www.turn2us.org.uk/',
     summary: 'Financial hardship advice, along with a comprehensive benefits calculator.',
     journalMessage: 'If you\'re worried about money, look at Turn2us:\n\nhttps://www.turn2us.org.uk/\n\nIt\'s got a lot of guidance for people in difficult situations, and there\'s a benefits calculator too.',
-    category: ['research', 'budgeting', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['research', 'budgeting', 'preparing for work', 'preparing for and finding work',
+      'support'],
     groups: [''],
     sector: {},
   },
@@ -1131,7 +1195,8 @@ const resourceList = [
     url: 'https://www.reed.co.uk/career-advice/four-ways-to-follow-up-after-an-application/',
     summary: 'Advice on following up on an interview or job application.',
     journalMessage: 'There\'s useful practical advice here on following up an interview or job application:\n\n https://www.reed.co.uk/career-advice/four-ways-to-follow-up-after-an-application/\n\nYou should always try to follow up if you didn\'t get a job - it helps for the next time.',
-    category: ['interviews', 'research', 'cover letters', 'preparing for work', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['interviews', 'research', 'cover letters', 'preparing for work',
+      'CVs, cover letters and interviews', 'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1141,7 +1206,8 @@ const resourceList = [
     url: 'https://www.reed.co.uk/career-advice/cover-letters/',
     summary: 'Advice on cover letters. Includes templates, separate advice for graduates, and tips on personal statements.',
     journalMessage: 'There\'s useful practical advice here on cover letters:\n\nhttps://www.reed.co.uk/career-advice/cover-letters/\n\nIt includes a template you could use.',
-    category: ['interviews', 'research', 'cover letters', 'preparing for work', 'CVs, cover letters and interviews', 'preparing for and finding work'],
+    category: ['interviews', 'research', 'cover letters', 'preparing for work',
+      'CVs, cover letters and interviews', 'preparing for and finding work'],
     groups: ['intensive work search'],
     sector: {},
   },
@@ -1151,7 +1217,8 @@ const resourceList = [
     url: 'https://www.myworldofwork.co.uk/my-career-options/career-progression',
     summary: 'Advice on moving your career forward - goals, how to plan, how to get and use feedback, and tips on finding a mentor.',
     journalMessage: 'If you want to move forward with work, this might be of use:\n\nhttps://www.myworldofwork.co.uk/my-career-options/career-progression\n\n',
-    category: ['career progression', 'mentors', 'preparing for work', 'preparing for and finding work', 'support'],
+    category: ['career progression', 'mentors', 'preparing for work',
+      'preparing for and finding work', 'support'],
     groups: [],
     sector: {},
   },
@@ -1161,7 +1228,8 @@ const resourceList = [
     url: 'https://www.myworldofwork.co.uk/getting-job/employer-advice-negotiating-your-salary',
     summary: 'Advice on how to ask for a raise, or a higher starting salary.',
     journalMessage: 'If you want to earn more, here\'s some advice on how to ask for raise or to negotiate how much you\'ll be paid:\n\nhttps://www.myworldofwork.co.uk/getting-job/employer-advice-negotiating-your-salary\n\n',
-    category: ['career progression', 'CVs, cover letters and interviews', 'preparing for and finding work', 'support'],
+    category: ['career progression', 'CVs, cover letters and interviews',
+      'preparing for and finding work', 'support'],
     groups: [],
     sector: {},
   },
@@ -1181,7 +1249,7 @@ const resourceList = [
         'preparing for and finding work',
         'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo116',
@@ -1197,7 +1265,7 @@ const resourceList = [
         'preparing for and finding work',
         'aviation jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo117',
@@ -1215,7 +1283,7 @@ const resourceList = [
         'science jobs',
         'STEM jobs'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo118',
@@ -1225,7 +1293,7 @@ const resourceList = [
     journalMessage: 'To find out more about Carer\'s Allowance, this guide should have everything you need: \n\nhttps://www.gov.uk/carers-allowance\n\nIt\'s official GOV.UK guidance on Carer\'s Allowance, including how it works, eligibility and how to make a claim.',
     category: ['research', 'support', 'benefits'],
     groups: [''],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo119',
@@ -1235,7 +1303,7 @@ const resourceList = [
     journalMessage: 'A good place to find out about support for the Armed Forces, veterans and their families is SSAFA - the Armed Forces charity:\n\nhttps://www.ssafa.org.uk',
     category: ['research', 'support', 'mental health and wellbeing', 'health'],
     groups: [''],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo120',
@@ -1251,7 +1319,7 @@ const resourceList = [
         'preparing for and finding work',
         'office jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo121',
@@ -1267,7 +1335,7 @@ const resourceList = [
         'preparing for and finding work',
         'science jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo122',
@@ -1282,7 +1350,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo123',
@@ -1297,7 +1365,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo124',
@@ -1312,7 +1380,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo125',
@@ -1328,7 +1396,7 @@ const resourceList = [
         'preparing for and finding work',
         'aviation jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo126',
@@ -1344,7 +1412,7 @@ const resourceList = [
         'preparing for and finding work',
         'engineering jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo127',
@@ -1358,7 +1426,7 @@ const resourceList = [
         'volunteering',
         'support'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo128',
@@ -1374,7 +1442,7 @@ const resourceList = [
         'preparing for and finding work',
         'creative jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo129',
@@ -1391,7 +1459,7 @@ const resourceList = [
         'gaming jobs',
         'technology jobs'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo130',
@@ -1406,7 +1474,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo131',
@@ -1421,7 +1489,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   },
   {
     resourceId: 'octo132',
@@ -1436,7 +1504,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: {'': ''}
+    sector: { '': '' },
   }];
 
 module.exports = resourceList;
