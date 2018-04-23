@@ -1253,22 +1253,6 @@ const resourceList = [
   },
   {
     resourceId: 'octo116',
-    title: 'Airport Jobs',
-    url: 'http://www.aviationjobsearch.com',
-    summary: 'Job listings in the aviation sector.',
-    journalMessage: 'Here\'s a website you might find useful - it lists jobs in the aviation sector and has career advice:\n\nhttps://jobs.sciencecareers.org',
-    category:
-      ['work search',
-        'research',
-        'listings',
-        'searching for work',
-        'preparing for and finding work',
-        'aviation jobs'],
-    groups: ['intensive work search'],
-    sector: { '': '' },
-  },
-  {
-    resourceId: 'octo117',
     title: 'Gradcracker',
     url: 'http://www.gradcracker.com',
     summary: 'A careers website for students looking for work experience and graduate roles in STEM - Science, Technology, Engineering, and Mathematics.',
@@ -1286,7 +1270,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo118',
+    resourceId: 'octo117',
     title: 'GOV.UK: Carer\'s Allowance',
     url: 'https://www.gov.uk/carers-allowance',
     summary: 'A GOV.UK guide explaining Carer\'s Allowance - how it works, eligibility, how to make a claim, and more.',
@@ -1296,7 +1280,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo119',
+    resourceId: 'octo118',
     title: 'SSAFA - the Armed Forces charity',
     url: 'https://www.ssafa.org.uk',
     summary: 'A charity that provides welfare and support for the Armed Forces, veterans and their families.',
@@ -1306,7 +1290,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo120',
+    resourceId: 'octo119',
     title: 'Office Angels',
     url: 'https://www.office-angels.com',
     summary: 'A recruiter that finds office, secretarial and administration staff for a wide range of employers.',
@@ -1322,7 +1306,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo121',
+    resourceId: 'octo120',
     title: 'Science Careers',
     url: 'https://jobs.sciencecareers.org',
     summary: 'Job listings in the science and technology sector.',
@@ -1338,7 +1322,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo122',
+    resourceId: 'octo121',
     title: 'Totaljobs.com',
     url: 'https://www.totaljobs.com',
     summary: 'A job search website with career advice.',
@@ -1353,7 +1337,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo123',
+    resourceId: 'octo122',
     title: 'Avis Budget Group Careers',
     url: 'http://www.avisbudgetgroupcareers.com',
     summary: 'The careers website of Avis Budget Group - a company that provides vehicle rental services.',
@@ -1368,9 +1352,9 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo124',
+    resourceId: 'octo123',
     title: 'jobrapido',
-    url: 'http://uk.jobrapido.com',
+    url: 'http://uk.jobrapido.com/',
     summary: 'A job search website with career advice.',
     journalMessage: 'This might help you with your job search: \n\nhttp://uk.jobrapido.com/\n\nIt\'s a website where you can search for jobs and get career advice.',
     category:
@@ -1383,7 +1367,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo125',
+    resourceId: 'octo124',
     title: 'Airport Jobs',
     url: 'http://www.aviationjobsearch.com',
     summary: 'Job listings in the aviation sector.',
@@ -1399,7 +1383,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo126',
+    resourceId: 'octo125',
     title: 'The Engineer Jobs',
     url: 'https://jobs.theengineer.co.uk/',
     summary: 'Job listings in the engineering sector.',
@@ -1415,9 +1399,9 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo127',
+    resourceId: 'octo126',
     title: 'vInspired',
-    url: 'www.vinspired.com',
+    url: 'https://www.vinspired.com/',
     summary: 'A volunteering charity that helps young people aged 14 to 25 to volunteer for causes they care about and learn skills such as teamwork and problem-solving.',
     journalMessage: 'Here\'s a website you might find useful while looking for ways to gain skills:\n\nhttps://vinspired.com/\n\nIt\'s a charity that helps young people aged 14 to 25 to volunteer for causes they care about and prepare better for the future.',
     category:
@@ -1429,7 +1413,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo128',
+    resourceId: 'octo127',
     title: 'af Selection',
     url: 'http://www.afselection.co.uk/',
     summary: 'A recruiter for the creative sectors that lists jobs and has career advice - interview tips, submitting a CV, and more.',
@@ -1445,7 +1429,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo129',
+    resourceId: 'octo128',
     title: 'datascope',
     url: 'https://datascope.co.uk/',
     summary: 'A recruiter for the gaming industry that lists jobs and has career advice about working in games, online and mobile technology.',
@@ -1462,7 +1446,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo130',
+    resourceId: 'octo129',
     title: 'Simply Hired',
     url: 'https://www.simplyhired.co.uk/',
     summary: 'A job search website.',
@@ -1477,7 +1461,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo131',
+    resourceId: 'octo130',
     title: 'Indeed',
     url: 'https://www.indeed.co.uk/',
     summary: 'A job search website with career advice.',
@@ -1492,7 +1476,7 @@ const resourceList = [
     sector: { '': '' },
   },
   {
-    resourceId: 'octo132',
+    resourceId: 'octo131',
     title: '1Job.co.uk',
     url: 'http://www.1job.co.uk',
     summary: 'A job search website.',
