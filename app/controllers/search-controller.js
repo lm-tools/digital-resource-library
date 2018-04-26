@@ -46,7 +46,7 @@ router.get('/search', (req, res) => {
   } else {
     return resourceModel.findByKeyword(search)
       .then(resourceList => searchResultsResponse(res, search, resourceList))
-      .catch(e => console.error(e));;
+      .catch(e => console.error(e));
   }
 });
 

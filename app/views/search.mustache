@@ -39,17 +39,17 @@
         {{#__}}search.emptyResults{{/__}} <a href="{{#__}}suggestResource.mailto{{/__}}">{{#__}}search.emptyResultsLink{{/__}}</a>.
       </p>
     {{/hasResults}}
-    max score: {{maxScore}}
     {{#resourceList}}
-      <div class="search-result" data-test="resource">
+      <div class="search-result" data-test="resource-id-{{ resourceId }}">
         <h2 class="search-result-title" data-test="title">
-          <a href="{{ basePath }}/resources/{{ resourceId }}?fromSearch={{search}}" data-test="resource-{{resourceId}}">
+          <a href="{{ basePath }}/resources/{{ resourceId }}?fromSearch={{search}}" data-test="resource-link">
             {{ title }}
-          </a>score: {{score}}
+          </a>
         </h2>
         <p class="search-result-excerpt" data-test="summary">
           {{summary}}
         </p>
+        <div class="resource-score" data-test="score">score: {{score}}</div>
       </div>
     {{/resourceList}}
   </section>

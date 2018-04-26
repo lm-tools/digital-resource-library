@@ -24,12 +24,18 @@ class SearchPage extends Page {
   }
 
   getResults() {
-    const resources = this.browser.queryAll('[data-test="resource"]');
+    const resources = this.browser.queryAll('[data-test^="resource-id-"]');
     return resources.map(resourceContext => ({
       title: this.extractText('title', resourceContext),
       summary: this.extractText('summary', resourceContext),
-      href: this.browser.query('[data-test^="resource-"]', resourceContext).getAttribute('href'),
+      href: this.browser.query('[data-test="resource-link"]', resourceContext).getAttribute('href'),
+      resourceId: resourceContext.getAttribute('data-test').replace('resource-id-', ''),
+      score: this.extractText('score', resourceContext),
     }));
+  }
+
+  getResult(id) {
+    const resources = this.browser.query(`[data-test="resource-${id}"]`);
   }
 
   getSearchSummary() {

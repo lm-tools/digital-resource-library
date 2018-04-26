@@ -1,5 +1,4 @@
-const resourcesData = require('./data/resources');
-const resourceModel = require('./models/resources-model')({ data: resourcesData });
+const resourceModel = require('./models/resources-model')('drl-resources');
 const categoriesData = require('./data/categories');
 const categoryModel = require('./models/categories-model')({ data: categoriesData });
 const featuredData = require('./data/featured');
