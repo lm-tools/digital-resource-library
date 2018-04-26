@@ -1,6 +1,7 @@
 const elasticsearch = require('elasticsearch');
 const esHost = process.env.ES_ENDPOINT || (process.env.NODE_ENV !== 'production' &&
   'https://search-drl-dev-im47pucexv7nd5grs35lkejah4.eu-west-1.es.amazonaws.com');
+const index = process.env.ES_INDEX || 'drl-resources';
 
 if (!esHost) {
   console.error('no elasticsearch endpoint set. In production env, the ES_ENDPOINT env variable' +
@@ -15,16 +16,15 @@ const esClient = new elasticsearch.Client({
 console.info(`using esHost: ${esHost}`);
 
 class SearchClient {
-  constructor(index) {
-    this.index = index;
-  }
+  constructor() {}
 
   findAll() {
     return esClient.search({
-      index: this.index, body: {
+      index,
+      body: {
         size: 1000, // need to implement pagination
         query: {
-          match_all: {}
+           match_all: {}
         }
       }
     });
@@ -32,7 +32,8 @@ class SearchClient {
 
   find(keyword) {
     return esClient.search({
-      index: this.index, body: {
+      index,
+      body: {
         size: 1000, // need to implement pagination
         query: {
           multi_match: {
@@ -50,7 +51,7 @@ class SearchClient {
     data.forEach(item => {
       bulkBody.push({
         index: {
-          _index: this.index,
+          _index: index,
           _type: type,
           _id: item[id]
         }

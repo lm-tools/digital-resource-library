@@ -1,6 +1,6 @@
 const { describe, it, beforeEach } = require('mocha');
 const { expect } = require('chai');
-const resourcesModel = require('../../app/models/resources-model');
+const resourcesModel = require('../../app/models/resources-model')('drl-resources');
 
 describe('resourcesModel', () => {
   describe('search by keyword', () => {
