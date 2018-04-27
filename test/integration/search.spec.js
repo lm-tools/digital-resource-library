@@ -4,6 +4,7 @@ const esResourcesMock = integrationSpecHelper.esResourcesMock;
 const resourceModel = integrationSpecHelper.resourceModel;
 const expect = require('chai').expect;
 const { describe, it, before, after } = require('mocha');
+const url = require('url');
 
 const visitPageWithMockedResources = resources => {
   esResourcesMock.mockEsSearch(resources);
@@ -64,7 +65,7 @@ describe('Search', () => {
     it('displays result found for keyword with correct title, summary, link, and score', () => {
       const hits = 1;
       const searchQuery = esResourcesMock.constructMockQuery({
-        keyword: 'cool search text',
+        keyword: 'cooltext',
         hits: 1,
       });
       esResourcesMock.mockEsSearch(esResourcesMock.mockedResources(hits));
@@ -73,8 +74,11 @@ describe('Search', () => {
           const expectedResource = resourceModel.getRawData()[0];
           const searchResults = searchPage.getResults();
           expect(searchResults.length).to.eql(1);
-          expect(searchResults[0].href)
-            .to.eql(`/resources/${expectedResource.resourceId}?fromSearch=${searchQuery}`);
+          const { pathname, query } = url.parse(searchResults[0].href);
+          const expectedUri = url.parse(
+            routes.detailsUrl(expectedResource.resourceId, searchQuery));
+          expect(pathname).to.eql(expectedUri.pathname);
+          expect(query).to.eql(expectedUri.query);
           expect(searchResults[0].resourceId).to.eql(expectedResource.resourceId);
           expect(searchResults[0].summary).to.eql(expectedResource.summary);
           expect(searchResults[0].title).to.eql(expectedResource.title);
