@@ -1500,9 +1500,7 @@ const resourceList = [
         'preparing for and finding work',
       ],
     groups: ['intensive work search'],
-    sector: {
-      '': '',
-    },
+    sector: { '': '' },
   },
   {
     resourceId: 'octo133',
@@ -1518,9 +1516,7 @@ const resourceList = [
         'apprenticeships',
       ],
     groups: ['intensive work search'],
-    sector: {
-      '': '',
-    },
+    sector: { '': '' },
   }];
 
 module.exports = resourceList;
