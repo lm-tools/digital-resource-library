@@ -1290,7 +1290,7 @@ const resourceList = [
     resourceId: 'octo119',
     title: 'Office Angels',
     url: 'https://www.office-angels.com',
-    summary: 'A recruiter that finds office, secretarial and administration staff for a wide range of employers.',
+    summary: 'A recruiter that finds office, secretarial and administration staff for a wide range of employers.',
     journalMessage: 'This might help you with your job search - it\'s a recruiter that finds office staff for a wide range of employers:\n\nhttps://www.office-angels.com\n\nYou can use its website to search for jobs and get career advice.',
     category:
       ['work search',
