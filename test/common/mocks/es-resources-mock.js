@@ -1,29 +1,33 @@
 const nock = require('nock');
 
 class EsResourcesMock {
-  constructor(esHost, resourcesModel) {
-    this.esHost = esHost;
-    this.resourcesModel = resourcesModel;
+  constructor({ searchService, logger }) {
+    this.searchService = searchService;
+    this.logger = logger;
   }
 
-  constructMockQuery({keyword="default search term", hits}) {
-    return keyword.replace(/\s/g, '').length === 0 ? keyword :`${keyword} (${hits})`
+  constructMockQuery({ keyword = 'default search term', hits }) {
+    return keyword.replace(/\s/g, '').length === 0 ? keyword : `${keyword} (${hits})`;
   }
 
   destructureMockQuery(query) {
-    const result = (/\(([^)]+)\)/).exec(query);
-    const hits = Array.isArray(result) && result[1];
-    if (hits && !isNaN(result[1])) {
-      const keyword = query.replace(`(${hits})`,'');
-      return {keyword, hits: Number(hits)};
-    } else {
-      return undefined
+    const hitsRegexResult = (/\(([^)]+)\)/).exec(query);
+    const hits = Array.isArray(hitsRegexResult) && hitsRegexResult[1];
+    let result;
+    if (hits && !isNaN(hits)) {
+      const keyword = query.replace(`(${hits})`, '');
+      result = { keyword, hits: Number(hits) };
     }
+    return result;
   }
 
   mockEsSearch(mockResources) {
-    return nock(this.esHost)
-      .post(`/${this.resourcesModel.esIndex}/_search`)
+    // prevent concurrent test issues. See node-nock issue 278
+    if (!nock.isActive()) {
+      nock.activate();
+    }
+    return nock(this.searchService.host)
+      .post(`/${this.searchService.index}/_search`)
       .reply(200, (url, body) => {
         // return all resources when matching all
         if (body && body.query && body.query.match_all) {
@@ -32,14 +36,13 @@ class EsResourcesMock {
               max_score: 213,
               hits: mockResources.map((r, i) => ({
                 _source: r,
-                _score: i + 1
+                _score: i + 1,
               })),
-              total: mockResources.length
-            }
-          }
-        }
-        // search query is a number, return that number of results from the mockResults
-        else if (body && body.query && body.query.multi_match) {
+              total: mockResources.length,
+            },
+          };
+        } else if (body && body.query && body.query.multi_match) {
+          // search query is a number, return that number of results from the mockResults
           const mockQuery = this.destructureMockQuery(body.query.multi_match.query);
           if (mockQuery) {
             return {
@@ -47,14 +50,14 @@ class EsResourcesMock {
                 max_score: 213,
                 hits: mockResources.slice(0, mockQuery.hits).map((r, i) => ({
                   _source: r,
-                  _score: i + 1
+                  _score: i + 1,
                 })),
-                total: mockQuery.hits
-              }
-            }
+                total: mockQuery.hits,
+              },
+            };
           }
         }
-        console.warn('no mock configured for es search: ', body);
+        this.logger.warn('no mock configured for es search: ', body);
         return {};
       });
   }
@@ -67,10 +70,10 @@ class EsResourcesMock {
       url: `https://www.id${id}.come`,
       summary: `summary - ${id}`,
       journalMessage: `journal - ${id}`,
-      category: (new Array(id)).fill(undefined).map((a, i) => `category - ${i + 1}`),
-      groups: (new Array(id)).fill(undefined).map((a, i) => `groups - ${i + 1}`)
+      category: (new Array(id)).fill(undefined).map((b, i) => `category - ${i + 1}`),
+      groups: (new Array(id)).fill(undefined).map((b, i) => `groups - ${i + 1}`),
     };
-  };
+  }
 
   restore() {
     nock.restore();

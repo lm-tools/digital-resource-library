@@ -18,8 +18,8 @@ const CookiePage = require('../../common/page_objects/cookie-page');
 const DetailPage = require('../../common/page_objects/detail-page');
 const EntrypointPage = require('../../common/page_objects/entrypoint-page');
 const routes = require('./routes')({ basePath, siteUrl: Zombie.site });
-const resourcesModel = require('./../../../app/models/resources-model')('test-drl-resources');
-const esResourcesMock = require('../../common/mocks/es-resources-mock');
+const { resourceModel, searchService, logger } = require('./../../../app/appContext');
+const EsResourcesMock = require('../../common/mocks/es-resources-mock');
 
 const app = require('../../../bin/www');
 
@@ -44,6 +44,6 @@ module.exports = {
   detailPage: new DetailPage({ browser, routes }),
   entrypointPage: new EntrypointPage({ browser, routes }),
   app,
-  resourcesModel,
-  esResourcesMock: new esResourcesMock(esEndpoint, resourcesModel),
+  resourceModel,
+  esResourcesMock: new EsResourcesMock({ searchService, logger }),
 };
