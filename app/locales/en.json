@@ -5,6 +5,7 @@
     "pagetitle": "Cookie"
   },
   "error": {
+    "401": "Not authorized",
     "404": "Page not found",
     "500": "We're experiencing technical problems."
   },

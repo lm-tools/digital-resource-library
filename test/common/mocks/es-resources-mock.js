@@ -21,11 +21,27 @@ class EsResourcesMock {
     return result;
   }
 
-  mockEsSearch(mockResources) {
-    // prevent concurrent test issues. See node-nock issue 278
+  mockEsBulk() {
+    this.activateNock();
+    return nock(this.searchService.host)
+      .post('/_bulk')
+      .reply(201, (url, body) => ({
+        items: body.split('\n')
+          .filter(doc => doc !== '')
+          .map(doc => JSON.parse(doc))
+          .filter((a, idx) => idx % 2 === 0),
+      }));
+  }
+
+  activateNock() {
     if (!nock.isActive()) {
       nock.activate();
     }
+  }
+
+  mockEsSearch(mockResources) {
+    this.activateNock();
+    // prevent concurrent test issues. See node-nock issue 278
     return nock(this.searchService.host)
       .post(`/${this.searchService.index}/_search`)
       .reply(200, (url, body) => {

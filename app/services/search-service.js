@@ -1,7 +1,15 @@
 const elasticsearch = require('elasticsearch');
-const { logger } = require('./../appContext');
+const logger = require('./../../logger');
 
 class SearchClient {
+
+  /**
+   *
+   * @param host: elasticsearch host
+   * @param index: elasticsearch index to search / upload records to
+   * @param rawData: rawData to add to the index
+   * @param esType: elasticsearch doc type to add to new records when applying bulk upload
+   */
   constructor({ host, index, rawData, esType }) {
     this.host = host;
     this.index = index;
@@ -40,15 +48,21 @@ class SearchClient {
     });
   }
 
-  bulkIndex({ data = this.rawData, id = 'id' }) {
+  bulkIndex() {
     const bulkBody = [];
-
-    data.forEach(item => {
+    // elasticsearch bulk upload requires to items in the array for each doc to be uploaded:
+    // [0]: action description
+    // [1]: doc to index/update
+    // [2]: action description
+    // [3]: doc to index/update
+    // ..[2n]: action description
+    // [2n+1]:
+    this.rawData.forEach(item => {
       bulkBody.push({
         index: {
           _index: this.index,
           _type: this.esType,
-          _id: item[id],
+          _id: item.id,
         },
       });
 
@@ -63,12 +77,11 @@ class SearchClient {
             logger.error(++errorCount, item.index.error);
           }
         });
-        const successful = bulkBody.length - errorCount;
-        logger.info(`Successfully indexed ${successful} out of ${bulkBody.length} resources`);
-        this.rawData = data;
-        return { errorCount, successCount: bulkBody.length };
+        const successful = this.rawData.length - errorCount;
+        logger.info(`Successfully indexed ${successful} out of ${this.rawData.length} resources`);
+        return { errorCount, successCount: this.rawData.length };
       })
-      .catch(logger.error);
+      .catch(() => logger.error());
   }
 }
 
