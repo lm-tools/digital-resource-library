@@ -1,11 +1,11 @@
-const { elasticSearch } = require('./config');
+const config = require('./config');
 const logger = require('./../logger');
 const resourcesData = require('./data/resources');
 const SearchService = require('./services/search-service');
 const searchService = new SearchService({
-  rawData: resourcesData,
-  host: elasticSearch.host,
-  index: elasticSearch.index,
+  rawData: resourcesData.map(r => Object.assign(r, { id: r.resourceId })),
+  host: config.elasticSearch.host,
+  index: config.elasticSearch.index,
   esType: 'resource',
 });
 const ResourceModel = require('./models/resources-model');
@@ -19,4 +19,4 @@ const featuredModel = require('./models/featured-model')({ data: featuredData, s
 
 const resourceModel = new ResourceModel({ searchService });
 
-module.exports = { resourceModel, categoryModel, featuredModel, searchService, logger };
+module.exports = { resourceModel, categoryModel, featuredModel, searchService, logger, config };
