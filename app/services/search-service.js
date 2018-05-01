@@ -56,7 +56,7 @@ class SearchClient {
     // [2]: action description
     // [3]: doc to index/update
     // ..[2n]: action description
-    // [2n+1]:
+    // ..[2n+1]: doc to index/update
     this.rawData.forEach(item => {
       bulkBody.push({
         index: {
