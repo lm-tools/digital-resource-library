@@ -66,14 +66,14 @@ describe('Search', () => {
       const hits = 1;
       const searchQuery = esResourcesMock.constructMockQuery({
         keyword: 'cooltext',
-        hits: 1,
+        hits,
       });
       esResourcesMock.mockEsSearch(esResourcesMock.mockedResources(hits));
       return searchPage.search(searchQuery)
         .then(() => {
           const expectedResource = resourceModel.getRawData()[0];
           const searchResults = searchPage.getResults();
-          expect(searchResults.length).to.eql(1);
+          expect(searchResults.length).to.eql(hits);
           const { pathname, query } = url.parse(searchResults[0].href);
           const expectedUri = url.parse(
             routes.detailsUrl(expectedResource.resourceId, searchQuery));
