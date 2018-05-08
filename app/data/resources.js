@@ -721,7 +721,6 @@ const resourceList = [
     groups: ['intensive work search'],
     sector: { 82: 'transport and mobile machine drivers and operatives' },
   },
-
   {
     resourceId: 'octo066',
     title: 'National Numeracy',
@@ -733,7 +732,6 @@ const resourceList = [
       'preparing for and finding work'],
     sector: {},
   },
-
   {
     resourceId: 'octo067',
     title: 'Security Industry Authority',
@@ -821,7 +819,6 @@ const resourceList = [
     groups: ['self employed', 'intensive work search'],
     sector: {},
   },
-
   {
     resourceId: 'octo075',
     title: 'Prospects: IT',
@@ -1368,7 +1365,7 @@ const resourceList = [
   },
   {
     resourceId: 'octo124',
-    title: 'Airport Jobs',
+    title: 'Aviation Job Search',
     url: 'http://www.aviationjobsearch.com',
     summary: 'Job listings in the aviation sector.',
     journalMessage: 'Here\'s a website you might find useful - it lists jobs in the aviation sector and has career advice:\n\nhttp://www.aviationjobsearch.com',
@@ -1487,6 +1484,37 @@ const resourceList = [
         'listings',
         'searching for work',
         'preparing for and finding work'],
+    groups: ['intensive work search'],
+    sector: { '': '' },
+  },
+  {
+    resourceId: 'octo132',
+    title: 'Monster Jobs',
+    url: 'https://www.monster.co.uk',
+    summary: 'A job search website with career advice and company profiles.',
+    journalMessage: 'This might help you with your job search: \n\nhttps://www.monster.co.uk\n\nIt\'s a website where you can search for jobs and get career advice.',
+    category: ['work search',
+        'research',
+        'listings',
+        'searching for work',
+        'preparing for and finding work',
+      ],
+    groups: ['intensive work search'],
+    sector: { '': '' },
+  },
+  {
+    resourceId: 'octo133',
+    title: 'BBC Careers',
+    url: 'http://www.bbc.co.uk/careers',
+    summary: 'Information about careers at the BBC - a public service broadcaster on television, on radio and online. It lists jobs, schemes, apprenticeships and work experience.',
+    journalMessage: 'Here\'s a website you might find useful. It lists jobs, schemes, apprenticeships and work experience at the BBC - a public service broadcaster on television, on radio and online.\n\nhttp://www.bbc.co.uk/careers\n\nIt\'s a place to get information about careers at the BBC.',
+    category: ['work search',
+        'research',
+        'listings',
+        'searching for work',
+        'preparing for and finding work',
+        'apprenticeships',
+      ],
     groups: ['intensive work search'],
     sector: { '': '' },
   }];
