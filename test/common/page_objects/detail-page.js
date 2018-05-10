@@ -1,8 +1,8 @@
 const Page = require('./page');
 class DetailPage extends Page {
 
-  visit(id, fromSearch) {
-    return this.browser.visit(this.routes.detailsUrl(id, fromSearch));
+  visit(id, fromSearch, result) {
+    return this.browser.visit(this.routes.detailsUrl(id, fromSearch, result));
   }
 
   categoryText() {

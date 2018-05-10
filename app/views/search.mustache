@@ -42,7 +42,8 @@
     {{#resourceList}}
       <div class="search-result" data-test="resource-id-{{ resourceId }}">
         <h2 class="search-result-title" data-test="title">
-          <a href="{{ basePath }}/resources/{{ resourceId }}?fromSearch={{search}}" data-test="resource-link-{{ resourceId }}">
+          <a href="{{basePath}}/resources/{{resourceId}}?fromSearch={{search}}&result={{resultNum}}"
+             data-test="resource-link-{{ resourceId }}">
             {{ title }}
           </a>
         </h2>

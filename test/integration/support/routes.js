@@ -7,8 +7,9 @@ function create({ basePath, siteUrl }) {
       `${basePath}/search${search ? `?search=${encodeURIComponent(search)}` : ''}`,
     searchUrlAbsolute: (search) =>
       `${siteUrl}${basePath}/search?search=${encodeURIComponent(search)}`,
-    detailsUrl: (resourceId, search) =>
-      `${basePath}/resources/${resourceId}?fromSearch=${encodeURIComponent(search)}`,
+    detailsUrl: (resourceId, search, result) =>
+      `${basePath}/resources/${resourceId}?fromSearch=${encodeURIComponent(search)}&` +
+        `result=${encodeURIComponent(result)}`,
   };
 }
 
