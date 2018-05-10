@@ -40,7 +40,10 @@ function searchResultsResponse(res, search, results) {
   return res.render('search',
     {
       maxScore: results.hits.max_score,
-      resourceList: results.hits.hits.map(r => Object.assign(r._source, { score: r._score })),
+      resourceList: results.hits.hits.map((r, resultNum) => Object.assign(r._source, {
+        score: r._score,
+        resultNum: resultNum + 1,
+      })),
       resultsSummaryCopy: resultsSummaryCopy(results.hits.total, search),
       search,
       hasResults: (results.hits.total > 0),
