@@ -26,7 +26,7 @@ gulp.task('lint-all-html', () => {
   );
   return serverStartPromise.then(() => lintHtml({
     url: `http://localhost:${port}`,
-    ignoreQsParams: ['fromSearch', 'result'],
+    ignoreQsParams: ['fromSearch', 'result', 'score'],
   }))
     .then(() => process.exit(0))
     .catch(e => gutil.log(gutil.colors.red(e)) && process.exit(1));

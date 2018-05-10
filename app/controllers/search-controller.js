@@ -36,12 +36,17 @@ router.get('/index', (req, res, next) => {
   }
 });
 
+function scoreModel(score) {
+  const s = Number(score);
+  return !isNaN(s) ? s.toFixed(2) : '0.00';
+}
+
 function searchResultsResponse(res, search, results) {
   return res.render('search',
     {
       maxScore: results.hits.max_score,
       resourceList: results.hits.hits.map((r, resultNum) => Object.assign(r._source, {
-        score: r._score,
+        score: scoreModel(r._score),
         resultNum: resultNum + 1,
       })),
       resultsSummaryCopy: resultsSummaryCopy(results.hits.total, search),
