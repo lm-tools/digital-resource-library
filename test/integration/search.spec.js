@@ -45,7 +45,8 @@ describe('Search', () => {
       );
       it('should have correct path for all resources details page with result number', () =>
         expect(this.resourceList.map(i => i.href)).to.eql(
-          resourceModel.getRawData().map((i, idx) => routes.detailsUrl(i.resourceId, '', idx + 1))
+          resourceModel.getRawData()
+            .map((i, idx) => routes.detailsUrl(i.resourceId, '', idx + 1, (idx + 1).toFixed(2)))
         )
       );
     });
@@ -77,13 +78,13 @@ describe('Search', () => {
           expect(searchResults.length).to.eql(hits);
           const { pathname, query } = url.parse(searchResults[0].href);
           const expectedUri = url.parse(
-            routes.detailsUrl(expectedResource.resourceId, searchQuery, 1));
+            routes.detailsUrl(expectedResource.resourceId, searchQuery, 1, '1.00'));
           expect(pathname).to.eql(expectedUri.pathname);
           expect(query).to.eql(expectedUri.query);
           expect(searchResults[0].resourceId).to.eql(expectedResource.resourceId);
           expect(searchResults[0].summary).to.eql(expectedResource.summary);
           expect(searchResults[0].title).to.eql(expectedResource.title);
-          expect(searchResults[0].score).to.eql('score: 1');
+          expect(searchResults[0].score).to.eql('score: 1.00');
         });
     });
     describe('search summary', () => {
