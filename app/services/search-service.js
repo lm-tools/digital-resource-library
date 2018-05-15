@@ -9,15 +9,16 @@ class SearchClient {
    * @param index: elasticsearch index to search / upload records to
    * @param rawData: rawData to add to the index
    * @param esType: elasticsearch doc type to add to new records when applying bulk upload
+   * @param log: log level for elasticsearch, default: error
    */
-  constructor({ host, index, rawData, esType }) {
+  constructor({ host, index, rawData, esType, log = "error" }) {
     this.host = host;
     this.index = index;
     this.rawData = rawData;
     this.esType = esType;
     this.esClient = new elasticsearch.Client({
       host,
-      log: 'error',
+      log,
     });
   }
 
