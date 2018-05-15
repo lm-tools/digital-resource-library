@@ -1246,7 +1246,7 @@ const resourceList = [
         'preparing for and finding work',
         'skills, training and qualifications'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo116',
@@ -1264,7 +1264,7 @@ const resourceList = [
         'science jobs',
         'STEM jobs'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo117',
@@ -1274,7 +1274,7 @@ const resourceList = [
     journalMessage: 'To find out more about Carer\'s Allowance, this guide should have everything you need: \n\nhttps://www.gov.uk/carers-allowance\n\nIt\'s official GOV.UK guidance on Carer\'s Allowance, including how it works, eligibility and how to make a claim.',
     category: ['research', 'support', 'benefits'],
     groups: [''],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo118',
@@ -1284,7 +1284,7 @@ const resourceList = [
     journalMessage: 'A good place to find out about support for the Armed Forces, veterans and their families is SSAFA - the Armed Forces charity:\n\nhttps://www.ssafa.org.uk',
     category: ['research', 'support', 'mental health and wellbeing', 'health'],
     groups: [''],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo119',
@@ -1300,7 +1300,7 @@ const resourceList = [
         'preparing for and finding work',
         'office jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo120',
@@ -1316,7 +1316,7 @@ const resourceList = [
         'preparing for and finding work',
         'science jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo121',
@@ -1331,7 +1331,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo122',
@@ -1346,7 +1346,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo123',
@@ -1361,7 +1361,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo124',
@@ -1377,7 +1377,7 @@ const resourceList = [
         'preparing for and finding work',
         'aviation jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo125',
@@ -1393,7 +1393,7 @@ const resourceList = [
         'preparing for and finding work',
         'engineering jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo126',
@@ -1407,7 +1407,7 @@ const resourceList = [
         'volunteering',
         'support'],
     groups: ['intensive work search', 'young jobseekers'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo127',
@@ -1423,7 +1423,7 @@ const resourceList = [
         'preparing for and finding work',
         'creative jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo128',
@@ -1440,7 +1440,7 @@ const resourceList = [
         'gaming jobs',
         'technology jobs'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo129',
@@ -1455,7 +1455,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo130',
@@ -1470,7 +1470,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo131',
@@ -1485,7 +1485,7 @@ const resourceList = [
         'searching for work',
         'preparing for and finding work'],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo132',
@@ -1500,7 +1500,7 @@ const resourceList = [
         'preparing for and finding work',
       ],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   },
   {
     resourceId: 'octo133',
@@ -1516,7 +1516,7 @@ const resourceList = [
         'apprenticeships',
       ],
     groups: ['intensive work search'],
-    sector: { '': '' },
+    sector: {},
   }];
 
 module.exports = resourceList;
