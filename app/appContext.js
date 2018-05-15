@@ -7,6 +7,7 @@ const searchService = new SearchService({
   host: config.elasticSearch.host,
   index: config.elasticSearch.index,
   esType: 'resource',
+  log: config.elasticSearch.log,
 });
 const ResourceModel = require('./models/resources-model');
 const categoriesData = require('./data/categories');
