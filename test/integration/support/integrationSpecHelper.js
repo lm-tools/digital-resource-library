@@ -1,5 +1,11 @@
-const Zombie = require('zombie');
+const esEndpoint = 'https://search-drl-test.com';
 const appPort = '9876';
+process.env.GOOGLE_TAG_MANAGER_ID = 'fake-id';
+process.env.PORT = appPort;
+process.env.ES_ENDPOINT = esEndpoint;
+process.env.ES_INDEX = 'test-drl-resources';
+
+const Zombie = require('zombie');
 const basePath = process.env.EXPRESS_BASE_PATH || '';
 Zombie.site = `http://localhost:${appPort}`;
 const browser = new Zombie();
@@ -12,9 +18,9 @@ const CookiePage = require('../../common/page_objects/cookie-page');
 const DetailPage = require('../../common/page_objects/detail-page');
 const EntrypointPage = require('../../common/page_objects/entrypoint-page');
 const routes = require('./routes')({ basePath, siteUrl: Zombie.site });
+const { resourceModel, searchService, logger } = require('./../../../app/appContext');
+const EsResourcesMock = require('../../common/mocks/es-resources-mock');
 
-process.env.GOOGLE_TAG_MANAGER_ID = 'fake-id';
-process.env.PORT = appPort;
 const app = require('../../../bin/www');
 
 /* eslint-disable no-console */
@@ -38,4 +44,6 @@ module.exports = {
   detailPage: new DetailPage({ browser, routes }),
   entrypointPage: new EntrypointPage({ browser, routes }),
   app,
+  resourceModel,
+  esResourcesMock: new EsResourcesMock({ searchService, logger }),
 };

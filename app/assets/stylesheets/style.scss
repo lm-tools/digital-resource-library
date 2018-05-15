@@ -40,6 +40,11 @@
   }
 }
 
+.resource-score {
+  font-size: 14px;
+  color: $secondary-text-colour;
+}
+
 /* reference https://github.com/alphagov/static/blob/9e8795b262c948a65b798029864cbe04f193262a/app/assets/stylesheets/govuk-component/_option-select.scss */
 
 .govuk-option-select {
