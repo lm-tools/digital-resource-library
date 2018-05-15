@@ -61,16 +61,4 @@ describe('Dashboard', () => {
       expect(dashboardPage.getBreadcrumbs()).to.eql([])
     );
   });
-
-  describe('featured', () => {
-    before(() => dashboardPage.visit());
-
-    it('should render heading', () =>
-      expect(dashboardPage.getFeaturedHeader()).to.eql('New resource')
-    );
-  });
-
-  it('should have a valid resource as the featured resource', () =>
-    dashboardPage.clickFeaturedResourceLink().then(() => expect(browser.statusCode).to.equal(200))
-  );
 });
