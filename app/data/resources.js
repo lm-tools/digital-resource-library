@@ -24,7 +24,7 @@ const resourceList = [
     resourceId: 'octo003',
     title: 'My world of work CV Builder',
     url: 'https://www.myworldofwork.co.uk/getting-job/building-cv',
-    summary: 'A simple tool to help a claimant build a CV',
+    summary: 'A simple tool for building a CV',
     journalMessage: 'Since you need to work on your CV, this site might be helpful: \n\n https://www.myworldofwork.co.uk/getting-job/building-cv \n\n You have to register, and after that it will guide you through making a new CV.',
     category: ['CV and resumes', 'CVs, cover letters and interviews'],
     groups: ['young jobseekers', 'intensive work search'],
