@@ -13,10 +13,6 @@ class DashboardPage extends Page {
     return this.browser.text(`[data-test="${name}"]`, context);
   }
 
-  getFeaturedHeader() {
-    return this.browser.text('[data-test="featured-header"]');
-  }
-
   extractRelativeLink(name, context) {
     const linkEl = this.browser.query(`[data-test="${name}"]`, context);
     return `${linkEl.pathname}${linkEl.search}`;
@@ -33,10 +29,6 @@ class DashboardPage extends Page {
   search(keyword) {
     this.browser.fill('[data-test="search-input"]', keyword);
     return this.browser.click('[data-test="search-button"]');
-  }
-
-  clickFeaturedResourceLink() {
-    return this.browser.click('[data-test="featured-resource-link"]');
   }
 
 }

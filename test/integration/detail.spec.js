@@ -2,14 +2,18 @@ const {
   googleTagManagerHelper,
   detailPage,
   searchPage,
-  routes } = require('./support/integrationSpecHelper');
+  routes,
+  esResourcesMock,
+  resourceModel } = require('./support/integrationSpecHelper');
 const chai = require('chai');
 chai.use(require('chai-string'));
 const expect = chai.expect;
-const { describe, it, before } = require('mocha');
+const { describe, it, before, after } = require('mocha');
 const sampleResource = require('../../app/data/resources').find(i => i.category.length > 1);
 
 describe('Detail', () => {
+  before(() => esResourcesMock.mockEsSearch(resourceModel.getRawData()));
+  after(() => esResourcesMock.restore());
   describe('DirectNavigation', () => {
     before(() => detailPage.visit(sampleResource.resourceId));
 

@@ -3,17 +3,21 @@ const {
   googleTagManagerHelper,
   browser,
   routes,
+  esResourcesMock,
+  resourceModel,
 } = require('./support/integrationSpecHelper');
 const expect = require('chai').expect;
-const { describe, it } = require('mocha');
+const { describe, it, before, beforeEach, after } = require('mocha');
 const categoryListModel = require('../../app/data/categories');
 
 describe('Dashboard', () => {
+  before(() => esResourcesMock.mockEsSearch(resourceModel.getRawData()));
   beforeEach(() => dashboardPage.visit());
   beforeEach(() => {
     this.categoryList = dashboardPage.getCategories();
     this.searchableCategory = categoryListModel.find((i) => !!i.title).title;
   });
+  after(() => esResourcesMock.restore());
 
   it('should contain valid google tag manager data', () =>
     expect(googleTagManagerHelper.getUserVariable()).to.equal('set-me-in-controller')
@@ -41,9 +45,12 @@ describe('Dashboard', () => {
     );
 
     it('should link to search page with correct category searched', () =>
-      dashboardPage.search(this.searchableCategory)
+      dashboardPage.search(esResourcesMock.constructMockQuery({
+        keyword: this.searchableCategory,
+        hits: 2,
+      }))
         .then(() => expect(browser.location.href)
-          .to.equal(routes.searchUrlAbsolute(this.searchableCategory)))
+          .to.equal(`${routes.searchUrlAbsolute(this.searchableCategory)}%20(2)`))
     );
   });
 
@@ -54,16 +61,4 @@ describe('Dashboard', () => {
       expect(dashboardPage.getBreadcrumbs()).to.eql([])
     );
   });
-
-  describe('featured', () => {
-    before(() => dashboardPage.visit());
-
-    it('should render heading', () =>
-      expect(dashboardPage.getFeaturedHeader()).to.eql('New resource')
-    );
-  });
-
-  it('should have a valid resource as the featured resource', () =>
-    dashboardPage.clickFeaturedResourceLink().then(() => expect(browser.statusCode).to.equal(200))
-  );
 });

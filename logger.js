@@ -1,4 +1,5 @@
 const morgan = require('morgan');
+const winston = require('winston');
 const fs = require('fs');
 
 function colorForStatus(status) {
@@ -56,13 +57,22 @@ function jsonFormat(tokens, req, res) {
   });
 }
 
-module.exports.init = (env) => {
-  if (env === 'test') {
-    return morgan('tiny', {
-      stream: fs.createWriteStream(`${__dirname}/logs/test.log`, { flags: 'w' }),
-    });
-  } else if (env === 'production') {
-    return morgan(jsonFormat);
-  }
-  return morgan('dev+');
-};
+const logger = new winston.Logger({
+  level: 'info',
+  transports: [
+    new (winston.transports.Console)({ timestamp: true }),
+  ],
+});
+
+module.exports = Object.assign(logger, {
+  init: (env) => {
+    if (env === 'test') {
+      return morgan('tiny', {
+        stream: fs.createWriteStream(`${__dirname}/logs/test.log`, { flags: 'w' }),
+      });
+    } else if (env === 'production') {
+      return morgan(jsonFormat);
+    }
+    return morgan('dev+');
+  },
+});

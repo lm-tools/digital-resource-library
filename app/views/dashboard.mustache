@@ -6,7 +6,7 @@
 
     <form action="{{ basePath }}/search" method="GET" id="search-form">
       <div class="form-group">
-        <input type="search" name="search" id="search" class="form-control" value=""
+        <input type="search" name="search" id="search" class="form-control" value="" maxlength="200"
                data-test="search-input">
         <input type="submit" class="button" value="Search" data-test="search-button">
       </div>
@@ -39,24 +39,6 @@
         </div>
       {{/categoryListRow2}}
 
-      </div>
-    </div>
-
-    <h2 class="heading-small" data-test="featured-header">{{featured.heading}}</h2>
-
-    <div class="feature-section">
-      <div class="thumbnail">
-        <a href="{{ basePath }}/resources/{{featured.resourceId}}">
-          <img src="{{ basePath }}/{{featured.imageSmall}}">
-        </a>
-      </div>
-
-      <div class="details">
-        <h3>
-          <a href="{{ basePath }}/resources/{{featured.resourceId}}"
-             data-test="featured-resource-link">{{featured.resourceLinkText}}</a>
-        </h3>
-        <p>{{featured.resourceSummary}}</p>
       </div>
     </div>
 
