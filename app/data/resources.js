@@ -1651,7 +1651,7 @@ const resourceList = [
     { resourceId: 'octo148',
       title: 'Rethink Mental Illness',
       url: 'https://www.rethink.org',
-      summary: 'A charity that provides advice and information to everyone affected by mental health problems.',
+      summary: 'A charity that provides advice and information to everyone affected by mental health problems.',
       journalMessage: 'Take a look at Rethink Mental Illness - they have advice that helps anyone affected by mental health problems:\n\nhttps://www.rethink.org',
       category: ['health, mental health and wellbeing'],
       groups: [''],
