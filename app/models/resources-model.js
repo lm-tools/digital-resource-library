@@ -1,17 +1,27 @@
-const _ = require('lodash');
+const resourceIdProperty = 'resourceId';
 
-module.exports = function ({ data }) {
-  const searchableFields = ['title', 'url', 'summary', 'journalMessage', 'category', 'groups'];
+class ResourcesModel {
 
-  const searchInSingleItem = (object, query) => {
-    const objWithOnlyTextFields = _.pick(object, searchableFields);
-    const foundFields = _.values(objWithOnlyTextFields)
-      .filter(it => it.toString().toLowerCase().includes(query.toLowerCase()));
-    return foundFields.length > 0;
-  };
+  constructor({ searchService }) {
+    this.searchService = searchService;
+    this.resourceIdProperty = resourceIdProperty;
+  }
 
-  const findAll = () => data;
-  const findByKeyword = (keyword) => _.values(data).filter(it => searchInSingleItem(it, keyword));
-  const findById = (id) => data.find(i => i.resourceId === id);
-  return { findAll, findByKeyword, findById };
-};
+  findAll() {
+    return this.searchService.findAll();
+  }
+
+  findByKeyword(keyword) {
+    return this.searchService.find(keyword);
+  }
+
+  findById(id) {
+    return this.getRawData().find(i => i[this.resourceIdProperty] === id);
+  }
+
+  getRawData() {
+    return this.searchService.rawData;
+  }
+}
+
+module.exports = ResourcesModel;

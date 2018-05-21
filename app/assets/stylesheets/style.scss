@@ -40,6 +40,11 @@
   }
 }
 
+.resource-score {
+  font-size: 14px;
+  color: $secondary-text-colour;
+}
+
 /* reference https://github.com/alphagov/static/blob/9e8795b262c948a65b798029864cbe04f193262a/app/assets/stylesheets/govuk-component/_option-select.scss */
 
 .govuk-option-select {
@@ -187,19 +192,3 @@ body.js-enabled .copy-journal-message .toggle-switch {
 .categories-list .heading-medium {
     margin: $gutter-half 0 0 0;
 }
-
-.feature-section {
-  padding: $gutter-one-third 0 $gutter-one-third 0;
-  height: 150px;
-}
-
-.feature-section .thumbnail {
-  display: block;
-  float: left;
-  margin-right: $gutter-two-thirds;
-  outline: 5px solid $outline-shadow-1;
-  -webkit-box-shadow: 0 2px 2px $outline-shadow-2;
-  -moz-box-shadow: 0 2px 2px $outline-shadow-2;
-  box-shadow: 0 2px 2px $outline-shadow-2;
-}
-
