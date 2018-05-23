@@ -465,7 +465,7 @@ const resourceList = [
     resourceId: 'octo046',
     title: 'Early years foundation stage framework (EYFS)',
     url: 'https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2',
-    summary: 'The standards that school and childcare providers must meet for the learning, development and care of children from birth to the age of 5.',
+    summary: 'The standards that school and childcare providers must meet for the learning, development and care of children from birth to the age of 5.',
     journalMessage: "If you're moving into childminding, you should read the Early years framework: \n\nhttps://www.gov.uk/government/publications/early-years-foundation-stage-framework--2\n\n These are the standards you must meet for the learning, development and care of children from birth to the age of 5.",
     category: ['research', 'regulations', 'preparing for work', 'other support', 'skills, training and qualifications'],
     groups: ['intensive work search', 'self employed'],
