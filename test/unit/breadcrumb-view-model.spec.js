@@ -34,7 +34,7 @@ describe('breadcrumbViewModel', () => {
         expected: [
           { title: 'Home', link: '/' },
           { title: 'Results', link: '/search?search=' },
-          { title: 'My world of work CV Builder' },
+          { title: 'My World of Work: CV Builder' },
         ],
       },
       {
@@ -42,7 +42,7 @@ describe('breadcrumbViewModel', () => {
         expected: [
           { title: 'Home', link: '/' },
           { title: 'Results', link: '/search?search=CV%20and%20Resumes' },
-          { title: 'My world of work CV Builder' },
+          { title: 'My World of Work: CV Builder' },
         ],
       },
       {
