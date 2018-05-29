@@ -42,7 +42,7 @@ class SearchClient {
         query: {
           multi_match: {
             query: keyword,
-            fields: ['title', 'url', 'summary', 'journalMessage', 'category', 'groups', 'sector.*'],
+            fields: ['title', 'url', 'summary', 'keywords', 'journalMessage', 'category', 'groups', 'sector.*'],
           },
         },
       },
