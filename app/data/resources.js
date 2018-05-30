@@ -925,6 +925,7 @@ const resourceList = [{
     summary: 'The mental health charity has guidance and practical suggestions on work and returning to work.',
     journalMessage: 'Mind is a charity with useful guidance on working and getting back to work: \n\nhttps://www.mind.org.uk/information-support/tips-for-everyday-living/work/ ',
     category: ['health, mental health and wellbeing'],
+    keywords: ['anxiety', 'depression'],
     groups: ['intensive work search', 'preparing for work'],
     sector: {},
   },
