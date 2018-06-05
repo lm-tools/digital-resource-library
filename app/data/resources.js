@@ -1754,7 +1754,7 @@ const resourceList = [{
     { resourceId: 'octo157',
       title: 'GOV.UK: Disability Confident employer scheme and guidance',
       url: 'https://www.gov.uk/government/collections/disability-confident-campaign',
-      summary: 'GOV.UK guidance and resources about employing disabled people and how the Disability Confident employer scheme can help your business.',
+      summary: 'GOV.UK guidance and resources about employing disabled people and how the Disability Confident employer scheme can help your business.',
       journalMessage: 'To find out about employing disabled people and the Disability Confident employer scheme, this guide should have everything you need:\n\nhttps://www.gov.uk/government/collections/disability-confident-campaign\n\nIt has resources and information about how the scheme can help your business.',
       category: ['other support', 'research'],
       groups: [''],
