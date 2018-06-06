@@ -1396,7 +1396,7 @@ const resourceList = [{
     url: 'https://www.reed.co.uk/cvbuilder',
     summary: 'A tool for building a CV in 4 steps.',
     journalMessage: 'This tool can help you with your CV:\n\nhttps://www.reed.co.uk/cvbuilder\n\nYou\'ll need to register, and after that it will guide you through making a new CV in 4 steps.',
-    category: ['CVs, cover letters and interviews', 'work search', 'research',],
+    category: ['CVs, cover letters and interviews', 'work search', 'research'],
     groups: [''],
     sector: {},
   },
@@ -1611,7 +1611,7 @@ const resourceList = [{
     journalMessage: 'You might find this website useful if you\'re starting a business:\n\nhttps://www.popupbusinessschool.co.uk\n\nIt\'s a business school that runs events across the UK. It also has an online step-by-step guide that may be helpful.',
     category: ['preparing for work', 'skills, training and qualifications', 'research', 'business'],
     groups: [''],
-    sector: { '': '' }
+    sector: { '': '' },
   },
   {
     resourceId: 'octo157',
@@ -1621,7 +1621,7 @@ const resourceList = [{
     journalMessage: 'To find out about employing disabled people and the Disability Confident employer scheme, this guide should have everything you need:\n\nhttps://www.gov.uk/government/collections/disability-confident-campaign\n\nIt has resources and information about how the scheme can help your business.',
     category: ['other support', 'research'],
     groups: [''],
-    sector: { '': '' }
+    sector: { '': '' },
   },
   {
     resourceId: 'octo158',
@@ -1631,7 +1631,7 @@ const resourceList = [{
     journalMessage: 'If you want to gain skills in construction, here\'s a directory of organisations that provide training approved by the CITB (Construction Industry Training Board):\n\nhttps://www.citb.co.uk/training-and-courses/construction-training-directory\n\nYou can search for courses and get information about locations, dates, and costs including grants.',
     category: ['skills, training and qualifications', 'research'],
     groups: [''],
-    sector: { '': '' }
+    sector: { '': '' },
   },
   {
     resourceId: 'octo159',
@@ -1641,7 +1641,7 @@ const resourceList = [{
     journalMessage: 'You might find this website useful if you do not have a bank account, or do not qualify for a standard current account:\n\nhttps://www.moneyadviceservice.org.uk/en/articles/basic-bank-accounts#how-to-get-a-basic-bank-account\n\nIt explains what a fee-free basic bank account is, and how to get one if you are eligible.',
     category: ['preparing for work', 'research'],
     groups: [''],
-    sector: { '': '' }
+    sector: { '': '' },
   },
   {
     resourceId: 'octo160',
@@ -1651,7 +1651,7 @@ const resourceList = [{
     journalMessage: 'You might find this website useful if you want to improve your digital skills:\n\nhttps://www.learnmyway.com\n\nIt has free online courses that can help.',
     category: ['skills, training and qualifications', 'preparing for work'],
     groups: [''],
-    sector: { '': '' }
+    sector: { '': '' },
   },
 ];
 
