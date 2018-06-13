@@ -100,6 +100,7 @@ const resourceList = [{
     summary: 'Short videos about various jobs, talking to the people who do them and showing the day-to-day work.',
     journalMessage: 'If you want to find out what a job is like, look at Careersbox: \n\n https://www.careersbox.co.uk \n\n The videos show you what various jobs are like - what the day to day work is, and talking to people who do them.',
     category: ['preparing for work'],
+    keywords: ['career', 'careers', 'box'],
     groups: ['intensive work search', 'young jobseekers'],
     sector: {},
   },
