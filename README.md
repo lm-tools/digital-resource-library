@@ -6,6 +6,10 @@ A digital resource library app, based on [express], which looks like [gov.uk]
 
 [![Deploy][heroku deploy image]][heroku deploy hook]
 
+## Search
+
+For details of search functionality, see the [search documentation](SEARCH.md).
+
 ## Dev Setup
 
 Use node 6.11.1 and npm >5. Setup with [nvm](https://github.com/creationix/nvm):
