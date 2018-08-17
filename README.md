@@ -16,6 +16,8 @@ $ npm install -g npm@5.2.0
 $ npm install
 ``` 
 
+Ensure `node_modules/.bin` is on your path
+
 ## Start App
 
 ```sh
