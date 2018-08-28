@@ -5,6 +5,11 @@ class Page {
     this.routes = routes;
   }
 
+  // eslint-disable-next-line no-unused-vars
+  visit(...args) {
+    throw new Error('Must implement the visit method');
+  }
+
   /**
    * @param {string} dataTest - the data test element
    * @param {object} context - the core object returned from browser.querySelector. By default
