@@ -5,9 +5,10 @@
     "pagetitle": "Cookie"
   },
   "error": {
+    "400": "Bad request",
     "401": "Not authorized",
     "404": "Page not found",
-    "500": "We're experiencing technical problems."
+    "500": "We're experiencing technical problems"
   },
   "layout": {
     "header": "Online resources"
