@@ -1,6 +1,48 @@
 const elasticsearch = require('elasticsearch');
 const logger = require('./../../logger');
 
+function traceLog(method, requestUrl, body, responseBody, responseStatus) {
+  logger.debug({
+    method: method,
+    requestUrl: requestUrl,
+    body: body,
+    responseBody: responseBody,
+    responseStatus: responseStatus
+  });
+}
+
+function esLoggerFactory(esLogLevelConfig) {
+  class EsLogger {
+    constructor() {
+      const logLevelConfigMap = new Map();
+      logLevelConfigMap.set('trace', traceLog);
+      logLevelConfigMap.set('debug', logger.debug.bind(logger));
+      logLevelConfigMap.set('info', logger.info.bind(logger));
+      logLevelConfigMap.set('warning', logger.warn.bind(logger));
+      logLevelConfigMap.set('error', logger.error.bind(logger));
+
+      if (!logLevelConfigMap.get(esLogLevelConfig)) {
+        throw new Error(`elasticsearch log level ${esLogLevelConfig} not in: ${logLevelConfigMap.keys()}`)
+      }
+      let minimumLogLevelHit = false;
+      for (let [logLevel, logFn] of logLevelConfigMap.entries()) {
+        if (minimumLogLevelHit || logLevel === esLogLevelConfig) {
+          minimumLogLevelHit = true;
+          this[logLevel] = logFn;
+        } else {
+          this[logLevel] = () => {/* do not log */
+          };
+        }
+      }
+
+      this.close = function () { /* winston's console logger does not need to be closed */
+      };
+    }
+  }
+
+  return EsLogger;
+}
+
 class SearchClient {
 
   /**
@@ -18,7 +60,7 @@ class SearchClient {
     this.esType = esType;
     this.esClient = new elasticsearch.Client({
       host,
-      log,
+      log: esLoggerFactory(log),
     });
   }
 
