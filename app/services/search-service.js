@@ -1,46 +1,50 @@
 const elasticsearch = require('elasticsearch');
+const winston = require('winston');
 const logger = require('./../../logger');
+const ES_LOG_LEVEL_DEFAULT = 'warning';
 
-function traceLog(method, requestUrl, body, responseBody, responseStatus) {
-  logger.debug({
-    method: method,
-    requestUrl: requestUrl,
-    body: body,
-    responseBody: responseBody,
-    responseStatus: responseStatus
+function generateWinstonConsoleLogger(level) {
+  return new winston.Logger({
+    level,
+    transports: [
+      new (winston.transports.Console)({ timestamp: true }),
+    ],
+  });
+}
+
+function traceLogFn(method, requestUrl, body, responseBody, responseStatus) {
+  this.debug({
+    method,
+    requestUrl,
+    body,
+    responseBody,
+    responseStatus,
   });
 }
 
 function esLoggerFactory(esLogLevelConfig) {
-  class EsLogger {
+  let esLogLevel = esLogLevelConfig;
+  if (['trace', 'debug', 'info', 'warning', 'error'].indexOf(esLogLevel) < 0) {
+    logger.warn(
+      `unsupported es log level '${esLogLevelConfig}'. `,
+      `Falling back to '${ES_LOG_LEVEL_DEFAULT}'`
+    );
+    esLogLevel = ES_LOG_LEVEL_DEFAULT;
+  } else {
+    logger.info(`es log level set to '${esLogLevel}'`);
+  }
+
+  class EsLogger2 {
     constructor() {
-      const logLevelConfigMap = new Map();
-      logLevelConfigMap.set('trace', traceLog);
-      logLevelConfigMap.set('debug', logger.debug.bind(logger));
-      logLevelConfigMap.set('info', logger.info.bind(logger));
-      logLevelConfigMap.set('warning', logger.warn.bind(logger));
-      logLevelConfigMap.set('error', logger.error.bind(logger));
-
-      if (!logLevelConfigMap.get(esLogLevelConfig)) {
-        throw new Error(`elasticsearch log level ${esLogLevelConfig} not in: ${logLevelConfigMap.keys()}`)
-      }
-      let minimumLogLevelHit = false;
-      for (let [logLevel, logFn] of logLevelConfigMap.entries()) {
-        if (minimumLogLevelHit || logLevel === esLogLevelConfig) {
-          minimumLogLevelHit = true;
-          this[logLevel] = logFn;
-        } else {
-          this[logLevel] = () => {/* do not log */
-          };
-        }
-      }
-
-      this.close = function () { /* winston's console logger does not need to be closed */
+      const esLogger = generateWinstonConsoleLogger(esLogLevel);
+      esLogger.trace = esLogLevel === 'trace' ? traceLogFn.bind(esLogger) : () => {
       };
+      esLogger.warning = esLogger.warn.bind(esLogger); // warning is used by es
+      return esLogger;
     }
   }
 
-  return EsLogger;
+  return EsLogger2;
 }
 
 class SearchClient {
