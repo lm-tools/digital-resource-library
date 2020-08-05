@@ -12,7 +12,9 @@
     "pretest": "npm run compile && eslint .",
     "test-mocha": "mocha",
     "test": "NODE_ENV=test npm run test-mocha && NODE_ENV=test EXPRESS_BASE_PATH=/digital-resource-library npm run test-mocha && npm run html-lint",
-    "heroku-postbuild": "npm run compile"
+    "heroku-postbuild": "npm run compile",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "// NOTE": [
     "^Pinned dependencies are actually devDependencies, which are only",
@@ -51,7 +53,7 @@
     "hogan.js": "~3.0",
     "i18n": "^0.8.2",
     "jquery": "^2.2.4",
-    "knex": "^0.11.5",
+    "knex": "^0.14.3",
     "lmt-utils": "^0.1.4",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
@@ -68,7 +70,8 @@
     "uuid": "^3.0.1",
     "vinyl-source-stream": "^2.0.0",
     "winston": "^2.2.0",
-    "ws": "^2.2.1"
+    "ws": "^2.2.1",
+    "snyk": "^1.369.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -89,5 +92,6 @@
   "engines": {
     "node": "12.18.3",
     "npm": "5.2.0"
-  }
+  },
+  "snyk": true
 }
