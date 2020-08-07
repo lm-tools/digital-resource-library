@@ -65,7 +65,7 @@
     "request-promise": "^4.2.1",
     "request-promise-core": "^1.1.1",
     "run-sequence": "^2.2.1",
-    "serve-favicon": "~2.4.5",
+    "serve-favicon": "~2.5.0",
     "setprototypeof": "^1.0.3",
     "uuid": "^3.0.1",
     "vinyl-source-stream": "^2.0.0",
