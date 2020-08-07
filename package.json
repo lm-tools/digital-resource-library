@@ -26,7 +26,7 @@
     "@babel/preset-env": "^7.10.4",
     "ansi-colors": "4.1.1",
     "bindings": "^1.2.1",
-    "body-parser": "~1.18.2",
+    "body-parser": "~1.19.0",
     "browserify": "^13.0.1",
     "clipboard": "^1.7.1",
     "consolidate": "~0.14",
