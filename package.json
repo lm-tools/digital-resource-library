@@ -45,7 +45,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rev": "^8.1.0",
     "gulp-rev-collector": "^1.2.3",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^1.5.3",
     "gulp4-run-sequence": "^1.0.1",
@@ -71,7 +71,7 @@
     "vinyl-source-stream": "^2.0.0",
     "winston": "^2.2.0",
     "ws": "^3.3.1",
-    "snyk": "^1.369.3"
+    "snyk": "^1.465.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
